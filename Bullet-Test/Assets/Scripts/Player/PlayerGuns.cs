@@ -68,6 +68,7 @@ public class PlayerGuns : MonoBehaviour {
 
             Guns[ind].GetComponent<GunPlayer>().cooldown -= 0.2f;
             Guns[ind].GetComponent<GunPlayer>().Change();
+          
         }
 
         if (col.tag == "IncreaseDamage")
@@ -75,16 +76,19 @@ public class PlayerGuns : MonoBehaviour {
           
             Guns[ind].GetComponent<GunPlayer>().damage += 0.2f;
             Guns[ind].GetComponent<GunPlayer>().Change();
-           
+          
         }
         if (col.tag == "Life+")
         {
             gameObject.GetComponent<Player>().health++;
+          
         }
         if (col.tag == "Bomb+")
         {
             gameObject.GetComponent<Bomb>().bombs++;
+          
         }
 
+       
     }
 }

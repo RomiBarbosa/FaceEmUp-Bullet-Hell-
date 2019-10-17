@@ -24,9 +24,9 @@ public class Player : MonoBehaviour {
         //if (Input.GetKey(KeyCode.R))
         //{
         //    invulnerable = true;
-            
-        //}
 
+        //}
+        ManagerPuntps.ins.ShowVida(health);
         if (invulnerable == true)
         {
             countdown -= Time.deltaTime;
@@ -44,7 +44,7 @@ public class Player : MonoBehaviour {
     {
         invulnerable = true;
         health--;
-        ManagerPuntps.ins.ShowVida(health);
+
         
     }
 
