@@ -10,8 +10,19 @@ public class PlayerMovement : MonoBehaviour {
     public float xMin, xMax, yMin, yMax;
 
     void Update () {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        if (gameObject.name =="Player2")
+        {
+            movement.x = Input.GetAxisRaw("Horizontal2");
+            movement.y = Input.GetAxisRaw("Vertical2");
+
+        }
+        else if(gameObject.name == "Player") {
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+        }
+        
+
+
         if (Input.GetButton("ralentizar"/*KeyCode.Z*/))
         {
             moveSpeed = 2;
@@ -20,6 +31,7 @@ public class PlayerMovement : MonoBehaviour {
         else { moveSpeed = 7;
 
         }
+
 	}
 
     private void FixedUpdate()
