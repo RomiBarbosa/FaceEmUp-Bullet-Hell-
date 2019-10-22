@@ -20,6 +20,7 @@ public class Boss : MonoBehaviour {
 
     private void Start()
     {
+        healthPercentage = 100f;
         //Pattern_SpitFlowers();
     }
 
