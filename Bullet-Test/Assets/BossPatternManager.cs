@@ -12,15 +12,34 @@ public class BossPatternManager : MonoBehaviour {
 		
 	}
 	
+
+    public enum ePatterns
+    {
+        DEFAULT,
+        DEATH_FLOWER,
+        SPIT_FLOWERS,
+        DO_YOU_LIKE_FLOWERS, 
+        THE_END, 
+        PRETTY_FLOWERS, 
+        THE_FLOWER,
+        THE_OTHER_FLOWER
+    }
+
+    public ePatterns patterns;
+
 	// Update is called once per frame
 	void Update () {
-        if (boss.health < 100)
+        if (boss.healthPercentage > 75)
         {
-            flowerPattern = false;
+            patterns = ePatterns.DEATH_FLOWER;
         }
-        else
+        else if (boss.healthPercentage > 50 && boss.healthPercentage < 75)
         {
-            flowerPattern = true;
+            patterns = ePatterns.PRETTY_FLOWERS;
+        }
+        else if(boss.healthPercentage < 50)
+        {
+            patterns = ePatterns.THE_END;
         }
 	}
 }
