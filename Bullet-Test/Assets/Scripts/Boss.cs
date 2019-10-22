@@ -14,14 +14,19 @@ public class Boss : MonoBehaviour {
     public float healthPercentage;
     public float timer;
 
-    public bool p1, p2, p3, p4, p5, p6, p7,p8;
+    //public bool p1, p2, p3, p4, p5, p6, p7,p8;
 
-
+    //all this variables are for the movent behaviour. 
+    public GameObject[] waypoints;
+    int current = 0;
+    float rotSpeed;
+    public float speed;
+    float WPRadius = 1;
+    public bool move = false;
 
     private void Start()
     {
         healthPercentage = 100f;
-        //Pattern_SpitFlowers();
     }
 
     void Update () {
@@ -51,14 +56,14 @@ public class Boss : MonoBehaviour {
         //    timer = 0;
         //}
         healthPercentage = HealthPercentage();
-        if (p1){ DefaultGun(); } 
-        if (p2){ Pattern_DeathFlower(); }
-        if (p3){ Pattern_SpitFlowers(); } 
-        if (p4){ Pattern_DoYouLikeFlowers(); } 
-        if (p5){ Pattern_TheEnd(); }
-        if (p6){ Pattern_PrettyFlower(); } 
-        if (p7){ Pattern_THEFlower(); }
-        if (p8){ Pattern_THEOtherFlower(); }
+        //if (p1){ DefaultGun(); } 
+        //if (p2){ Pattern_DeathFlower(); }
+        //if (p3){ Pattern_SpitFlowers(); } 
+        //if (p4){ Pattern_DoYouLikeFlowers(); } 
+        //if (p5){ Pattern_TheEnd(); }
+        //if (p6){ Pattern_PrettyFlower(); } 
+        //if (p7){ Pattern_THEFlower(); }
+        //if (p8){ Pattern_THEOtherFlower(); }
 
         switch (bpm.patterns)
         {
@@ -89,6 +94,11 @@ public class Boss : MonoBehaviour {
             default:
                 //DefaultGun(); lo dejo comentado pero puede que sirva
                 break;
+        }
+
+        if (move == true)
+        {
+            WaypointsMovement();
         }
     }
 
@@ -191,5 +201,19 @@ public class Boss : MonoBehaviour {
     {
         float result = this.health * 100 / MAX_HEALTH;
         return result;
+    }
+
+    public void WaypointsMovement()
+    {
+        if (Vector2.Distance(waypoints[current].transform.position, transform.position) < WPRadius)
+        {
+            current++;
+            if (current >= waypoints.Length)
+            {
+                current = 0;
+            } 
+        }
+        transform.position = Vector2.MoveTowards(transform.position, waypoints[current].transform.position, Time.deltaTime * speed);
+        DefaultGun();
     }
 }

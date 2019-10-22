@@ -1745,7 +1745,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1015335671}
   m_Layer: 0
-  m_Name: EndPoint1
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1823,6 +1823,7 @@ MonoBehaviour:
   endPoint: {fileID: 1015335670}
   endPoint2: {fileID: 1333567499}
   lerpTime: 3
+  time: 0
 --- !u!1 &1060368058
 GameObject:
   m_ObjectHideFlags: 0
@@ -2650,7 +2651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1333567500}
   m_Layer: 0
-  m_Name: EndPoint2
+  m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2997,6 +2998,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114760924007487502, guid: 0320f1a02e4531740a48f999c00d66ba,
+        type: 2}
+      propertyPath: waypoints.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4900764548597306, guid: 0320f1a02e4531740a48f999c00d66ba, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.07132888
@@ -3038,6 +3044,21 @@ Prefab:
         type: 2}
       propertyPath: health
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 114760924007487502, guid: 0320f1a02e4531740a48f999c00d66ba,
+        type: 2}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1015335670}
+    - target: {fileID: 114760924007487502, guid: 0320f1a02e4531740a48f999c00d66ba,
+        type: 2}
+      propertyPath: waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1333567499}
+    - target: {fileID: 114760924007487502, guid: 0320f1a02e4531740a48f999c00d66ba,
+        type: 2}
+      propertyPath: speed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0320f1a02e4531740a48f999c00d66ba, type: 2}
