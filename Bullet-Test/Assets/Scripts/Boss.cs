@@ -22,11 +22,18 @@ public class Boss : MonoBehaviour {
     float rotSpeed;
     public float speed;
     float WPRadius = 1;
+    public float setMovementTime;
+    
+    public float setWanderInterval = 0;
     public bool move = false;
+    private float movementTime;
+    
+
 
     private void Start()
     {
         healthPercentage = 100f;
+        movementTime = setMovementTime;
     }
 
     void Update () {
@@ -96,9 +103,21 @@ public class Boss : MonoBehaviour {
                 break;
         }
 
-        if (move == true)
+        Move();
+    }
+
+    
+    private void Move()
+    {
+        if (move == true && movementTime > 0)
         {
+            movementTime -= Time.deltaTime;
             WaypointsMovement();
+        }
+        if (movementTime <= 0)
+        {
+            move = false;
+            movementTime = setMovementTime;
         }
     }
 
@@ -108,8 +127,7 @@ public class Boss : MonoBehaviour {
         bossGun.canShoot = false;
         bossGun.canRotate = false;
     }
-
-
+    
     void Pattern_DeathFlower()
     {
         bossGun2.canShoot = false;
@@ -142,6 +160,7 @@ public class Boss : MonoBehaviour {
         bossGun.bulletForce = 4;
 
     }
+
     void Pattern_TheEnd()
     {
         bossGun2.canShoot = false;

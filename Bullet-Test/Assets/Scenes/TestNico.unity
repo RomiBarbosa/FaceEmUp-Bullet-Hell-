@@ -1745,7 +1745,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1015335671}
   m_Layer: 0
-  m_Name: Left
+  m_Name: WaypointLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1758,7 +1758,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1015335670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.05, y: 2.45, z: -9.744141}
+  m_LocalPosition: {x: -6.99, y: 2.45, z: -9.744141}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1820,9 +1820,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 886064336}
-  endPoint: {fileID: 1015335670}
-  endPoint2: {fileID: 1333567499}
-  lerpTime: 3
   time: 0
 --- !u!1 &1060368058
 GameObject:
@@ -2651,7 +2648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1333567500}
   m_Layer: 0
-  m_Name: Right
+  m_Name: WayPointRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2664,7 +2661,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1333567499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.51, y: 2.57, z: -9.744141}
+  m_LocalPosition: {x: 7.01, y: 2.57, z: -9.744141}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3059,6 +3056,16 @@ Prefab:
         type: 2}
       propertyPath: speed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114760924007487502, guid: 0320f1a02e4531740a48f999c00d66ba,
+        type: 2}
+      propertyPath: setMovementTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114760924007487502, guid: 0320f1a02e4531740a48f999c00d66ba,
+        type: 2}
+      propertyPath: setWanderInterval
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0320f1a02e4531740a48f999c00d66ba, type: 2}
