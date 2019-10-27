@@ -11,7 +11,7 @@ public class Player : MonoBehaviour {
 
     float countdown;
     // Use this for initialization
-
+   public Animator anim;
     public GameObject ObjectCollider;
     void Start () {
         ObjectCollider.SetActive(true);
@@ -31,12 +31,13 @@ public class Player : MonoBehaviour {
         {
             countdown -= Time.deltaTime;
             ObjectCollider.SetActive(false);
-
+            anim.SetBool("invulnerable",true);
             //animacion y a la vez desactivas tu corazon
             if (countdown <= 0)
             {
                 ObjectCollider.SetActive(true);
                 invulnerable = false;
+                anim.SetBool("invulnerable", false);
                 countdown = 2;
             }
         }
