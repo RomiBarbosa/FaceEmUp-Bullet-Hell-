@@ -31,6 +31,8 @@ public class Player : MonoBehaviour {
         {
             countdown -= Time.deltaTime;
             ObjectCollider.SetActive(false);
+
+            //animacion y a la vez desactivas tu corazon
             if (countdown <= 0)
             {
                 ObjectCollider.SetActive(true);

@@ -66,6 +66,8 @@
     <Compile Include="Assets\Scripts\Boss.cs" />
     <Compile Include="Assets\Scripts\Boss2.cs" />
     <Compile Include="Assets\Scripts\BossGun.cs" />
+    <Compile Include="Assets\Scripts\BossMovement.cs" />
+    <Compile Include="Assets\Scripts\BossPatternManager.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\BulletEnemy.cs" />
     <Compile Include="Assets\Scripts\ColliderISP.cs" />
@@ -84,18 +86,19 @@
     <Compile Include="Assets\Scripts\Player\PlayerShoot.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
+    <Compile Include="Assets\Scripts\Sounds\ManagerSounds.cs" />
     <Compile Include="Assets\Scripts\Wall.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/Danmaku/Bullet-Test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/DanmakuMultiplayer/Bullet-Test/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Danmaku/Bullet-Test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/DanmakuMultiplayer/Bullet-Test/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Danmaku/Bullet-Test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/DanmakuMultiplayer/Bullet-Test/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Danmaku/Bullet-Test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/DanmakuMultiplayer/Bullet-Test/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 4900764548597306}
   - component: {fileID: 212194387706197934}
   - component: {fileID: 114760924007487502}
+  - component: {fileID: 95301467668089924}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -93,14 +94,32 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1451030312892666}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.54, z: -0.0792584}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.61, y: 2.98, z: -0.0792584}
+  m_LocalScale: {x: 0.393984, y: 0.455838, z: 1}
   m_Children:
   - {fileID: 4595145893544450}
   - {fileID: 4280360805927180}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95301467668089924
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1451030312892666}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 94eb4b3362b55ca49a70653d7a9d778a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114554167915661550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a1c0085b86bbd647b937eb1de0fb77b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 500
   bossGun: {fileID: 114554167915661550}
   bossGun2: {fileID: 114810563512802052}
   bullets:
@@ -139,15 +158,14 @@ MonoBehaviour:
   - {fileID: 1880868425618140, guid: 6f614f22a44765943ad7862d222b7a32, type: 2}
   - {fileID: 1659667555473700, guid: 24995aeea5ce8734ea8aae33ae75de0e, type: 2}
   - {fileID: 1265219243434970, guid: 580094a4ca130094482279ce30dcf466, type: 2}
+  bpm: {fileID: 0}
+  healthPercentage: 0
   timer: 0
-  p1: 0
-  p2: 0
-  p3: 0
-  p4: 0
-  p5: 0
-  p6: 0
-  p7: 0
-  p8: 0
+  waypoints: []
+  speed: 10
+  setMovementTime: 0.5
+  setWanderInterval: 2
+  move: 0
 --- !u!114 &114810563512802052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,8 +219,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3711a9f6f2ccda14f8b60029a163776b, type: 3}
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 3ec04f1b664275344bb46385c7becfa7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

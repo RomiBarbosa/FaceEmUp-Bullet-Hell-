@@ -24,6 +24,7 @@ public class PlayerShoot : MonoBehaviour {
         {
             ShootBullet();
             time = 0;
+            ManagerSounds.ins.Shoot();
         }
 
     }
