@@ -100,6 +100,7 @@
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
     <Compile Include="Assets\Scripts\Sounds\ManagerSounds.cs" />
+    <Compile Include="Assets\Scripts\TheBoss.cs" />
     <Compile Include="Assets\Scripts\Wall.cs" />
     <None Include="Assets\AssetsExtra\_MK\MKGlowFree\Shaders\VariantsSelective\Sprites\Sprites-Diffuse.shader" />
     <None Include="Assets\AssetsExtra\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\MKGlowStandard.shader" />

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour {
 
+    //Boss script behavior
     //manager gun boss
     public float health = 100;
     public BossGun bossGun;
