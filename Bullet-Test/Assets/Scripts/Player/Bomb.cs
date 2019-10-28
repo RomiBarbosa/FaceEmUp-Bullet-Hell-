@@ -27,6 +27,10 @@ public class Bomb : MonoBehaviour {
                 Destroy(enemies[i]);
             }
             bombs--;
+            var boss = GameObject.FindGameObjectWithTag("Boss");
+            {
+                boss.GetComponent<Boss>().TakeDamageFromBomb(10);
+            }
         }
 
         if (!bombAvailable)

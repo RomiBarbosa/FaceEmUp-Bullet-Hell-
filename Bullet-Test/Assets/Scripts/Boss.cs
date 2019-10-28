@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,12 +7,12 @@ public class Boss : MonoBehaviour {
 
     //Boss script behavior
     //manager gun boss
-    public float health = 100;
+    public float health = 500f;
     public BossGun bossGun;
     public BossGun bossGun2;
     public GameObject[] bullets;
     public BossPatternManager bpm;
-    private const float MAX_HEALTH = 500;
+    private const float MAX_HEALTH = 500f;
     public float healthPercentage;
     public float timer;
 
@@ -28,12 +29,13 @@ public class Boss : MonoBehaviour {
     public float setWanderInterval = 0;
     public bool move = false;
     private float movementTime;
-    
 
+    
 
     private void Start()
     {
         healthPercentage = 100f;
+        health = 500f;
         movementTime = setMovementTime;
     }
 
@@ -64,14 +66,7 @@ public class Boss : MonoBehaviour {
         //    timer = 0;
         //}
         healthPercentage = HealthPercentage();
-        //if (p1){ DefaultGun(); } 
-        //if (p2){ Pattern_DeathFlower(); }
-        //if (p3){ Pattern_SpitFlowers(); } 
-        //if (p4){ Pattern_DoYouLikeFlowers(); } 
-        //if (p5){ Pattern_TheEnd(); }
-        //if (p6){ Pattern_PrettyFlower(); } 
-        //if (p7){ Pattern_THEFlower(); }
-        //if (p8){ Pattern_THEOtherFlower(); }
+        
 
         switch (bpm.patterns)
         {
@@ -103,11 +98,20 @@ public class Boss : MonoBehaviour {
                 //DefaultGun(); lo dejo comentado pero puede que sirva
                 break;
         }
-
         Move();
     }
 
-    
+    internal void TakeDamageFromBomb(float amount)
+    {
+        this.health -= amount;
+        bpm.WaitToFire();
+    }
+
+    public void TakeDamage(float amount)
+    {
+        this.health -= amount;
+    }
+
     private void Move()
     {
         if (move == true && movementTime > 0)

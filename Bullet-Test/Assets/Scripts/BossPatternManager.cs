@@ -6,7 +6,7 @@ public class BossPatternManager : MonoBehaviour {
 
     public Boss boss;
     public bool flowerPattern = true; 
-    
+    public bool defaultPattern = false; 
 
 	void Start () {
 		
@@ -29,17 +29,40 @@ public class BossPatternManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        if (boss.healthPercentage > 75)
+        if (defaultPattern == true)
         {
-            patterns = ePatterns.DEATH_FLOWER;
+            patterns = ePatterns.DEFAULT;
+            CountDown();
         }
-        else if (boss.healthPercentage > 50 && boss.healthPercentage < 75)
+        else
         {
-            patterns = ePatterns.PRETTY_FLOWERS;
-        }
-        else if(boss.healthPercentage < 50)
-        {
-            patterns = ePatterns.THE_END;
+            if (boss.healthPercentage > 75)
+            {
+                patterns = ePatterns.DEATH_FLOWER;
+            }
+            else if (boss.healthPercentage > 50 && boss.healthPercentage < 75)
+            {
+                patterns = ePatterns.PRETTY_FLOWERS;
+            }
+            else if (boss.healthPercentage < 50)
+            {
+                patterns = ePatterns.THE_END;
+            }
         }
 	}
+    public float timer = 1f;
+    public void WaitToFire()
+    {
+        defaultPattern = true;
+    }
+
+    private void CountDown()
+    {
+        timer -= Time.deltaTime;
+        if (timer < -0.2)
+        {
+            defaultPattern = false;
+            timer = 1;
+        }
+    }
 }

@@ -21,12 +21,12 @@ GameObject:
   - component: {fileID: 4225521215799974}
   - component: {fileID: 212928659713378142}
   - component: {fileID: 50768979507194768}
-  - component: {fileID: 114802086944414012}
   - component: {fileID: 96279475789883306}
   - component: {fileID: 61096336676418622}
+  - component: {fileID: 114977616479274610}
   m_Layer: 0
   m_Name: BulletPlayer
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1379686112277676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.9304314, y: 0.5619284, z: -0.008}
+  m_LocalPosition: {x: -4.742647, y: -3.1964002, z: -0.008}
   m_LocalScale: {x: 0.21149941, y: 0.26797622, z: 0.222}
   m_Children: []
   m_Father: {fileID: 0}
@@ -199,7 +199,7 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
---- !u!114 &114802086944414012
+--- !u!114 &114977616479274610
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,9 +207,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1379686112277676}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faaf83f19697de9448ade950bbf165ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 493a102b353732b469c81df446928064, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 1
 --- !u!212 &212928659713378142
 SpriteRenderer:
   m_ObjectHideFlags: 1

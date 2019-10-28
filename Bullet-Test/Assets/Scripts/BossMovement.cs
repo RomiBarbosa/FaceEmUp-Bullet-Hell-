@@ -2,12 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//hola soy una modificacion
+
 public class BossMovement : MonoBehaviour {
 
     public Boss boss;
     public float time;
-    private bool pupo = false; //hola
+    
     
     void Start () {
        

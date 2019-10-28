@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class BulletEnemy : MonoBehaviour {
 
-	
+   
+    
+
 	void Start ()
     {
         Destroy(gameObject,3);
@@ -16,11 +18,5 @@ public class BulletEnemy : MonoBehaviour {
         
 	}
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Boss")
-        {
-            Destroy(gameObject);
-        }
-    }
+    
 }
