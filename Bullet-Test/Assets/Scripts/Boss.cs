@@ -16,6 +16,9 @@ public class Boss : MonoBehaviour {
     public float healthPercentage;
     public float timer;
 
+    public Material[] materiales;
+    Renderer rend;
+    public bool hit;
     //public bool p1, p2, p3, p4, p5, p6, p7,p8;
 
     //all this variables are for the movent behaviour. 
@@ -30,6 +33,7 @@ public class Boss : MonoBehaviour {
     public bool move = false;
     private float movementTime;
 
+    float countdown;
     
 
     private void Start()
@@ -37,6 +41,12 @@ public class Boss : MonoBehaviour {
         healthPercentage = 100f;
         health = 500f;
         movementTime = setMovementTime;
+
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
+        rend.sharedMaterial = materiales[0];
+        countdown = 0.3f;
+
     }
 
     void Update () {
@@ -65,6 +75,23 @@ public class Boss : MonoBehaviour {
 
         //    timer = 0;
         //}
+        if (hit == true)
+        {
+            countdown -= Time.deltaTime;
+            rend.sharedMaterial = materiales[1];
+            if (countdown <= 0)
+            {
+                hit = false;
+                countdown = 0.3f;
+            }
+            
+        }
+        else
+        {
+            rend.sharedMaterial = materiales[0];
+        }
+
+
         healthPercentage = HealthPercentage();
         
 
@@ -103,12 +130,14 @@ public class Boss : MonoBehaviour {
 
     internal void TakeDamageFromBomb(float amount)
     {
+        hit = true;
         this.health -= amount;
         bpm.WaitToFire();
     }
 
     public void TakeDamage(float amount)
     {
+        hit = true;
         this.health -= amount;
     }
 

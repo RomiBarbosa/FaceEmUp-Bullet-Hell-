@@ -450,6 +450,10 @@ Prefab:
       propertyPath: m_Name
       value: Main Camera (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4690165498244434, guid: 451df1328a51f1945aa6a5acf3b6a133, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 451df1328a51f1945aa6a5acf3b6a133, type: 2}
   m_IsPrefabAsset: 0
@@ -1411,6 +1415,16 @@ Prefab:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114496590219326348, guid: 1dd6ea697206b27408947246443b7d37,
+        type: 2}
+      propertyPath: maincamera
+      value: 
+      objectReference: {fileID: 1358168978}
+    - target: {fileID: 114496590219326348, guid: 1dd6ea697206b27408947246443b7d37,
+        type: 2}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1358168981}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dd6ea697206b27408947246443b7d37, type: 2}
   m_IsPrefabAsset: 0
@@ -2438,6 +2452,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114760924007487502, guid: 0320f1a02e4531740a48f999c00d66ba,
+        type: 2}
+      propertyPath: materiales.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4900764548597306, guid: 0320f1a02e4531740a48f999c00d66ba, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.94
@@ -2499,6 +2518,25 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1451030312892666, guid: 0320f1a02e4531740a48f999c00d66ba, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95301467668089924, guid: 0320f1a02e4531740a48f999c00d66ba,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114760924007487502, guid: 0320f1a02e4531740a48f999c00d66ba,
+        type: 2}
+      propertyPath: materiales.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 27871c14dd5c43a4abe10b3695e324ad, type: 2}
+    - target: {fileID: 114760924007487502, guid: 0320f1a02e4531740a48f999c00d66ba,
+        type: 2}
+      propertyPath: materiales.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 308ec7b790b155f4f8bb1df2f1c70575, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0320f1a02e4531740a48f999c00d66ba, type: 2}
   m_IsPrefabAsset: 0
@@ -2652,6 +2690,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1865115694694654, guid: 451df1328a51f1945aa6a5acf3b6a133,
     type: 2}
   m_PrefabInternal: {fileID: 342024464}
+--- !u!20 &1358168978 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 20124413108873558, guid: 451df1328a51f1945aa6a5acf3b6a133,
+    type: 2}
+  m_PrefabInternal: {fileID: 342024464}
 --- !u!114 &1358168980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2678,6 +2721,24 @@ MonoBehaviour:
     maxValue: 9.272572
   bloomScattering: 5.46
   bloomIntensity: 1
+--- !u!95 &1358168981
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1358168976}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 316375b9d9b0fec478df9995989e897c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1361593076
 GameObject:
   m_ObjectHideFlags: 0

@@ -83,6 +83,7 @@
     <Compile Include="Assets\Scripts\BossPatternManager.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\BulletEnemy.cs" />
+    <Compile Include="Assets\Scripts\ChangeMaterial.cs" />
     <Compile Include="Assets\Scripts\ColliderISP.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\MonsterBoss.cs" />
