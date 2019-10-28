@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50826023920272620}
   - component: {fileID: 114394433801974204}
   - component: {fileID: 96004100384458398}
+  - component: {fileID: 58998570321604908}
   m_Layer: 0
   m_Name: BulletPlayer1
   m_TagString: Untagged
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1185599295989270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.462, y: -1.239, z: -0.008}
+  m_LocalPosition: {x: -4.731018, y: 0.6000517, z: -0.008}
   m_LocalScale: {x: 0.27044708, y: 0.26966187, z: 0.222}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,6 +64,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58998570321604908
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1185599295989270}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.018876221, y: -0.083542734}
+  serializedVersion: 2
+  m_Radius: 0.6372611
 --- !u!96 &96004100384458398
 TrailRenderer:
   serializedVersion: 2
@@ -227,7 +243,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300002, guid: 0d43e8561d16c2f478977c893d521441, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
