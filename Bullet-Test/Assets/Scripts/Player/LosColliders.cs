@@ -12,12 +12,15 @@ public class LosColliders : MonoBehaviour {
             Debug.Log(" -----");
             Player p = other.GetComponentInParent<Player>();
             p.TakeDamage();
+            
         }
 
         if (other.tag == "PlayerHeartClose")
         {
             Debug.Log("paso cerca");
             ManagerPuntps.ins.CloseScore();
+            Player p = other.GetComponentInParent<Player>();
+            p.CloseScore();
         }
     }
 }

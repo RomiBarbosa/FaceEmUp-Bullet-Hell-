@@ -10,12 +10,15 @@ public class Player : MonoBehaviour {
     public int bombs;
 
     float countdown;
+
+    public int score0;
+    public int score1;
     // Use this for initialization
    public Animator anim;
     public GameObject ObjectCollider;
     void Start () {
         ObjectCollider.SetActive(true);
-        ManagerPuntps.ins.ShowVida(health);
+    ManagerPuntps.ins.ShowVida(health);
     }
 	
 	// Update is called once per frame
@@ -26,7 +29,6 @@ public class Player : MonoBehaviour {
         //    invulnerable = true;
 
         //}
-        ManagerPuntps.ins.ShowVida(health);
         if (invulnerable == true)
         {
             countdown -= Time.deltaTime;
@@ -45,10 +47,16 @@ public class Player : MonoBehaviour {
 
     public void TakeDamage()
     {
+        ManagerPuntps.ins.ShowVida(health);
         invulnerable = true;
         health--;
 
         
     }
 
+    public void CloseScore()
+    {
+       score1 += 10;
+        ManagerPuntps.ins.CloseScore();
+    }
 }

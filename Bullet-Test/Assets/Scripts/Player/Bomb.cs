@@ -13,7 +13,7 @@ public class Bomb : MonoBehaviour {
     float cont;
     private void Start()
     {
-        cont = 2;
+        cont = 1;
 
     }
     private void Update()
@@ -28,7 +28,7 @@ public class Bomb : MonoBehaviour {
             if (cont <= 0)
             {
                 bomb = false;
-                cont = 2;
+                cont = 1;
             }
         }
         else

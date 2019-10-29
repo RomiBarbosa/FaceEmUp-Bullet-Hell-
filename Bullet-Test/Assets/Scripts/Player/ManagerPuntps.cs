@@ -12,10 +12,23 @@ public class ManagerPuntps : MonoBehaviour {
     public Text ui_importantscore;
     public Text ui_vida;
     public Text ui_bombas;
+    public GameObject[] Heart;
+  
+    int index;
+    private void Start()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            Heart[i].SetActive(true);
+            index = 3;
+        }
+
+    }
 
     public void ShowVida(int vidas)
     {
-
+        Heart[index].SetActive(false);
+        index--;
         ui_vida.text = vidas.ToString();
     }
     public void ShowBombas(int bombas)

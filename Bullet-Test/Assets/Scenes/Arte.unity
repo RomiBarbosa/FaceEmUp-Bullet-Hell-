@@ -1399,7 +1399,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4238302067517158, guid: 1dd6ea697206b27408947246443b7d37, type: 2}
       propertyPath: m_LocalScale.x
-      value: 3.9076226
+      value: 3.1749434
       objectReference: {fileID: 0}
     - target: {fileID: 4238302067517158, guid: 1dd6ea697206b27408947246443b7d37, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1425,6 +1425,10 @@ Prefab:
       propertyPath: anim
       value: 
       objectReference: {fileID: 1358168981}
+    - target: {fileID: 4238302067517158, guid: 1dd6ea697206b27408947246443b7d37, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.427882
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dd6ea697206b27408947246443b7d37, type: 2}
   m_IsPrefabAsset: 0
@@ -1711,6 +1715,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114877442293517648, guid: de5b6d2cdf899a544b5346fd505e25d6,
+        type: 2}
+      propertyPath: Heart.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4148960865626352, guid: de5b6d2cdf899a544b5346fd505e25d6, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1.6503593
@@ -1763,6 +1772,26 @@ Prefab:
       propertyPath: ui_bombas
       value: 
       objectReference: {fileID: 1361593078}
+    - target: {fileID: 114877442293517648, guid: de5b6d2cdf899a544b5346fd505e25d6,
+        type: 2}
+      propertyPath: Heart.Array.data[0]
+      value: 
+      objectReference: {fileID: 507667856}
+    - target: {fileID: 114877442293517648, guid: de5b6d2cdf899a544b5346fd505e25d6,
+        type: 2}
+      propertyPath: Heart.Array.data[1]
+      value: 
+      objectReference: {fileID: 1940390531}
+    - target: {fileID: 114877442293517648, guid: de5b6d2cdf899a544b5346fd505e25d6,
+        type: 2}
+      propertyPath: Heart.Array.data[2]
+      value: 
+      objectReference: {fileID: 1619313541}
+    - target: {fileID: 114877442293517648, guid: de5b6d2cdf899a544b5346fd505e25d6,
+        type: 2}
+      propertyPath: Heart.Array.data[3]
+      value: 
+      objectReference: {fileID: 395102152}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de5b6d2cdf899a544b5346fd505e25d6, type: 2}
   m_IsPrefabAsset: 0
