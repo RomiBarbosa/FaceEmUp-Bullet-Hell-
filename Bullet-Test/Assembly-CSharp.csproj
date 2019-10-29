@@ -98,8 +98,10 @@
     <Compile Include="Assets\Scripts\Player\PlayerGuns.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerShoot.cs" />
+    <Compile Include="Assets\Scripts\Player\PowerUp.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\Settings\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\Settings\GameManager.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
     <Compile Include="Assets\Scripts\Sounds\ManagerSounds.cs" />
     <Compile Include="Assets\Scripts\TheBoss.cs" />

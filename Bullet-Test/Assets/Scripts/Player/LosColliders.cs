@@ -9,16 +9,17 @@ public class LosColliders : MonoBehaviour {
     {
         if (other.tag== "PlayerHeart")
         {
+           
             Debug.Log(" -----");
             Player p = other.GetComponentInParent<Player>();
             p.TakeDamage();
-            
+            Destroy(gameObject);
         }
 
         if (other.tag == "PlayerHeartClose")
         {
             Debug.Log("paso cerca");
-            ManagerPuntps.ins.CloseScore();
+           // ManagerPuntps.ins.CloseScore();
             Player p = other.GetComponentInParent<Player>();
             p.CloseScore();
         }

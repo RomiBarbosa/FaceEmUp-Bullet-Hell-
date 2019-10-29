@@ -18,7 +18,7 @@ public class Bomb : MonoBehaviour {
     }
     private void Update()
     {
-        ManagerPuntps.ins.ShowBombas(bombs);
+       // ManagerPuntps.ins.ShowBombas(bombs);
             TirarBomba();
 
         if (bomb == true)

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BulletEnemy : MonoBehaviour {
 
-   
+    public float time;
     
 
 	void Start ()
     {
-        Destroy(gameObject,3);
+        Destroy(gameObject, time);
 	}
 	
 	// Update is called once per frame

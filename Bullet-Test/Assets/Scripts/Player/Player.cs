@@ -16,9 +16,12 @@ public class Player : MonoBehaviour {
     // Use this for initialization
    public Animator anim;
     public GameObject ObjectCollider;
+
+
     void Start () {
         ObjectCollider.SetActive(true);
-    ManagerPuntps.ins.ShowVida(health);
+        countdown = 2;
+   // ManagerPuntps.ins.ShowVida(health);
     }
 	
 	// Update is called once per frame
@@ -32,7 +35,7 @@ public class Player : MonoBehaviour {
         if (invulnerable == true)
         {
             countdown -= Time.deltaTime;
-            ObjectCollider.SetActive(false);
+            
             anim.SetBool("invulnerable",true);
             //animacion y a la vez desactivas tu corazon
             if (countdown <= 0)
@@ -43,12 +46,15 @@ public class Player : MonoBehaviour {
                 countdown = 2;
             }
         }
+
+        bombs = gameObject.GetComponent<Bomb>().bombs;
     }
 
     public void TakeDamage()
     {
-        ManagerPuntps.ins.ShowVida(health);
-        invulnerable = true;
+        //  ManagerPuntps.ins.ShowVida(health);
+        ObjectCollider.SetActive(false);
+          invulnerable = true;
         health--;
 
         
@@ -57,6 +63,6 @@ public class Player : MonoBehaviour {
     public void CloseScore()
     {
        score1 += 10;
-        ManagerPuntps.ins.CloseScore();
+       // ManagerPuntps.ins.CloseScore();
     }
 }
