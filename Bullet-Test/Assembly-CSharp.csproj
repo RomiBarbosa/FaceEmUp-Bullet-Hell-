@@ -99,6 +99,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerShoot.cs" />
     <Compile Include="Assets\Scripts\Player\PowerUp.cs" />
+    <Compile Include="Assets\Scripts\RotanteEnemy.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\Settings\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Settings\GameManager.cs" />

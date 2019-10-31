@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4283031409775992}
   - component: {fileID: 50414791876805258}
   - component: {fileID: 114321662727389936}
+  - component: {fileID: 114442223666376058}
   m_Layer: 0
   m_Name: balarecta
   m_TagString: Untagged
@@ -253,6 +254,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 3
+--- !u!114 &114442223666376058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1245358832542838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a674b3b188a38a429af22d41e8defb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5
 --- !u!212 &212191824913515248
 SpriteRenderer:
   m_ObjectHideFlags: 1
