@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Boss : MonoBehaviour {
 
@@ -34,7 +35,8 @@ public class Boss : MonoBehaviour {
     private float movementTime;
 
     float countdown;
-    
+
+    public Image healthbar;
 
     private void Start()
     {
@@ -93,8 +95,8 @@ public class Boss : MonoBehaviour {
 
 
         healthPercentage = HealthPercentage();
-        
 
+        healthbar.fillAmount = healthPercentage / 100;
         switch (bpm.patterns)
         {
             case BossPatternManager.ePatterns.DEFAULT:

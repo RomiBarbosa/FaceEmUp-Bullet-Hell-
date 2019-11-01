@@ -85,6 +85,9 @@
     <Compile Include="Assets\Scripts\BulletEnemy.cs" />
     <Compile Include="Assets\Scripts\ChangeMaterial.cs" />
     <Compile Include="Assets\Scripts\ColliderISP.cs" />
+    <Compile Include="Assets\Scripts\Experimental\ShootExperimental.cs" />
+    <Compile Include="Assets\Scripts\Experimental\SpawnBulletsWithBullets.cs" />
+    <Compile Include="Assets\Scripts\Experimental\SpecialBullet.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\Scripts\MonsterBoss.cs" />
     <Compile Include="Assets\Scripts\MovementGun.cs" />

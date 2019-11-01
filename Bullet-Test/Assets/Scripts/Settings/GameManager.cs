@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
 
     public GameManager gm;
@@ -10,8 +10,12 @@ public class GameManager : MonoBehaviour {
 
     public Player[] players;
 
+    public float time;
+    public Text timeUI;
+
 	void Start () {
         GameOverUI.SetActive(false);
+        time = 0;
     }
 	
 	// Update is called once per frame
@@ -21,6 +25,13 @@ public class GameManager : MonoBehaviour {
         {
             GameOver();
         }
+
+        time += Time.deltaTime;
+        var minutes = ((int)time / 60).ToString();
+        var seconds = (time % 60).ToString("f0");
+
+        timeUI.text = minutes + ":" + seconds;
+
 
 	}
 
