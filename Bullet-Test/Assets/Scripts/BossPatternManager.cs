@@ -27,29 +27,26 @@ public class BossPatternManager : MonoBehaviour {
 
     public ePatterns patterns;
 
-	// Update is called once per frame
-	void Update () {
+    public virtual ePatterns State()
+    {
+        return ePatterns.DO_YOU_LIKE_FLOWERS;
+    }
+
+    void Update () {
         if (defaultPattern == true)
         {
-            patterns = ePatterns.DEFAULT;
+            SetPattern(State());
             CountDown();
         }
-        else
-        {
-            if (boss.healthPercentage > 75)
-            {
-                patterns = ePatterns.DEATH_FLOWER;
-            }
-            else if (boss.healthPercentage > 50 && boss.healthPercentage < 75)
-            {
-                patterns = ePatterns.PRETTY_FLOWERS;
-            }
-            else if (boss.healthPercentage < 50)
-            {
-                patterns = ePatterns.THE_END;
-            }
-        }
 	}
+
+    
+
+    protected void SetPattern(ePatterns pattern)
+    {
+        patterns = pattern;
+    }
+
     public float timer = 1f;
     public void WaitToFire()
     {
