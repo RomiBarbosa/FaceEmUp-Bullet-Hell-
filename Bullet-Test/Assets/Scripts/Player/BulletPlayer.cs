@@ -17,7 +17,7 @@ public class BulletPlayer : MonoBehaviour {
         if (collision.tag == "Boss")
         {
             Destroy(gameObject);
-            collision.GetComponent<Boss>().TakeDamage(damage);
+            collision.GetComponent<BossBehaviour>().TakeDamage(damage);
             //boss.TakeDamage(damage); no funciona desde aca ni idea
         }
     }
