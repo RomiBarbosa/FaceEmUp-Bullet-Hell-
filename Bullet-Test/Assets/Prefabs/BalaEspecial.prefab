@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114334339383312330}
   - component: {fileID: 114935503433970696}
   - component: {fileID: 114238255779875170}
+  - component: {fileID: 114541450297286146}
   - component: {fileID: 50085902819693828}
   m_Layer: 0
   m_Name: BalaEspecial
@@ -70,7 +71,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1101934965686512}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72ba15a795b84f745bd3cd5d2a9c9dc9, type: 3}
   m_Name: 
@@ -88,6 +89,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
   speed: 50
+--- !u!114 &114541450297286146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1101934965686512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a56c5eb389e3c8a4ba86b5d21a81054e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114935503433970696
 MonoBehaviour:
   m_ObjectHideFlags: 1
