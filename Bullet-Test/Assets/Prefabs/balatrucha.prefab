@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 4301044427824352}
   - component: {fileID: 212828321694269296}
   - component: {fileID: 114468822692941514}
+  - component: {fileID: 114907626544419860}
   m_Layer: 0
   m_Name: balatrucha
   m_TagString: Untagged
@@ -112,7 +113,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1942703764787422}
   m_LocalRotation: {x: 0, y: 0, z: 0.99999833, w: 0.0018327427}
-  m_LocalPosition: {x: -4.049274, y: 1.9785444, z: -0.08161449}
+  m_LocalPosition: {x: -6.058127, y: 0.9148084, z: -0.08161449}
   m_LocalScale: {x: 0.30667844, y: 0.30433324, z: 0.2727}
   m_Children:
   - {fileID: 4122350422418386}
@@ -146,10 +147,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4122350422418386}
-  bulletPrefab: {fileID: 1491836870529618, guid: c40e6de36d1fbac4cb2627f421ace25f,
+  bulletPrefab: {fileID: 1208668860476200, guid: bec65ac0f32b3b5428d7a4208cc375e8,
     type: 2}
-  bulletForce: 3
-  coolDown: 0.5
+  bulletForce: 5
+  coolDown: 0
 --- !u!114 &114468822692941514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -162,10 +163,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4301044427824352}
-  bulletPrefab: {fileID: 1491836870529618, guid: c40e6de36d1fbac4cb2627f421ace25f,
+  bulletPrefab: {fileID: 1208668860476200, guid: bec65ac0f32b3b5428d7a4208cc375e8,
     type: 2}
-  bulletForce: 3
-  coolDown: 0.5
+  bulletForce: 5
+  coolDown: 0
 --- !u!114 &114815300619044788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -178,10 +179,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4473247675613494}
-  bulletPrefab: {fileID: 1491836870529618, guid: c40e6de36d1fbac4cb2627f421ace25f,
+  bulletPrefab: {fileID: 1208668860476200, guid: bec65ac0f32b3b5428d7a4208cc375e8,
     type: 2}
-  bulletForce: 3
-  coolDown: 0.5
+  bulletForce: 5
+  coolDown: 0
+--- !u!114 &114907626544419860
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1942703764787422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faaf83f19697de9448ade950bbf165ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0.2
 --- !u!114 &114925672795758614
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,10 +207,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4092317426287700}
-  bulletPrefab: {fileID: 1491836870529618, guid: c40e6de36d1fbac4cb2627f421ace25f,
+  bulletPrefab: {fileID: 1208668860476200, guid: bec65ac0f32b3b5428d7a4208cc375e8,
     type: 2}
-  bulletForce: 3
-  coolDown: 0.5
+  bulletForce: 5
+  coolDown: 0
 --- !u!212 &212042408997252520
 SpriteRenderer:
   m_ObjectHideFlags: 1

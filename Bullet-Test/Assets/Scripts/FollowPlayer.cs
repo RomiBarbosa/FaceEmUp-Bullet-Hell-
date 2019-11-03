@@ -4,22 +4,17 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour {
 
-    Vector2 direccion;
-    public float speed;
-    public Rigidbody2D rb;
-    public GameObject target;
+    Rigidbody2D rb;
+    GameObject target;
+   public  float movespeed;
+    Vector2 directiontoTarget;
 
     private void Start()
     {
-        target = GameObject.Find("Player");
-        direccion = (target.transform.position - transform.position).normalized * speed;
-        rb.velocity = new Vector2(direccion.x, direccion.y);
-    }
-    private void Update()
-    {
-        if (transform.position.y <= -11)
-        {
-            Destroy(this.gameObject);
-        }
+        target = GameObject.FindGameObjectWithTag("Player");
+        rb = GetComponent<Rigidbody2D>();
+
+        directiontoTarget = (target.transform.position - transform.position).normalized * movespeed;
+        rb.velocity = new Vector2(directiontoTarget.x, directiontoTarget.y);
     }
 }

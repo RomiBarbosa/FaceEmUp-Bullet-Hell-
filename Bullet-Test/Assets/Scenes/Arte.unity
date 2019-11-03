@@ -784,9 +784,9 @@ RectTransform:
   m_Father: {fileID: 1455057995}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 18, y: -422}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 19.9, y: 15.899994}
   m_SizeDelta: {x: 393.1, y: 20.100006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &414876098
@@ -2916,6 +2916,12 @@ Prefab:
       propertyPath: hit
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114760924007487502, guid: 0320f1a02e4531740a48f999c00d66ba,
+        type: 2}
+      propertyPath: bullets.Array.data[0]
+      value: 
+      objectReference: {fileID: 1706914078768222, guid: a1966b2d3e7073b45b3e799a48bdbfaf,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0320f1a02e4531740a48f999c00d66ba, type: 2}
   m_IsPrefabAsset: 0
@@ -3243,7 +3249,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -3548,10 +3554,10 @@ RectTransform:
   m_Father: {fileID: 1455057995}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.17573257, y: 0.91425234}
-  m_AnchorMax: {x: 0.24546514, y: 0.98825234}
-  m_AnchoredPosition: {x: 20.5, y: -402}
-  m_SizeDelta: {x: 14.05, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -201, y: 19.459991}
+  m_SizeDelta: {x: 47.850006, y: 31.119995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1525468745
 MonoBehaviour:
