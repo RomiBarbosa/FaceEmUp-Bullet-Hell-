@@ -3,19 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
-
+    public static GameManager ins; 
     public GameManager gm;
 
     public GameObject GameOverUI;
+    public GameObject WinUI;
 
     public Player[] players;
 
     public float time;
     public Text timeUI;
 
-	void Start () {
+    public Pause pause;
+
+    public bool ingame;
+    private void Awake()
+    {
+        ins = this;
+    }
+
+    void Start () {
         GameOverUI.SetActive(false);
         time = 0;
+        pause.BackGame();
+        ingame = true;
     }
 	
 	// Update is called once per frame
@@ -38,5 +49,13 @@ public class GameManager : MonoBehaviour {
     public void GameOver()
     {
         GameOverUI.SetActive(true);
+        pause.PauseGame();
+        ingame = false;
+    }
+
+    public void WinGame()
+    {
+        WinUI.SetActive(true);
+        ingame = false;
     }
 }

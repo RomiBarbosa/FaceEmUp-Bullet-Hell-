@@ -53,9 +53,13 @@ public class Player : MonoBehaviour {
     public void TakeDamage()
     {
         //  ManagerPuntps.ins.ShowVida(health);
-        ObjectCollider.SetActive(false);
-          invulnerable = true;
-        health--;
+        if (GameManager.ins.ingame == true)
+        {
+            ObjectCollider.SetActive(false);
+            invulnerable = true;
+            health--;
+        }
+      
 
         
     }

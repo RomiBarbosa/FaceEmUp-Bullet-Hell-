@@ -13,7 +13,7 @@ public class BossBehaviour : MonoBehaviour {
     public BossGun bossGun2;
     public GameObject[] bullets;
     public NewBossPatternManager bpm;
-    private const float MAX_HEALTH = 500f;
+    private float MAX_HEALTH;
     public float healthPercentage;
     public float timer;
 
@@ -38,21 +38,21 @@ public class BossBehaviour : MonoBehaviour {
 
     public Image healthbar;
 
-    
+    public Animator anim;
     
 
 
     private void Start()
     {
         healthPercentage = 100f;
-        health = 500f;
+       // health = 500f;
         movementTime = setMovementTime;
 
         rend = GetComponent<Renderer>();
         rend.enabled = true;
         rend.sharedMaterial = materiales[0];
         countdown = 0.3f;
-
+        MAX_HEALTH = health;
     }
 
     void Update () {
@@ -114,6 +114,13 @@ public class BossBehaviour : MonoBehaviour {
                 break;
         }
         //Move();
+
+        if (healthPercentage <= 0)
+        {
+            anim.SetBool("cry",true);
+            Destroy(gameObject, 1.5f);
+            GameManager.ins.WinGame();
+        }
     }
 
     internal void TakeDamageFromBomb(float amount)
