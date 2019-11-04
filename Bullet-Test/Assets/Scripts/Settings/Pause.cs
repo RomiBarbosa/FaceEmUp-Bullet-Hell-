@@ -9,12 +9,12 @@ public class Pause : MonoBehaviour {
 	
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.P) && InPause == false)
+        if (Input.GetButtonDown("Pause") && InPause == false)
         {
             PauseGame();
 
         }
-        else if (Input.GetKeyDown(KeyCode.P) && InPause == true)
+        else if (Input.GetButtonDown("Pause") && InPause == true)
         {
             BackGame();
 

@@ -53,7 +53,7 @@ public class Bomb : MonoBehaviour {
             bombs--;
             var boss = GameObject.FindGameObjectWithTag("Boss");
             {
-                boss.GetComponent<Boss>().TakeDamageFromBomb(10);
+                boss.GetComponent<BossBehaviour>().TakeDamageFromBomb(10);
                 bomb = true;
             }
 
