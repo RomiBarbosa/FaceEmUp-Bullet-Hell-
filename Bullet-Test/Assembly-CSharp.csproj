@@ -85,6 +85,7 @@
     <Compile Include="Assets\Scripts\BulletEnemy.cs" />
     <Compile Include="Assets\Scripts\ChangeMaterial.cs" />
     <Compile Include="Assets\Scripts\ColliderISP.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyBehavior.cs" />
     <Compile Include="Assets\Scripts\Experimental\RandomPosition.cs" />
     <Compile Include="Assets\Scripts\Experimental\SpawnBulletsWithBullets.cs" />
     <Compile Include="Assets\Scripts\Experimental\SpecialBullet.cs" />
@@ -105,9 +106,12 @@
     <Compile Include="Assets\Scripts\Player\PowerUp.cs" />
     <Compile Include="Assets\Scripts\RotanteEnemy.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
+    <Compile Include="Assets\Scripts\Settings\AnimationText.cs" />
     <Compile Include="Assets\Scripts\Settings\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Settings\GameManager.cs" />
     <Compile Include="Assets\Scripts\Settings\Pause.cs" />
+    <Compile Include="Assets\Scripts\Settings\PrincipalMenu.cs" />
+    <Compile Include="Assets\Scripts\Settings\Waves.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
     <Compile Include="Assets\Scripts\Sounds\ManagerSounds.cs" />
     <Compile Include="Assets\Scripts\Wall.cs" />

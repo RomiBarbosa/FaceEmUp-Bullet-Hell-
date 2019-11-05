@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerGuns : MonoBehaviour {
 
     public GameObject[] Guns;
-    public GameObject currentGun;
+   // public GameObject currentGun;
     public int ind;
     public bool focus;
     private void Start()

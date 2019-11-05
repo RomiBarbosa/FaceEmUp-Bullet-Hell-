@@ -20,5 +20,7 @@ public class BulletPlayer : MonoBehaviour {
             collision.GetComponent<BossBehaviour>().TakeDamage(damage);
             //boss.TakeDamage(damage); no funciona desde aca ni idea
         }
+
+        
     }
 }

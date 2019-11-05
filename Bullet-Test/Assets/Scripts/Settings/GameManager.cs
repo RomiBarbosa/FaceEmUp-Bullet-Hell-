@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour {
     public Pause pause;
 
     public bool ingame;
+
+    public ChangeScene scene;
+    public string SceneName;
+
     private void Awake()
     {
         ins = this;
@@ -43,8 +47,12 @@ public class GameManager : MonoBehaviour {
 
         timeUI.text = minutes + ":" + seconds;
 
+        if (Input.GetButtonDown("PressStart") && ingame == false)
+        {
+            scene.ChangScene(SceneName);
+        }
 
-	}
+    }
 
     public void GameOver()
     {

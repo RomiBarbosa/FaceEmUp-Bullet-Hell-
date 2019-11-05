@@ -26,7 +26,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1451030312892666
 GameObject:
   m_ObjectHideFlags: 0
@@ -61,7 +61,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4280360805927180
 Transform:
   m_ObjectHideFlags: 1
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a1c0085b86bbd647b937eb1de0fb77b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
+  health: 125
   bossGun: {fileID: 114554167915661550}
   bossGun2: {fileID: 114810563512802052}
   bullets:
@@ -383,11 +383,19 @@ MonoBehaviour:
   bpm: {fileID: 0}
   healthPercentage: 0
   timer: 0
-  waypoints: []
+  materiales:
+  - {fileID: 2100000, guid: 27871c14dd5c43a4abe10b3695e324ad, type: 2}
+  - {fileID: 2100000, guid: 308ec7b790b155f4f8bb1df2f1c70575, type: 2}
+  hit: 0
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
   speed: 10
   setMovementTime: 0.5
   setWanderInterval: 2
   move: 0
+  healthbar: {fileID: 0}
+  anim: {fileID: 95301467668089924}
 --- !u!114 &114810563512802052
 MonoBehaviour:
   m_ObjectHideFlags: 1
