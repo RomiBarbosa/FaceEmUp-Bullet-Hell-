@@ -13,6 +13,7 @@ public class EnemyBehavior : MonoBehaviour {
 
     void Update()
     {
+        
         transform.Translate(-Vector3.up * Time.deltaTime * speed);
      
         if (health <= 0)
@@ -22,6 +23,7 @@ public class EnemyBehavior : MonoBehaviour {
             {
                 GetComponent<SpawnBulletsWhenDie>().SpawnBullets();
                 Destroy(this.gameObject);
+                
             } else
             {
                 Destroy(this.gameObject); 
@@ -42,6 +44,11 @@ public class EnemyBehavior : MonoBehaviour {
             Player p = collider.GetComponentInParent<Player>();
             p.TakeDamage();
         }
+
+        //if (this.health <= 0)
+        //{
+        //    ManagerPuntps.instance.score += 10;
+        //}
     }
 
 }

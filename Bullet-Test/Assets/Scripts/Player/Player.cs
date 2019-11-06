@@ -48,6 +48,7 @@ public class Player : MonoBehaviour {
         }
 
         bombs = gameObject.GetComponent<Bomb>().bombs;
+        
     }
 
     public void TakeDamage()

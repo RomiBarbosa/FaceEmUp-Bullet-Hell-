@@ -44,7 +44,7 @@ public class Bomb : MonoBehaviour {
         {
             bombAvailable = false;
             var enemies = GameObject.FindGameObjectsWithTag("EnemyBullet");
-
+            
             for (int i = 0; i < enemies.Length; i++)
             {
                 Destroy(enemies[i]);

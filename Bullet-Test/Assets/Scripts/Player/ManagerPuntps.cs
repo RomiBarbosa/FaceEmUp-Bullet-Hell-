@@ -14,6 +14,7 @@ public class ManagerPuntps : MonoBehaviour {
     public Text ui_vida;
     public Text ui_bombas;
     public GameObject[] Heart;
+    public static ManagerPuntps instance;
   
     int index;
 
@@ -21,12 +22,12 @@ public class ManagerPuntps : MonoBehaviour {
 
     private void Start()
     {
+        instance = this;
         for (int i = 0; i < 4; i++)
         {
             Heart[i].SetActive(false);
             index = 3;
         }
-
     }
 
     private void Update()
@@ -39,8 +40,6 @@ public class ManagerPuntps : MonoBehaviour {
 
     public void ShowVida()
     {
-
-
         ui_vida.text = player.health.ToString();
         GraficarVida();
     }
@@ -57,24 +56,24 @@ public class ManagerPuntps : MonoBehaviour {
                 Heart[i].SetActive(false);
 
             }
-           
         }
-        
-
-
     }
-
-
     public void ShowBombas()
     {
-
         ui_bombas.text = player.bombs.ToString();
     }
     public void Score()
     {
         this.score += score;
+        Debug.Log(score);
         ui_score.text = player.score0.ToString();
     }
+
+    public void AddScore(int amount)
+    {
+        this.score = score + amount;
+    }
+
     public void CloseScore()
     {
         this.importantscore += 10;
