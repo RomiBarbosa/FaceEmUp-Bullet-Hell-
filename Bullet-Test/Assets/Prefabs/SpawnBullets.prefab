@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114697706355497830}
   - component: {fileID: 114487768205339324}
   - component: {fileID: 114409158229178862}
+  - component: {fileID: 114375834387055614}
   m_Layer: 0
   m_Name: SpawnBullets
   m_TagString: Untagged
@@ -42,6 +43,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114375834387055614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1191696688703148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd560fedc70f8ec4582c7dc0b3468956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114409158229178862
 MonoBehaviour:
   m_ObjectHideFlags: 1

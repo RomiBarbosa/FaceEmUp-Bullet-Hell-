@@ -29,12 +29,18 @@ public class EnemyBehavior : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.tag =="PlayerBullet")
+        if (collider.tag =="PlayerBullet")
         {
-           health -= collision.gameObject.GetComponent<BulletPlayer>().damage;
-            Destroy(collision.gameObject);
+           health -= collider.gameObject.GetComponent<BulletPlayer>().damage;
+           Destroy(collider.gameObject);
+        }
+
+        if (collider.tag == "PlayerHeart")
+        {
+            Player p = collider.GetComponentInParent<Player>();
+            p.TakeDamage();
         }
     }
 

@@ -23,6 +23,8 @@ GameObject:
   - component: {fileID: 50505056932716030}
   - component: {fileID: 114262954981821386}
   - component: {fileID: 114802627420786840}
+  - component: {fileID: 114307368037951808}
+  - component: {fileID: 58074162423523796}
   m_Layer: 0
   m_Name: Bullet2
   m_TagString: Untagged
@@ -37,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1491836870529618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5081, y: 1.7727, z: -0.008}
+  m_LocalPosition: {x: -0.25671336, y: 0.55893916, z: -0.008}
   m_LocalScale: {x: 0.1583526, y: 0.1583526, z: 0.1583526}
   m_Children: []
   m_Father: {fileID: 0}
@@ -63,6 +65,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58074162423523796
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1491836870529618}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03872601, y: 0.05015892}
+  serializedVersion: 2
+  m_Radius: 1.3174597
 --- !u!114 &114262954981821386
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -75,6 +92,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 20
+--- !u!114 &114307368037951808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1491836870529618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd560fedc70f8ec4582c7dc0b3468956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114802627420786840
 MonoBehaviour:
   m_ObjectHideFlags: 1

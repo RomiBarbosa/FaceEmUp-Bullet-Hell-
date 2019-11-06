@@ -13,7 +13,7 @@ public class BossBehaviour : MonoBehaviour {
     public BossGun bossGun2;
     public GameObject[] bullets;
     public NewBossPatternManager bpm;
-    private float MAX_HEALTH;
+    private float maxHealth;
     public float healthPercentage;
     public float timer;
 
@@ -52,7 +52,7 @@ public class BossBehaviour : MonoBehaviour {
         rend.enabled = true;
         rend.sharedMaterial = materiales[0];
         countdown = 0.3f;
-        MAX_HEALTH = health;
+        maxHealth = health;
     }
 
     void Update () {
@@ -261,7 +261,7 @@ public class BossBehaviour : MonoBehaviour {
 
     public float HealthPercentage()
     {
-        float result = this.health * 100 / MAX_HEALTH;
+        float result = this.health * 100 / maxHealth;
         return result;
     }
 
@@ -281,5 +281,15 @@ public class BossBehaviour : MonoBehaviour {
             DefaultGun();
         }
        
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "PlayerHeart")
+        {
+            Debug.Log(" Boss!");
+            Player p = other.GetComponentInParent<Player>();
+            p.TakeDamage();
+        }
     }
 }

@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114886757666825246}
   - component: {fileID: 114263424872178256}
   - component: {fileID: 114375283204279114}
+  - component: {fileID: 58889996708834084}
   m_Layer: 0
   m_Name: BulletCirlce
   m_TagString: EnemyBullet
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1208668860476200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.4846, y: 0.806, z: -0.008}
+  m_LocalPosition: {x: -0.79975903, y: 0.3350261, z: -0.008}
   m_LocalScale: {x: 0.1011876, y: 0.1011876, z: 0.1011876}
   m_Children: []
   m_Father: {fileID: 0}
@@ -64,6 +65,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58889996708834084
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1208668860476200}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.033343222, y: -0.0066686445}
+  serializedVersion: 2
+  m_Radius: 1.7599527
 --- !u!114 &114263424872178256
 MonoBehaviour:
   m_ObjectHideFlags: 1
