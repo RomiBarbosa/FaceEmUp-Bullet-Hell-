@@ -14,9 +14,18 @@ public class EnemyBehavior : MonoBehaviour {
     void Update()
     {
         transform.Translate(-Vector3.up * Time.deltaTime * speed);
+     
         if (health <= 0)
         {
-            Destroy(this.gameObject);
+            
+            if (GetComponent<SpawnBulletsWhenDie>() != null)
+            {
+                GetComponent<SpawnBulletsWhenDie>().SpawnBullets();
+                Destroy(this.gameObject);
+            } else
+            {
+                Destroy(this.gameObject); 
+            }
         }
     }
 

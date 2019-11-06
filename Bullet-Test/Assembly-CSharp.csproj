@@ -86,7 +86,10 @@
     <Compile Include="Assets\Scripts\ChangeMaterial.cs" />
     <Compile Include="Assets\Scripts\ColliderISP.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyBehavior.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyMove0.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyMove01.cs" />
     <Compile Include="Assets\Scripts\Experimental\RandomPosition.cs" />
+    <Compile Include="Assets\Scripts\Experimental\SpawnBulletsWhenDie.cs" />
     <Compile Include="Assets\Scripts\Experimental\SpawnBulletsWithBullets.cs" />
     <Compile Include="Assets\Scripts\Experimental\SpecialBullet.cs" />
     <Compile Include="Assets\Scripts\FollowPlayer.cs" />

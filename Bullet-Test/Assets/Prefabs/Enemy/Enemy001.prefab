@@ -21,9 +21,11 @@ GameObject:
   - component: {fileID: 4293961536950506}
   - component: {fileID: 212283599851842374}
   - component: {fileID: 114613806652496044}
+  - component: {fileID: 114780707750599656}
   - component: {fileID: 95915259462535340}
   - component: {fileID: 60083497587371140}
   - component: {fileID: 114881938368376924}
+  - component: {fileID: 50190265172789672}
   m_Layer: 0
   m_Name: Enemy001
   m_TagString: Untagged
@@ -38,12 +40,32 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1446621914109694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.3845534, y: 4.016967, z: -0.017}
+  m_LocalPosition: {x: -0.52779543, y: -0.8348117, z: -0.017}
   m_LocalScale: {x: 0.397265, y: 0.4055172, z: 0.341}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50190265172789672
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1446621914109694}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!60 &60083497587371140
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -190,7 +212,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1446621914109694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fc146dd9bb923f44a5a27957a8be8e8, type: 3}
   m_Name: 
@@ -198,6 +220,18 @@ MonoBehaviour:
   health: 5
   speed: 2
   anim: {fileID: 95915259462535340}
+--- !u!114 &114780707750599656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1446621914109694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04a83eb3089c77a48b730bff29cd8001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
 --- !u!114 &114881938368376924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -210,10 +244,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4293961536950506}
-  bulletPrefab: {fileID: 1023293905393472, guid: 8d6d7742adb8d59498884b98798af9b8,
+  bulletPrefab: {fileID: 1965843649271408, guid: f51ba807edf476b4caee47963c0f4f6f,
     type: 2}
-  bulletForce: 3
-  coolDown: 2
+  bulletForce: 5
+  coolDown: 0.3
 --- !u!212 &212283599851842374
 SpriteRenderer:
   m_ObjectHideFlags: 1

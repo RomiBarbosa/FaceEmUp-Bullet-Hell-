@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50052586838617838}
   - component: {fileID: 114813177782207692}
   - component: {fileID: 114108734578146978}
+  - component: {fileID: 58480835461475316}
   m_Layer: 0
   m_Name: BulletFollowPlayer
   m_TagString: EnemyBullet
@@ -64,6 +65,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58480835461475316
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1023293905393472}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.925
 --- !u!114 &114108734578146978
 MonoBehaviour:
   m_ObjectHideFlags: 1
