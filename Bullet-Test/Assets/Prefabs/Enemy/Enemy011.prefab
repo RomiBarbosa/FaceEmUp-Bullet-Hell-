@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114699624358873646}
   m_Layer: 0
   m_Name: Enemy011
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -213,9 +213,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  speed: 2
   anim: {fileID: 95044139406521242}
   points: 100
+  materiales:
+  - {fileID: 2100000, guid: e8a31531154fdb740bd39c13dc927564, type: 2}
+  - {fileID: 2100000, guid: 308ec7b790b155f4f8bb1df2f1c70575, type: 2}
+  hit: 0
 --- !u!114 &114699624358873646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -279,9 +282,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d059bd685654a2543871e1d7bb716e44, type: 3}
-  m_Color: {r: 0.21568625, g: 0.40767112, b: 0.972549, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

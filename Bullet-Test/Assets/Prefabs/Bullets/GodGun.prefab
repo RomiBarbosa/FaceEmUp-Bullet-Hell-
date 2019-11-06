@@ -209,6 +209,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1706914078768222, guid: a1966b2d3e7073b45b3e799a48bdbfaf,
     type: 2}
   bulletForce: 2
+  coolDown: 0
+  canShoot: 0
 --- !u!114 &114596759474308000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,6 +226,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1706914078768222, guid: a1966b2d3e7073b45b3e799a48bdbfaf,
     type: 2}
   bulletForce: 2
+  coolDown: 0
+  canShoot: 0
 --- !u!114 &114788407296923278
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,6 +243,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1706914078768222, guid: a1966b2d3e7073b45b3e799a48bdbfaf,
     type: 2}
   bulletForce: 2
+  coolDown: 0
+  canShoot: 0
 --- !u!114 &114828225401074920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -254,6 +260,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1706914078768222, guid: a1966b2d3e7073b45b3e799a48bdbfaf,
     type: 2}
   bulletForce: 2
+  coolDown: 0
+  canShoot: 0
 --- !u!114 &114941391851129390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -269,6 +277,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1706914078768222, guid: a1966b2d3e7073b45b3e799a48bdbfaf,
     type: 2}
   bulletForce: 2
+  coolDown: 0
+  canShoot: 0
 --- !u!212 &212332641157828934
 SpriteRenderer:
   m_ObjectHideFlags: 1

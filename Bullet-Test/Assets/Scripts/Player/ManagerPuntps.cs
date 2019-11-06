@@ -8,9 +8,11 @@ public class ManagerPuntps : MonoBehaviour {
   //  public static ManagerPuntps ins;
 
     public float score;
+    public float highscore;
     public int importantscore;
     public Text ui_score;
     public Text ui_importantscore;
+    public Text ui_highscore;
     public Text ui_vida;
     public Text ui_bombas;
     public GameObject[] Heart;
@@ -28,6 +30,8 @@ public class ManagerPuntps : MonoBehaviour {
             Heart[i].SetActive(false);
             index = 3;
         }
+
+     highscore = PlayerPrefs.GetFloat("Highscore");
     }
 
     private void Update()
@@ -36,6 +40,13 @@ public class ManagerPuntps : MonoBehaviour {
         ShowBombas();
         Score();
         CloseScore();
+
+        ui_highscore.text = highscore.ToString();
+        if (score > highscore)
+        {
+            PlayerPrefs.SetFloat("Highscore",score);
+            ui_highscore.text = score.ToString();
+        }
     }
 
     public void ShowVida()

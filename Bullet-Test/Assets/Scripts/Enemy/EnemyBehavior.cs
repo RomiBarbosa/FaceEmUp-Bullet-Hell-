@@ -7,15 +7,38 @@ public class EnemyBehavior : MonoBehaviour {
     public float health;
     public Animator anim;
     public float points;
+    public Material[] materiales;
+    Renderer rend;
+    public bool hit;
+    float countdown;
+
     void Start () {
         Destroy(this.gameObject, 10);
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
+        rend.sharedMaterial = materiales[0];
     }
 
     void Update()
     {
-        
-        
-     
+        if (hit == true)
+        {
+            countdown -= Time.deltaTime;
+            rend.sharedMaterial = materiales[1];
+            if (countdown <= 0)
+            {
+                hit = false;
+                countdown = 0.3f;
+            }
+
+        }
+        else
+        {
+            rend.sharedMaterial = materiales[0];
+        }
+
+
+
         if (health <= 0)
         {
             
@@ -37,6 +60,7 @@ public class EnemyBehavior : MonoBehaviour {
         if (collider.tag =="PlayerBullet")
         {
            health -= collider.gameObject.GetComponent<BulletPlayer>().damage;
+            hit = true;
            Destroy(collider.gameObject);
         }
 

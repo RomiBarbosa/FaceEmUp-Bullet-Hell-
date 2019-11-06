@@ -26,9 +26,10 @@ GameObject:
   - component: {fileID: 60083497587371140}
   - component: {fileID: 114881938368376924}
   - component: {fileID: 50190265172789672}
+  - component: {fileID: 114945598126821106}
   m_Layer: 0
   m_Name: Enemy001
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,9 +219,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  speed: 2
   anim: {fileID: 95915259462535340}
   points: 100
+  materiales:
+  - {fileID: 2100000, guid: d8130ff3b69f726478b64a72dba01592, type: 2}
+  - {fileID: 2100000, guid: 308ec7b790b155f4f8bb1df2f1c70575, type: 2}
+  hit: 0
 --- !u!114 &114780707750599656
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -250,6 +254,18 @@ MonoBehaviour:
   bulletForce: 5
   coolDown: 0.3
   canShoot: 1
+--- !u!114 &114945598126821106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1446621914109694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faaf83f19697de9448ade950bbf165ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 5
 --- !u!212 &212283599851842374
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -284,9 +300,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 17b7d0ad3e40f0841890adba60a5bff0, type: 3}
-  m_Color: {r: 0.9716981, g: 0.21542363, b: 0.21542363, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

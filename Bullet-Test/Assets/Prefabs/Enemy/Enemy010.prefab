@@ -23,10 +23,13 @@ GameObject:
   - component: {fileID: 114336015623505224}
   - component: {fileID: 95825908971692726}
   - component: {fileID: 60959097437166258}
+  - component: {fileID: 114140511164689796}
   - component: {fileID: 114435410707303864}
+  - component: {fileID: 114638626138529132}
+  - component: {fileID: 50008442037238338}
   m_Layer: 0
   m_Name: Enemy010
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,6 +47,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50008442037238338
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1673578964203362}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!60 &60959097437166258
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -184,6 +207,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114140511164689796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1673578964203362}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fe97c4cf57872046b8c0e5a50388d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
 --- !u!114 &114336015623505224
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -196,9 +231,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
-  speed: 2
   anim: {fileID: 95825908971692726}
   points: 100
+  materiales:
+  - {fileID: 2100000, guid: d8130ff3b69f726478b64a72dba01592, type: 2}
+  - {fileID: 2100000, guid: 308ec7b790b155f4f8bb1df2f1c70575, type: 2}
+  hit: 0
 --- !u!114 &114435410707303864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -216,6 +254,18 @@ MonoBehaviour:
   bulletForce: 3
   coolDown: 2
   canShoot: 1
+--- !u!114 &114638626138529132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1673578964203362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04a83eb3089c77a48b730bff29cd8001, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
 --- !u!212 &212435034805274072
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -250,9 +300,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d059bd685654a2543871e1d7bb716e44, type: 3}
-  m_Color: {r: 0.9716981, g: 0.21542363, b: 0.21542363, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

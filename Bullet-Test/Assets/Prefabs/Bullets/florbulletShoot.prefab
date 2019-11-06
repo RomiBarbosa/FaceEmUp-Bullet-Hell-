@@ -224,6 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faaf83f19697de9448ade950bbf165ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: 0
 --- !u!114 &114156731453074216
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,6 +241,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0
+  canShoot: 0
 --- !u!114 &114996893986262558
 MonoBehaviour:
   m_ObjectHideFlags: 1

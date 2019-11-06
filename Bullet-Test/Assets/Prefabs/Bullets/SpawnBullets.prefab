@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114375834387055614}
   m_Layer: 0
   m_Name: SpawnBullets
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,3 +94,4 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0
+  canShoot: 1

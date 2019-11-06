@@ -5137,7 +5137,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 7
   coolDown: 0
-  canShoot: 0
+  canShoot: 1
 --- !u!212 &795559061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8144,7 +8144,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 7
   coolDown: 0
-  canShoot: 0
+  canShoot: 1
 --- !u!114 &1305990954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12889,7 +12889,7 @@ GameObject:
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1948195894
 MonoBehaviour:
   m_ObjectHideFlags: 0

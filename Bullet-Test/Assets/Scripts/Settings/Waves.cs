@@ -19,8 +19,8 @@ public class Waves : MonoBehaviour {
 
     public void Update()
     {
-     
-        if (index < Wave.Length)
+        var s = Wave.Length - 1;
+        if (index < s)
         {
 
             if (spawn == true)
@@ -34,6 +34,14 @@ public class Waves : MonoBehaviour {
                 }
             }
         }
+        if (index >= s && index < (Wave.Length + 1))
+        {
+            //Spawnear(Wave[index]);
+            GameObject a = Instantiate(Wave[index], Wave[index].transform.position, Wave[index].transform.rotation);
+            index+=50;
+            
+        }
+       
     }
 
     public void Spawnear(GameObject go)

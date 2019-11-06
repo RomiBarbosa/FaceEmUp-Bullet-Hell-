@@ -52,10 +52,16 @@ public class Bomb : MonoBehaviour {
             }
             bombs--;
             var boss = GameObject.FindGameObjectWithTag("Boss");
-            {
-                boss.GetComponent<BossBehaviour>().TakeDamageFromBomb(10);
-                bomb = true;
-            }
+                {
+                if (boss != null)
+                {
+                    boss.GetComponent<BossBehaviour>().TakeDamageFromBomb(10);
+                }
+                    
+                    bomb = true;
+                }
+
+            
 
 
         }
