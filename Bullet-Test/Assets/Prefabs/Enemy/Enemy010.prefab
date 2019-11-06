@@ -198,6 +198,7 @@ MonoBehaviour:
   health: 5
   speed: 2
   anim: {fileID: 95825908971692726}
+  points: 100
 --- !u!114 &114435410707303864
 MonoBehaviour:
   m_ObjectHideFlags: 1
