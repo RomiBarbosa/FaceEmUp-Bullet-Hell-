@@ -3145,9 +3145,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  highscore: 0
   importantscore: 0
   ui_score: {fileID: 1074991148}
   ui_importantscore: {fileID: 888198463}
+  ui_highscore: {fileID: 0}
   ui_vida: {fileID: 266885146}
   ui_bombas: {fileID: 1361593078}
   Heart:
@@ -3242,7 +3244,7 @@ MonoBehaviour:
   - {fileID: 1446621914109694, guid: f917e5bdc04d6074c817d533cc47d29b, type: 2}
   - {fileID: 1446621914109694, guid: f917e5bdc04d6074c817d533cc47d29b, type: 2}
   - {fileID: 1027170488459874, guid: a805963b427a40a4daf6a8e4e0d77a37, type: 2}
-  - {fileID: 1446621914109694, guid: f917e5bdc04d6074c817d533cc47d29b, type: 2}
+  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
   Rate: 2
   spawn: 1
   posxmax: 7

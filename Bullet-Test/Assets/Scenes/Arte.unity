@@ -3058,10 +3058,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Wave:
+  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1917895244055850, guid: 9fed99cb52658d649a5f4f589425e172, type: 2}
+  - {fileID: 1917895244055850, guid: 9fed99cb52658d649a5f4f589425e172, type: 2}
+  - {fileID: 1917895244055850, guid: 9fed99cb52658d649a5f4f589425e172, type: 2}
   - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
+  - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
   - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
-  - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
-  - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
+  - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
+  - {fileID: 1027170488459874, guid: a805963b427a40a4daf6a8e4e0d77a37, type: 2}
+  - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
+  - {fileID: 1027170488459874, guid: a805963b427a40a4daf6a8e4e0d77a37, type: 2}
+  - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
+  - {fileID: 1027170488459874, guid: a805963b427a40a4daf6a8e4e0d77a37, type: 2}
+  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
+  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
+  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
   - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
   - {fileID: 1063111008428698, guid: 9b55bd8a056069f43ab6904adf1408ee, type: 2}
   Rate: 2
