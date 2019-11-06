@@ -7,7 +7,7 @@ public class ManagerPuntps : MonoBehaviour {
 
   //  public static ManagerPuntps ins;
 
-    public int score;
+    public float score;
     public int importantscore;
     public Text ui_score;
     public Text ui_importantscore;
@@ -64,12 +64,11 @@ public class ManagerPuntps : MonoBehaviour {
     }
     public void Score()
     {
-        this.score += score;
         Debug.Log(score);
         ui_score.text = player.score0.ToString();
     }
 
-    public void AddScore(int amount)
+    public void AddScore(float amount)
     {
         this.score = score + amount;
     }

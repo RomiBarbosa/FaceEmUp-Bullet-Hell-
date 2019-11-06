@@ -7,6 +7,7 @@ public class EnemyBehavior : MonoBehaviour {
     public float health;
     public float speed;
     public Animator anim;
+    public float points;
     void Start () {
         Destroy(this.gameObject, 10);
     }
@@ -28,6 +29,7 @@ public class EnemyBehavior : MonoBehaviour {
             {
                 Destroy(this.gameObject); 
             }
+            ManagerPuntps.instance.AddScore(points);
         }
     }
 

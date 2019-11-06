@@ -28,7 +28,6 @@ public class Waves : MonoBehaviour {
 
                 if (Time.time > next)
                 {
-
                     Spawnear(Wave[index]);
                     next = Time.time + Rate;
 

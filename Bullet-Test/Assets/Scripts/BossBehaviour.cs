@@ -39,8 +39,8 @@ public class BossBehaviour : MonoBehaviour {
     public Image healthbar;
 
     public Animator anim;
-    
 
+    public float points;
 
     private void Start()
     {
@@ -291,5 +291,10 @@ public class BossBehaviour : MonoBehaviour {
             Player p = other.GetComponentInParent<Player>();
             p.TakeDamage();
         }
+    }
+
+    private void OnDestroy()
+    {
+        ManagerPuntps.instance.AddScore(points);
     }
 }

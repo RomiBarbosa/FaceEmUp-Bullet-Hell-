@@ -26,7 +26,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1451030312892666
 GameObject:
   m_ObjectHideFlags: 0
@@ -61,7 +61,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4280360805927180
 Transform:
   m_ObjectHideFlags: 1
@@ -396,6 +396,7 @@ MonoBehaviour:
   move: 0
   healthbar: {fileID: 0}
   anim: {fileID: 95301467668089924}
+  points: 1000
 --- !u!114 &114810563512802052
 MonoBehaviour:
   m_ObjectHideFlags: 1
