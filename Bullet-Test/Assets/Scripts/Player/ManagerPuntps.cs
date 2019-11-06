@@ -60,12 +60,13 @@ public class ManagerPuntps : MonoBehaviour {
     }
     public void ShowBombas()
     {
-        ui_bombas.text = player.bombs.ToString();
+        ui_bombas.text = "x"+ player.bombs.ToString();
     }
     public void Score()
     {
         Debug.Log(score);
-        ui_score.text = player.score0.ToString();
+        // ui_score.text = player.score0.ToString();
+        ui_score.text = score.ToString();
     }
 
     public void AddScore(float amount)
@@ -75,10 +76,7 @@ public class ManagerPuntps : MonoBehaviour {
 
     public void CloseScore()
     {
-        this.importantscore += 10;
         ui_importantscore.text = player.score1.ToString();
-        //importantscore += (importantscore * 180);
-        //ui_importantscore.text = this.importantscore.ToString();
     }
     private void Awake()
     {

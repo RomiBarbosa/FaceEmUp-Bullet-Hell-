@@ -8,7 +8,6 @@ public class EnemyMove0 : MonoBehaviour {
     public float speed;
     Rigidbody2D rb;
     GameObject target;
-	
 
 	void Start () {
 

@@ -10,17 +10,21 @@ public class Shoot : MonoBehaviour {
     public float bulletForce;
     public float coolDown;
     float time;
+    public bool canShoot;
 	void Update () {
 
         //if (Input.GetButtonDown("Fire1"))
         //{
-
-        time += Time.deltaTime;
-        if (time >=coolDown)
+        if (canShoot == true)
         {
-            ShootBullet();
-            time = 0;
+            time += Time.deltaTime;
+            if (time >= coolDown)
+            {
+                ShootBullet();
+                time = 0;
+            }
         }
+       
             
         //}
 

@@ -245,10 +245,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 4293961536950506}
-  bulletPrefab: {fileID: 1965843649271408, guid: f51ba807edf476b4caee47963c0f4f6f,
+  bulletPrefab: {fileID: 1023293905393472, guid: 8d6d7742adb8d59498884b98798af9b8,
     type: 2}
   bulletForce: 5
   coolDown: 0.3
+  canShoot: 1
 --- !u!212 &212283599851842374
 SpriteRenderer:
   m_ObjectHideFlags: 1

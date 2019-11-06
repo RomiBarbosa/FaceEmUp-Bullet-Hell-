@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyBehavior : MonoBehaviour {
 
     public float health;
-    public float speed;
     public Animator anim;
     public float points;
     void Start () {
@@ -15,7 +14,7 @@ public class EnemyBehavior : MonoBehaviour {
     void Update()
     {
         
-        transform.Translate(-Vector3.up * Time.deltaTime * speed);
+        
      
         if (health <= 0)
         {

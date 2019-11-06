@@ -151,6 +151,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0
+  canShoot: 1
 --- !u!114 &114468822692941514
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -167,6 +168,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0
+  canShoot: 1
 --- !u!114 &114815300619044788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -183,6 +185,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0
+  canShoot: 1
 --- !u!114 &114907626544419860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -211,6 +214,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0
+  canShoot: 1
 --- !u!212 &212042408997252520
 SpriteRenderer:
   m_ObjectHideFlags: 1

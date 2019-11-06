@@ -228,6 +228,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 2
+  canShoot: 1
 --- !u!212 &212173655586148186
 SpriteRenderer:
   m_ObjectHideFlags: 1

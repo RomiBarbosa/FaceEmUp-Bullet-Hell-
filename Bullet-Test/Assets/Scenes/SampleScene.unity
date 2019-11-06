@@ -161,6 +161,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &6128187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,6 +178,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &6128188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,7 +397,7 @@ Transform:
   - {fileID: 625953770}
   - {fileID: 226767743}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &59717080
 GameObject:
@@ -531,6 +533,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 1
+  canShoot: 0
 --- !u!212 &76935613
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -666,6 +669,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.1
+  canShoot: 0
 --- !u!212 &99864223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -760,6 +764,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &103275702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -776,6 +781,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &103275703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -883,6 +889,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &128801841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,6 +906,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &128801842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1053,6 +1061,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &140765244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1147,6 +1156,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &146763204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1163,6 +1173,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -1
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &146763205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1255,6 +1266,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 2
   coolDown: 0
+  canShoot: 0
 --- !u!212 &156559502
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1373,6 +1385,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 1
+  canShoot: 0
 --- !u!212 &208078280
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1465,6 +1478,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &223319312
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1763,6 +1777,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &265609839
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1881,6 +1896,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.1
+  canShoot: 0
 --- !u!212 &265927026
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2123,6 +2139,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &327116987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2228,6 +2245,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.1
+  canShoot: 0
 --- !u!212 &330753894
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2371,6 +2389,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &348298443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2387,6 +2406,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &348298444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2505,6 +2525,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 1
+  canShoot: 0
 --- !u!212 &350638439
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2672,6 +2693,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &355021971
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2852,6 +2874,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 1
+  canShoot: 0
 --- !u!212 &432776643
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2946,6 +2969,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &438012161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2962,6 +2986,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &438012162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3085,7 +3110,7 @@ Transform:
   - {fileID: 654684850}
   - {fileID: 1470008150}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &459952365
 GameObject:
@@ -3120,6 +3145,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 2
   coolDown: 0
+  canShoot: 0
 --- !u!212 &459952367
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3273,6 +3299,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.1
+  canShoot: 0
 --- !u!212 &489013152
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3453,6 +3480,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.2
+  canShoot: 0
 --- !u!212 &492474435
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3611,7 +3639,7 @@ Transform:
   - {fileID: 1516847287}
   - {fileID: 1077983467}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &577988563
 MonoBehaviour:
@@ -3672,6 +3700,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &580982813
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3729,7 +3758,7 @@ Transform:
   m_LocalScale: {x: 1.1246, y: 1.116, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &590892931
 GameObject:
@@ -3779,6 +3808,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &590892934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3795,6 +3825,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &590892935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3908,7 +3939,7 @@ Transform:
   - {fileID: 1436750272}
   - {fileID: 2081432337}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &612854265
 GameObject:
@@ -3969,6 +4000,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 1
+  canShoot: 0
 --- !u!212 &612854269
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4198,7 +4230,7 @@ Transform:
   - {fileID: 711362828}
   - {fileID: 99864220}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &657473885
 GameObject:
@@ -4232,7 +4264,7 @@ Transform:
   - {fileID: 103275700}
   - {fileID: 1140594516}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &671557648
 GameObject:
@@ -4280,6 +4312,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 7
   coolDown: 1
+  canShoot: 0
 --- !u!212 &671557651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4480,7 +4513,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &709000618
 MonoBehaviour:
@@ -4498,6 +4531,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -1
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &709000619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4514,6 +4548,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!1 &711362827
 GameObject:
   m_ObjectHideFlags: 0
@@ -4560,6 +4595,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &711362830
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4746,6 +4782,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -1
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &727923153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4816,7 +4853,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &727923156
 MonoBehaviour:
@@ -4834,6 +4871,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!1 &728987015
 GameObject:
   m_ObjectHideFlags: 0
@@ -4882,6 +4920,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &728987018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4898,6 +4937,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &728987019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5016,6 +5056,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 1
+  canShoot: 0
 --- !u!212 &776747441
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5096,6 +5137,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 7
   coolDown: 0
+  canShoot: 0
 --- !u!212 &795559061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5153,7 +5195,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &795559063
 MonoBehaviour:
@@ -5338,7 +5380,7 @@ Transform:
   - {fileID: 2095703905}
   - {fileID: 1797044592}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &842796012
 GameObject:
@@ -5375,6 +5417,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &842796014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5391,6 +5434,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &842796015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5463,48 +5507,6 @@ Transform:
   m_Father: {fileID: 1040491628}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &851261049
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4087257592018836, guid: 9cfc537bf39da8b4483c25ea665428a9, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -5.481852
-      objectReference: {fileID: 0}
-    - target: {fileID: 4087257592018836, guid: 9cfc537bf39da8b4483c25ea665428a9, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 9.436699
-      objectReference: {fileID: 0}
-    - target: {fileID: 4087257592018836, guid: 9cfc537bf39da8b4483c25ea665428a9, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.07564231
-      objectReference: {fileID: 0}
-    - target: {fileID: 4087257592018836, guid: 9cfc537bf39da8b4483c25ea665428a9, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4087257592018836, guid: 9cfc537bf39da8b4483c25ea665428a9, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4087257592018836, guid: 9cfc537bf39da8b4483c25ea665428a9, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4087257592018836, guid: 9cfc537bf39da8b4483c25ea665428a9, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4087257592018836, guid: 9cfc537bf39da8b4483c25ea665428a9, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9cfc537bf39da8b4483c25ea665428a9, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &858916378
 GameObject:
   m_ObjectHideFlags: 0
@@ -5538,6 +5540,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 2
   coolDown: 0
+  canShoot: 0
 --- !u!212 &858916380
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5632,6 +5635,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &867735654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5648,6 +5652,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &867735655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5884,6 +5889,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.2
+  canShoot: 0
 --- !u!212 &889064328
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6156,7 +6162,7 @@ Transform:
   m_LocalScale: {x: 0.14269325, y: 0.1414867, z: 0.0498607}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1005024379
 GameObject:
@@ -6217,6 +6223,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 1
+  canShoot: 0
 --- !u!212 &1005024383
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6370,6 +6377,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 1
+  canShoot: 0
 --- !u!212 &1025345511
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6475,6 +6483,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 1
+  canShoot: 0
 --- !u!212 &1025380702
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6630,7 +6639,7 @@ Transform:
   - {fileID: 1933811550}
   - {fileID: 1518301703}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1054378154
 GameObject:
@@ -6667,6 +6676,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -1
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1054378156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6737,7 +6747,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1054378159
 MonoBehaviour:
@@ -6755,6 +6765,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!1 &1069561436
 GameObject:
   m_ObjectHideFlags: 0
@@ -6788,6 +6799,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 2
   coolDown: 0
+  canShoot: 0
 --- !u!212 &1069561438
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6880,6 +6892,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 2
   coolDown: 0
+  canShoot: 0
 --- !u!212 &1077983466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6974,6 +6987,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -1
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1082319549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7044,7 +7058,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1082319552
 MonoBehaviour:
@@ -7062,6 +7076,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!1 &1098783229
 GameObject:
   m_ObjectHideFlags: 0
@@ -7154,6 +7169,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!1 &1108411062
 GameObject:
   m_ObjectHideFlags: 0
@@ -7202,6 +7218,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1108411065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7218,6 +7235,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1108411066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7325,6 +7343,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1140594518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7341,6 +7360,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1140594519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7495,6 +7515,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &1160858845
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7589,6 +7610,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1163409361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7605,6 +7627,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -1
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1163409362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7712,6 +7735,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1174574196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7728,6 +7752,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1174574197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7894,7 +7919,7 @@ Transform:
   - {fileID: 1845308601}
   - {fileID: 728987016}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1206547234
 GameObject:
@@ -8083,7 +8108,7 @@ Transform:
   - {fileID: 1329291055}
   - {fileID: 1601238078}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1305990952
 GameObject:
@@ -8119,6 +8144,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 7
   coolDown: 0
+  canShoot: 0
 --- !u!114 &1305990954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8188,7 +8214,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1313335423
 GameObject:
@@ -8238,6 +8264,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1313335426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8254,6 +8281,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1313335427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8359,6 +8387,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &1329291057
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8453,6 +8482,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1339880667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8469,6 +8499,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -1
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1339880668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8562,6 +8593,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &1376452406
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8619,7 +8651,7 @@ Transform:
   m_LocalScale: {x: 1.1246, y: 1.116, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1376452408
 Rigidbody2D:
@@ -8989,6 +9021,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.1
+  canShoot: 0
 --- !u!212 &1422754072
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9145,6 +9178,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -1
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1437974973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9215,7 +9249,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1437974976
 MonoBehaviour:
@@ -9233,6 +9267,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!1 &1453365035
 GameObject:
   m_ObjectHideFlags: 0
@@ -9462,6 +9497,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 2
   coolDown: 0
+  canShoot: 0
 --- !u!212 &1489714721
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9519,7 +9555,7 @@ Transform:
   m_LocalScale: {x: 0.32369998, y: 0.33319998, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1491621004
 GameObject:
@@ -9659,6 +9695,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 2
   coolDown: 0
+  canShoot: 0
 --- !u!212 &1516847286
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9753,6 +9790,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1518301700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9769,6 +9807,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1518301701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9900,6 +9939,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.1
+  canShoot: 0
 --- !u!212 &1528914933
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9983,7 +10023,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4900764548597306, guid: 0320f1a02e4531740a48f999c00d66ba, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1451030312892666, guid: 0320f1a02e4531740a48f999c00d66ba, type: 2}
       propertyPath: m_IsActive
@@ -10133,6 +10173,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &1583165817
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10238,6 +10279,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.1
+  canShoot: 0
 --- !u!212 &1601238081
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10359,7 +10401,7 @@ Transform:
   - {fileID: 471439285}
   - {fileID: 2106330493}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1626071402
 Prefab:
@@ -10398,7 +10440,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4301044427824352, guid: 9da6b6d69814fba48818c025e3e1fb93, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1942703764787422, guid: 9da6b6d69814fba48818c025e3e1fb93, type: 2}
       propertyPath: m_IsActive
@@ -10515,6 +10557,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 2
   coolDown: 0
+  canShoot: 0
 --- !u!212 &1643206990
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10622,6 +10665,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1672951972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10638,6 +10682,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -1
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1672951973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10745,6 +10790,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1682358873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10761,6 +10807,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1682358874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11088,7 +11135,7 @@ Transform:
   - {fileID: 253953697}
   - {fileID: 1689169841}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1723198692
 MonoBehaviour:
@@ -11292,6 +11339,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 1
+  canShoot: 0
 --- !u!212 &1770267941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11371,6 +11419,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 2
   coolDown: 0
+  canShoot: 0
 --- !u!212 &1770981859
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11478,6 +11527,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1797044594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11494,6 +11544,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1797044595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11612,6 +11663,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &1813077926
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11706,6 +11758,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1823195682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11722,6 +11775,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1823195683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11904,6 +11958,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1845308603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11920,6 +11975,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1845308604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12025,6 +12081,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 7
   coolDown: 1
+  canShoot: 0
 --- !u!212 &1846993214
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12194,6 +12251,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1854617412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12210,6 +12268,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1854617413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12314,7 +12373,7 @@ Transform:
   - {fileID: 146763202}
   - {fileID: 1996183449}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1884997903
 GameObject:
@@ -12427,6 +12486,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0
+  canShoot: 0
 --- !u!212 &1901748639
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12484,7 +12544,7 @@ Transform:
   m_LocalScale: {x: 1.1246, y: 1.116, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1901748641
 MonoBehaviour:
@@ -12514,6 +12574,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.7
+  canShoot: 0
 --- !u!114 &1901748643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12562,7 +12623,7 @@ Transform:
   - {fileID: 879228630}
   - {fileID: 1453365036}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1921815974
 GameObject:
@@ -12674,6 +12735,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1933811547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12690,6 +12752,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &1933811548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12840,11 +12903,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Wave:
   - {fileID: 1027170488459874, guid: a805963b427a40a4daf6a8e4e0d77a37, type: 2}
-  - {fileID: 1446621914109694, guid: f917e5bdc04d6074c817d533cc47d29b, type: 2}
-  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
+  - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
+  - {fileID: 1027170488459874, guid: a805963b427a40a4daf6a8e4e0d77a37, type: 2}
+  - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
+  - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
   - {fileID: 1917895244055850, guid: 9fed99cb52658d649a5f4f589425e172, type: 2}
-  - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
-  - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
   - {fileID: 1917895244055850, guid: 9fed99cb52658d649a5f4f589425e172, type: 2}
   Rate: 2
   spawn: 1
@@ -12862,7 +12926,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1990192240
 GameObject:
@@ -12897,6 +12961,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &1990192242
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13004,6 +13069,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1996183451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13020,6 +13086,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -1
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &1996183452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13281,6 +13348,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &2018561342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13297,6 +13365,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &2018561343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13420,7 +13489,7 @@ Transform:
   - {fileID: 1206547236}
   - {fileID: 1834597418}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2063589775
 Prefab:
@@ -13459,7 +13528,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4555542039271664, guid: 0f0badcc0056f2f47b3d960bdf98cbd4, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1782636082009254, guid: 0f0badcc0056f2f47b3d960bdf98cbd4, type: 2}
       propertyPath: m_IsActive
@@ -13591,6 +13660,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: -4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &2095703907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13607,6 +13677,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.1
+  canShoot: 0
 --- !u!114 &2095703908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13818,6 +13889,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 5
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &2116576128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13834,6 +13906,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 4
   coolDown: 0.4
+  canShoot: 0
 --- !u!114 &2116576129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13952,6 +14025,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.1
+  canShoot: 0
 --- !u!212 &2116784667
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14044,6 +14118,7 @@ MonoBehaviour:
     type: 2}
   bulletForce: 3
   coolDown: 0.5
+  canShoot: 0
 --- !u!212 &2143743507
 SpriteRenderer:
   m_ObjectHideFlags: 0
