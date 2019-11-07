@@ -11,6 +11,7 @@ public class EnemyBehavior : MonoBehaviour {
     Renderer rend;
     public bool hit;
     float countdown;
+    public GameObject explotion;
 
     void Start () {
         Destroy(this.gameObject, 10);
@@ -44,12 +45,15 @@ public class EnemyBehavior : MonoBehaviour {
             
             if (GetComponent<SpawnBulletsWhenDie>() != null)
             {
+               
                 GetComponent<SpawnBulletsWhenDie>().SpawnBullets();
                 Destroy(this.gameObject);
-                
+                Instantiate(explotion, transform.position, transform.rotation);
+
             } else
             {
-                Destroy(this.gameObject); 
+                Destroy(this.gameObject);
+                Instantiate(explotion, transform.position, transform.rotation);
             }
             ManagerPuntps.instance.AddScore(points);
         }

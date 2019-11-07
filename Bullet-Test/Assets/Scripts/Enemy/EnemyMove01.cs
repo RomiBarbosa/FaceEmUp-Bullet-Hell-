@@ -4,31 +4,13 @@ using UnityEngine;
 
 public class EnemyMove01 : MonoBehaviour {
 
-    public float speed, Ymin, Ymax;
-    float Y;
+    public float speed, Ymin;
     public bool Down;
 
 
     private void Update()
     {
-        //if (Down == true)
-        //{
-        //    transform.Translate(-Vector2.up * speed * Time.deltaTime);
-        //}
-        //else
-        //{
-        //    transform.Translate(Vector2.up * speed * Time.deltaTime);
-        //    Destroy(gameObject, 10);
-        //}
-        //if (transform.position.y < Ymin)
-        //{
-        //    Down = false;
-        //}
-        //else if (transform.position.y > Ymin)
-        //{
-        //    Down = true;
-
-        //}
+      
         if (Down != true)
         {
             transform.Translate(-Vector3.up * Time.deltaTime * speed);

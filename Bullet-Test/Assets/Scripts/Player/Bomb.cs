@@ -48,6 +48,7 @@ public class Bomb : MonoBehaviour {
             for (int i = 0; i < enemies.Length; i++)
             {
                 Destroy(enemies[i]);
+
                 bomb = true;
             }
             bombs--;
