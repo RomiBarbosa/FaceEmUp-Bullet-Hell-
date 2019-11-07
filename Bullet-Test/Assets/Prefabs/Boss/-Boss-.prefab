@@ -645,6 +645,7 @@ MonoBehaviour:
   healthbar: {fileID: 114212530453471956}
   anim: {fileID: 95881279106812222}
   points: 1000
+  explotion: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 2}
 --- !u!114 &114694504944299050
 MonoBehaviour:
   m_ObjectHideFlags: 1

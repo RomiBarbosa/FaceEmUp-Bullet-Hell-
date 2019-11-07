@@ -35,12 +35,15 @@ public class BossBehaviour : MonoBehaviour {
     private float movementTime;
 
     float countdown;
+    float countdown2;
 
     public Image healthbar;
 
     public Animator anim;
 
     public float points;
+
+    public GameObject explotion;
 
     private void Start()
     {
@@ -66,6 +69,8 @@ public class BossBehaviour : MonoBehaviour {
                 hit = false;
                 countdown = 0.3f;
             }
+
+
             
         }
         else
@@ -119,7 +124,14 @@ public class BossBehaviour : MonoBehaviour {
         {
             anim.SetBool("cry",true);
             Destroy(gameObject, 1.5f);
-            GameManager.ins.WinGame();
+            countdown2 += Time.deltaTime;
+            if (countdown2 >= 1.3f)
+            {
+                Instantiate(explotion, transform.position, transform.rotation);
+                GameManager.ins.WinGame();
+            }
+           
+           
         }
     }
 

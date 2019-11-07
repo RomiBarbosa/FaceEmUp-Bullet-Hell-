@@ -59,6 +59,12 @@ public class EnemyBehavior : MonoBehaviour {
         }
     }
 
+    public void Die()
+    {
+        Destroy(this.gameObject);
+        Instantiate(explotion, transform.position, transform.rotation);
+    }
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.tag =="PlayerBullet")

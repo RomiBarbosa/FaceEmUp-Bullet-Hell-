@@ -47,10 +47,17 @@ public class Bomb : MonoBehaviour {
             
             for (int i = 0; i < enemies.Length; i++)
             {
-                Destroy(enemies[i]);
-
+               
+                var enemy = enemies[i].GetComponent<EnemyBehavior>();
+                if (enemy != null)
+                {
+                    enemies[i].GetComponent<EnemyBehavior>().Die();
+                } else { Destroy(enemies[i]); }
                 bomb = true;
             }
+            
+          
+
             bombs--;
             var boss = GameObject.FindGameObjectWithTag("Boss");
                 {
