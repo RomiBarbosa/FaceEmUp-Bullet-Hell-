@@ -205,6 +205,8 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 308ec7b790b155f4f8bb1df2f1c70575, type: 2}
   hit: 0
   explotion: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 2}
+  FloatingText: {fileID: 1533424224869582, guid: 1c2c20ac9856232498f469e741003002,
+    type: 2}
 --- !u!114 &114167778517436510
 MonoBehaviour:
   m_ObjectHideFlags: 1

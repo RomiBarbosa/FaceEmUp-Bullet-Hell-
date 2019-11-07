@@ -12,6 +12,7 @@ public class EnemyBehavior : MonoBehaviour {
     public bool hit;
     float countdown;
     public GameObject explotion;
+    public GameObject FloatingText;
 
     void Start () {
         Destroy(this.gameObject, 10);
@@ -49,14 +50,27 @@ public class EnemyBehavior : MonoBehaviour {
                 GetComponent<SpawnBulletsWhenDie>().SpawnBullets();
                 Destroy(this.gameObject);
                 Instantiate(explotion, transform.position, transform.rotation);
+                if (FloatingText)
+                {
+                    ShowFloatingText();
+                }
 
             } else
             {
                 Destroy(this.gameObject);
                 Instantiate(explotion, transform.position, transform.rotation);
+                if (FloatingText)
+                {
+                    ShowFloatingText();
+                }
             }
             ManagerPuntps.instance.AddScore(points);
         }
+    }
+
+    private void ShowFloatingText()
+    {
+        Instantiate(FloatingText, transform.position, Quaternion.identity);
     }
 
     public void Die()
