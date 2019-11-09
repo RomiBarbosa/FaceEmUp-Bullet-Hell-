@@ -10,12 +10,13 @@ public class MoveToRnadomPosition : MonoBehaviour {
     GameObject target;
     public static System.Random r = new System.Random();
     Vector3 pos;
+    public int ymin, ymax;
     void Start()
     {
        //var xp = r.Next(-15, 13);
        // var yp = r.Next(0, 7);
         rb = gameObject.GetComponent<Rigidbody2D>();
-       pos = new Vector3(r.Next(-8, 8), r.Next(-6, 2));
+       pos = new Vector3(r.Next(-8, 8), r.Next(ymin, ymax));
 
 
             direction = (/*new Vector3(/*r.Next(-15, 13)10,10 r.Next(0, 7),0)*/ pos - transform.position/*target.transform.position - transform.position*/).normalized * speed;
