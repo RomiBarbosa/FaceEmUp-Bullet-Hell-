@@ -313,7 +313,6 @@ public class BossBehaviour : MonoBehaviour {
     {
         if (other.tag == "PlayerHeart")
         {
-            Debug.Log(" Boss!");
             Player p = other.GetComponentInParent<Player>();
             p.TakeDamage();
         }

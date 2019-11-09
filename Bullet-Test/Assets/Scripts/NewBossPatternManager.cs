@@ -56,6 +56,7 @@ public class NewBossPatternManager : MonoBehaviour {
 
     private float timer = 1f;
     public float patternTime = 5f;
+
     public void WaitToFire()
     {
         defaultPattern = true;

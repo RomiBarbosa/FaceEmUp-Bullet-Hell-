@@ -50,19 +50,11 @@ public class EnemyBehavior : MonoBehaviour {
                 GetComponent<SpawnBulletsWhenDie>().SpawnBullets();
                 Destroy(this.gameObject);
                 Instantiate(explotion, transform.position, transform.rotation);
-                if (FloatingText)
-                {
-                    ShowFloatingText();
-                }
 
             } else
             {
                 Destroy(this.gameObject);
                 Instantiate(explotion, transform.position, transform.rotation);
-                if (FloatingText)
-                {
-                    ShowFloatingText();
-                }
             }
             ManagerPuntps.instance.AddScore(points);
         }
@@ -72,12 +64,14 @@ public class EnemyBehavior : MonoBehaviour {
     {
         FloatingText.GetComponent<TextMesh>().text = points.ToString();
         Instantiate(FloatingText, transform.position, Quaternion.identity);
+        
     }
 
     public void Die()
     {
         Destroy(this.gameObject);
         Instantiate(explotion, transform.position, transform.rotation);
+        ShowFloatingText();
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -100,5 +94,7 @@ public class EnemyBehavior : MonoBehaviour {
         //    ManagerPuntps.instance.score += 10;
         //}
     }
+
+    
 
 }
