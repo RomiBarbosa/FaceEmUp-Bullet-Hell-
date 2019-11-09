@@ -646,6 +646,8 @@ MonoBehaviour:
   anim: {fileID: 95881279106812222}
   points: 1000
   explotion: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 2}
+  floatingText: {fileID: 1931630329274424, guid: d795acb1e9f0d3c4d9efa884dc31b01a,
+    type: 2}
 --- !u!114 &114694504944299050
 MonoBehaviour:
   m_ObjectHideFlags: 1

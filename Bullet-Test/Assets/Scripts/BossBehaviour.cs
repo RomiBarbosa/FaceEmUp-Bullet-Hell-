@@ -44,6 +44,8 @@ public class BossBehaviour : MonoBehaviour {
     public float points;
 
     public GameObject explotion;
+    public GameObject floatingText;
+    private Vector2 position;
 
     private void Start()
     {
@@ -56,6 +58,7 @@ public class BossBehaviour : MonoBehaviour {
         rend.sharedMaterial = materiales[0];
         countdown = 0.3f;
         maxHealth = health;
+        position = transform.position;
     }
 
     void Update () {
@@ -128,11 +131,22 @@ public class BossBehaviour : MonoBehaviour {
             if (countdown2 >= 1.3f)
             {
                 Instantiate(explotion, transform.position, transform.rotation);
+                ShowFloatingText();
                 GameManager.ins.WinGame();
             }
            
            
         }
+    }
+
+    private void ShowFloatingText()
+    {
+        if (floatingText)
+        {
+            floatingText.GetComponent<TextMesh>().text = points.ToString();
+            Instantiate(floatingText, position, Quaternion.identity);
+        }
+        
     }
 
     internal void TakeDamageFromBomb(float amount)
