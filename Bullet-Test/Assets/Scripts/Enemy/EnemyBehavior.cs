@@ -50,11 +50,20 @@ public class EnemyBehavior : MonoBehaviour {
                 GetComponent<SpawnBulletsWhenDie>().SpawnBullets();
                 Destroy(this.gameObject);
                 Instantiate(explotion, transform.position, transform.rotation);
+                if (FloatingText)
+                {
+                    ShowFloatingText();
+                }
+                
 
             } else
             {
                 Destroy(this.gameObject);
                 Instantiate(explotion, transform.position, transform.rotation);
+                if (FloatingText)
+                {
+                    ShowFloatingText();
+                }
             }
             ManagerPuntps.instance.AddScore(points);
         }

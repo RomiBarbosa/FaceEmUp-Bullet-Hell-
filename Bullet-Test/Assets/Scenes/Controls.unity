@@ -371,7 +371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: {fileID: 405811422}
-  SceneName: Arte
+  SceneName: WRYYYY
 --- !u!114 &405811422
 MonoBehaviour:
   m_ObjectHideFlags: 0
