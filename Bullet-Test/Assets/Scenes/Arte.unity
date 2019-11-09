@@ -2810,13 +2810,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 828290310}
+  - component: {fileID: 828290314}
   - component: {fileID: 828290311}
   - component: {fileID: 828290313}
   - component: {fileID: 828290309}
   - component: {fileID: 828290312}
   - component: {fileID: 828290308}
   - component: {fileID: 828290307}
-  - component: {fileID: 828290314}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged

@@ -13,9 +13,9 @@ public class EnemyBehavior : MonoBehaviour {
     float countdown;
     public GameObject explotion;
     public GameObject FloatingText;
-
+    public float timeToSelfDestruct;
     void Start () {
-        Destroy(this.gameObject, 10);
+        Destroy(this.gameObject, timeToSelfDestruct);
         rend = GetComponent<Renderer>();
         rend.enabled = true;
         rend.sharedMaterial = materiales[0];

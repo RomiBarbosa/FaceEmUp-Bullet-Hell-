@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 60327928562722536}
   - component: {fileID: 114874833016402220}
   m_Layer: 0
-  m_Name: Enemy012
+  m_Name: YellowEnemy
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,6 +207,7 @@ MonoBehaviour:
   explotion: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 2}
   FloatingText: {fileID: 1931630329274424, guid: d795acb1e9f0d3c4d9efa884dc31b01a,
     type: 2}
+  timeToSelfDestruct: 10
 --- !u!114 &114167778517436510
 MonoBehaviour:
   m_ObjectHideFlags: 1

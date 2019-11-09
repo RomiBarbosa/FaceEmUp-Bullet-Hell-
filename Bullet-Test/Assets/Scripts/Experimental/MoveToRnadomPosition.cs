@@ -31,7 +31,7 @@ public class MoveToRnadomPosition : MonoBehaviour {
             transform.position = pos;
         }
 
-        Destroy(gameObject, 10);
+        
     }
 
     private void Update()

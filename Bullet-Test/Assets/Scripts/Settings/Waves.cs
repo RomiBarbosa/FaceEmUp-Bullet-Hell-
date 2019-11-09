@@ -30,7 +30,6 @@ public class Waves : MonoBehaviour {
                 {
                     Spawnear(Wave[index]);
                     next = Time.time + Rate;
-
                 }
             }
         }
