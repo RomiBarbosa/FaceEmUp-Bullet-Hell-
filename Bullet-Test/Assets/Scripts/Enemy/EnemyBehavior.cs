@@ -70,6 +70,7 @@ public class EnemyBehavior : MonoBehaviour {
 
     private void ShowFloatingText()
     {
+        FloatingText.GetComponent<TextMesh>().text = points.ToString();
         Instantiate(FloatingText, transform.position, Quaternion.identity);
     }
 
