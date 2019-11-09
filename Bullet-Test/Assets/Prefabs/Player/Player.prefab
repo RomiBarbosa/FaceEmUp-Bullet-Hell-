@@ -993,8 +993,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 50366377781470422}
-  xMin: -8.5
-  xMax: 8.5
+  xMin: -8.4
+  xMax: 8.4
   yMin: -6
   yMax: 7
 --- !u!114 &114479177637963522
