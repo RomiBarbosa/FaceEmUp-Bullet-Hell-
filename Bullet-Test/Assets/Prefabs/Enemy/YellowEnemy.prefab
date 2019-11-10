@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 95857017247826734}
   - component: {fileID: 60327928562722536}
   - component: {fileID: 114874833016402220}
+  - component: {fileID: 114678158854877154}
   m_Layer: 0
   m_Name: YellowEnemy
   m_TagString: EnemyBullet
@@ -232,6 +233,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+--- !u!114 &114678158854877154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1327887747145276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578defdec68694a4ebe9494eef5eccfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerups:
+  - {fileID: 1722636035509072, guid: fee4b6415ac30ce4990c6612933742b8, type: 2}
+  - {fileID: 1597288442594782, guid: b174457d2be4cc9488c6df796692886c, type: 2}
+  - {fileID: 1618655795316856, guid: 01119d9118d1cc14894c0dabae6f37e9, type: 2}
+  - {fileID: 1547066422572924, guid: 9ba86bc4790b03c4ab87269a373d12c9, type: 2}
 --- !u!114 &114874833016402220
 MonoBehaviour:
   m_ObjectHideFlags: 1

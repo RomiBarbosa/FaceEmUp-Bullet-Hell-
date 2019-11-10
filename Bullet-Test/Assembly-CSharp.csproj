@@ -84,6 +84,7 @@
     <Compile Include="Assets\AssetsExtra\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\AssetsExtra\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\AssetsExtra\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\DeployPowerUp.cs" />
     <Compile Include="Assets\Scripts\Autodestruccion.cs" />
     <Compile Include="Assets\Scripts\BalaCirculo.cs" />
     <Compile Include="Assets\Scripts\Boss1.cs" />
