@@ -132,6 +132,7 @@
     <Compile Include="Assets\Scripts\Settings\Waves.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
     <Compile Include="Assets\Scripts\Sounds\ManagerSounds.cs" />
+    <Compile Include="Assets\Scripts\TEST.cs" />
     <Compile Include="Assets\Scripts\Wall.cs" />
     <None Include="Assets\AssetsExtra\_MK\MKGlowFree\Shaders\VariantsSelective\Sprites\Sprites-Diffuse.shader" />
     <None Include="Assets\AssetsExtra\_MK\MKGlowFree\Shaders\VariantsSelective\Legacy\MKGlowStandard.shader" />
