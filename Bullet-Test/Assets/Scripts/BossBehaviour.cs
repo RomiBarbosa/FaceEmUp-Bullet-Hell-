@@ -321,5 +321,6 @@ public class BossBehaviour : MonoBehaviour {
     private void OnDestroy()
     {
         ManagerPuntps.instance.AddScore(points);
+        GameManager.ins.LevelUp();
     }
 }

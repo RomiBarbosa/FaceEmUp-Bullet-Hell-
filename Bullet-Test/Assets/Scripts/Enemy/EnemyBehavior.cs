@@ -19,6 +19,8 @@ public class EnemyBehavior : MonoBehaviour {
         rend = GetComponent<Renderer>();
         rend.enabled = true;
         rend.sharedMaterial = materiales[0];
+        anim = gameObject.GetComponent<Animator>();
+        anim.SetBool("death", false);
     }
 
     void Update()
@@ -27,10 +29,12 @@ public class EnemyBehavior : MonoBehaviour {
         {
             countdown -= Time.deltaTime;
             rend.sharedMaterial = materiales[1];
+            anim.SetBool("death", true);
             if (countdown <= 0)
             {
                 hit = false;
                 countdown = 0.3f;
+                anim.SetBool("death", false);
             }
 
         }
@@ -43,7 +47,7 @@ public class EnemyBehavior : MonoBehaviour {
 
         if (health <= 0)
         {
-            
+            anim.SetBool("death",true);
             if (GetComponent<SpawnBulletsWhenDie>() != null)
             {
                

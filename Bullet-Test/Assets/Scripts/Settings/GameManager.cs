@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour {
     public ChangeScene scene;
     public string SceneName;
 
+    public int Level;
+    public Text levelUI;
     private void Awake()
     {
         ins = this;
@@ -53,6 +55,8 @@ public class GameManager : MonoBehaviour {
             scene.ChangScene(SceneName);
         }
 
+        levelUI.text = Level.ToString() ;
+
     }
 
     public void GameOver()
@@ -66,5 +70,10 @@ public class GameManager : MonoBehaviour {
     {
         WinUI.SetActive(true);
         ingame = false;
+    }
+
+    public void LevelUp()
+    {
+        Level += 1;
     }
 }
