@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
     public Rigidbody2D rb;
     Vector2 movement;
     public float xMin, xMax, yMin, yMax;
+    public float focusSpeed;
 
     void Update () {
         if (gameObject.name =="Player2")
@@ -25,7 +26,7 @@ public class PlayerMovement : MonoBehaviour {
 
         if (Input.GetButton("ralentizar"/*KeyCode.Z*/))
         {
-            moveSpeed = 2;
+            moveSpeed = focusSpeed;
             
         }
         else { moveSpeed = 7;

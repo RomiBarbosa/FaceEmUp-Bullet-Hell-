@@ -35,8 +35,8 @@ public class Waves : MonoBehaviour {
         }
         if (index >= wave && index < (Wave.Length + 1))
         {
-            // GameObject boss = Instantiate(Wave[index], Wave[index].transform.position, Wave[index].transform.rotation);
-             Wave[index].SetActive(true);
+            GameObject boss = Instantiate(Wave[index], Wave[index].transform.position, Wave[index].transform.rotation);
+            Wave[index].SetActive(true);
             index+=50;
             
         }

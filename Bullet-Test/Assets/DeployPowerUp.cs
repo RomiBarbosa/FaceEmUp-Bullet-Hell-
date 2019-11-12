@@ -20,7 +20,8 @@ public class DeployPowerUp : MonoBehaviour {
         var chance = rnd.Next(0, 101);
         if (chance < powerUpChance)
         {
-            var i = rndIndex.Next(1, 5);
+            var i = rnd.Next(1, 5);
+            Debug.Log("Power up: " + i);
             Instantiate(powerups[i - 1], position, Quaternion.identity);
         }
     }
