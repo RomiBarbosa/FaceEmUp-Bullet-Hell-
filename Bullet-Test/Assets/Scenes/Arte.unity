@@ -2894,7 +2894,9 @@ GameObject:
   m_Component:
   - component: {fileID: 828290310}
   - component: {fileID: 828290316}
+  - component: {fileID: 828290318}
   - component: {fileID: 828290314}
+  - component: {fileID: 828290317}
   - component: {fileID: 828290311}
   - component: {fileID: 828290313}
   - component: {fileID: 828290309}
@@ -3085,6 +3087,7 @@ MonoBehaviour:
   SceneName: Menu
   Level: 0
   levelUI: {fileID: 1074864008}
+  mw: {fileID: 828290317}
 --- !u!114 &828290312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3144,7 +3147,7 @@ MonoBehaviour:
   - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
   - {fileID: 1973655076}
   Rate: 2
-  spawn: 1
+  spawn: 0
   posxmax: 7
   posxmin: -7
   posy: 10
@@ -3254,6 +3257,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06931478d4ef724789a06e647a68bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &828290317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 828290306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bcfa9c03f5dedc468e1fc672fbc269e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - {fileID: 828290318}
+  - {fileID: 828290314}
+  index: 0
+--- !u!114 &828290318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 828290306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db0487ae091c2a4caa5d1d97884564a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wave:
+  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
+  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1917895244055850, guid: 9fed99cb52658d649a5f4f589425e172, type: 2}
+  - {fileID: 1917895244055850, guid: 9fed99cb52658d649a5f4f589425e172, type: 2}
+  - {fileID: 1917895244055850, guid: 9fed99cb52658d649a5f4f589425e172, type: 2}
+  - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
+  - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
+  - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
+  - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
+  - {fileID: 1027170488459874, guid: a805963b427a40a4daf6a8e4e0d77a37, type: 2}
+  - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
+  - {fileID: 1027170488459874, guid: a805963b427a40a4daf6a8e4e0d77a37, type: 2}
+  - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
+  - {fileID: 1027170488459874, guid: a805963b427a40a4daf6a8e4e0d77a37, type: 2}
+  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
+  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
+  - {fileID: 1999567147468580, guid: c3f3f7dd51fd9b94890527973ee35032, type: 2}
+  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
+  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
+  - {fileID: 1973655076}
+  Rate: 2
+  spawn: 0
+  posxmax: 7
+  posxmin: -7
+  posy: 10
 --- !u!1 &853893828
 GameObject:
   m_ObjectHideFlags: 0

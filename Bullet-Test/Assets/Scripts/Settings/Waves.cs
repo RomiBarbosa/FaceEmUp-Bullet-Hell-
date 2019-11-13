@@ -11,6 +11,7 @@ public class Waves : MonoBehaviour {
     int index;
     public float posxmax, posxmin, posy;
 
+
     private void Start()
     {
         index = 0;

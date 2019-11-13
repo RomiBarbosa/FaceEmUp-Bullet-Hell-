@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour {
 
     public int Level;
     public Text levelUI;
+
+    public ManagerWaves mw;
     private void Awake()
     {
         ins = this;
@@ -74,6 +76,12 @@ public class GameManager : MonoBehaviour {
 
     public void LevelUp()
     {
+        WinUI.SetActive(true);
+        mw.index++;
+        mw.NextWave();
         Level += 1;
+        ingame = true;
     }
+
+    
 }

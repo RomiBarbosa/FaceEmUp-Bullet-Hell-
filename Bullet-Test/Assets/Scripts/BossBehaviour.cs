@@ -47,6 +47,8 @@ public class BossBehaviour : MonoBehaviour {
     public GameObject floatingText;
     private Vector2 position;
 
+    
+
     private void Start()
     {
         healthPercentage = 100f;
@@ -130,9 +132,12 @@ public class BossBehaviour : MonoBehaviour {
             countdown2 += Time.deltaTime;
             if (countdown2 >= 1.3f)
             {
+               
                 Instantiate(explotion, transform.position, transform.rotation);
                 ShowFloatingText();
-                GameManager.ins.WinGame();
+               // GameManager.ins.WinGame();
+                
+             
             }
            
            
@@ -322,5 +327,6 @@ public class BossBehaviour : MonoBehaviour {
     {
         ManagerPuntps.instance.AddScore(points);
         GameManager.ins.LevelUp();
+        
     }
 }
