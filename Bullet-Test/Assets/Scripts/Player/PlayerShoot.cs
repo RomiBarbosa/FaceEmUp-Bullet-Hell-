@@ -20,7 +20,7 @@ public class PlayerShoot : MonoBehaviour {
         //    time = 0;
         //}
 
-        if (Input.GetButton/*Down*/("Fire1") && time >= cooldown && Time.timeScale == 1)
+        if (Input.GetButton/*Down*/("Fire1") && time >= cooldown && Time.timeScale != 0)
         {
             ShootBullet();
             time = 0;

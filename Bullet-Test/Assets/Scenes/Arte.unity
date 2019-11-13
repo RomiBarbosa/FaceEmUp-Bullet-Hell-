@@ -2644,6 +2644,11 @@ Prefab:
       propertyPath: anim
       value: 
       objectReference: {fileID: 1358168981}
+    - target: {fileID: 114400167849559964, guid: 1dd6ea697206b27408947246443b7d37,
+        type: 2}
+      propertyPath: focusSpeed
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dd6ea697206b27408947246443b7d37, type: 2}
   m_IsPrefabAsset: 0
@@ -3092,6 +3097,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InPause: 0
+  SlowDown: 0
+  countdown: 0
 --- !u!114 &828290313
 MonoBehaviour:
   m_ObjectHideFlags: 0

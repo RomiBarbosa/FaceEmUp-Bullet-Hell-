@@ -40,7 +40,7 @@ public class Bomb : MonoBehaviour {
     public void TirarBomba()
     {
     
-        if (Input.GetButton("Button_Bomb") && bombs > 0 && bombAvailable)
+        if (Input.GetButton("Button_Bomb") && bombs > 0 && bombAvailable && Time.timeScale != 0)
         {
             bombAvailable = false;
             var enemies = GameObject.FindGameObjectsWithTag("EnemyBullet");
