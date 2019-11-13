@@ -8,11 +8,13 @@ public class Pause : MonoBehaviour {
     public bool InPause;
     public bool SlowDown;
     public float countdown;
+    public bool starttimer;
+
 
 
 	void Update () {
 
-        if (Input.GetButtonDown("Pause") && InPause == false)
+        if (Input.GetButtonDown("Pause") && InPause == false )
         {
             PauseGame();
 
@@ -22,23 +24,38 @@ public class Pause : MonoBehaviour {
             BackGame();
 
         }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) && SlowDown == false && InPause == false)
+       
+        if (Input.GetButtonDown("ralentizar") && SlowDown == false && InPause == false)
         {
             SlowDownTime();
+            starttimer = true;
+            
         }
-        else if (/*Input.GetKeyDown(KeyCode.LeftShift) && */SlowDown == true)
+        else if (Input.GetButtonUp("ralentizar") && SlowDown == true)
+        {
+                BackGame();
+                countdown = 0;
+            starttimer = false;
+
+
+
+        }
+
+        if (starttimer)
         {
             countdown += Time.deltaTime;
             if (countdown >= 3)
             {
                 BackGame();
-               
+
                 countdown = 0;
 
-            } 
+                starttimer = false;
+
+            }
+        }  
+
             
-        }
     }
 
     public void SlowDownTime()
