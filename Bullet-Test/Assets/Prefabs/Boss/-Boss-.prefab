@@ -26,15 +26,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1108304175642976
+--- !u!1 &1237561814374746
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4510364643371858}
-  - component: {fileID: 114997539668994124}
+  - component: {fileID: 4863570555093466}
+  - component: {fileID: 114727890309084512}
   m_Layer: 0
   m_Name: BossPatternManager
   m_TagString: Untagged
@@ -229,19 +229,6 @@ Transform:
   m_Father: {fileID: 4827694667185684}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4510364643371858
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1108304175642976}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.7545977, y: -2.280711, z: 9.388672}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4720593008632354}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4720593008632354
 Transform:
   m_ObjectHideFlags: 1
@@ -253,7 +240,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4827694667185684}
-  - {fileID: 4510364643371858}
+  - {fileID: 4863570555093466}
   - {fileID: 224920350830118388}
   - {fileID: 4108577213673428}
   - {fileID: 4403098684986304}
@@ -274,6 +261,19 @@ Transform:
   - {fileID: 4502991661052724}
   m_Father: {fileID: 4720593008632354}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4863570555093466
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1237561814374746}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.7545977, y: -2.280711, z: 9.388672}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4720593008632354}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &50560668842296976
 Rigidbody2D:
@@ -628,7 +628,7 @@ MonoBehaviour:
   - {fileID: 1880868425618140, guid: 6f614f22a44765943ad7862d222b7a32, type: 2}
   - {fileID: 1659667555473700, guid: 24995aeea5ce8734ea8aae33ae75de0e, type: 2}
   - {fileID: 1265219243434970, guid: 580094a4ca130094482279ce30dcf466, type: 2}
-  bpm: {fileID: 114997539668994124}
+  bpm: {fileID: 114727890309084512}
   healthPercentage: 0
   timer: 0
   materiales:
@@ -667,6 +667,24 @@ MonoBehaviour:
   canRotate: 1
   canShoot: 0
   speedRotate: 50
+--- !u!114 &114727890309084512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1237561814374746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0f760890d088c488d3213fb7f2efb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boss: {fileID: 114299037525408102}
+  flowerPattern: 1
+  defaultPattern: 0
+  currentPattern: 0
+  fullPattern: 0100000008000000050000000300000008000000
+  patternTime: 5
+  arrayIndex: 0
 --- !u!114 &114893690334471158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -721,23 +739,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114997539668994124
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1108304175642976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa0f760890d088c488d3213fb7f2efb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boss: {fileID: 114299037525408102}
-  flowerPattern: 1
-  defaultPattern: 0
-  currentPattern: 0
-  patternTime: 5
-  arrayIndex: 0
 --- !u!212 &212995300360348954
 SpriteRenderer:
   m_ObjectHideFlags: 1

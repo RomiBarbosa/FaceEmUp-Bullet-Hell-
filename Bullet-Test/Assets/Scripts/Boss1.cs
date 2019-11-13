@@ -120,7 +120,6 @@ public class Boss : MonoBehaviour {
     {
         hit = true;
         this.health -= amount;
-        bpm.WaitToFire();
     }
 
     public void TakeDamage(float amount)

@@ -397,6 +397,8 @@ MonoBehaviour:
   healthbar: {fileID: 0}
   anim: {fileID: 95301467668089924}
   points: 1000
+  explotion: {fileID: 0}
+  floatingText: {fileID: 0}
 --- !u!114 &114810563512802052
 MonoBehaviour:
   m_ObjectHideFlags: 1

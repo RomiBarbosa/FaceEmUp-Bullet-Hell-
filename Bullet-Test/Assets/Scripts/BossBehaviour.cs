@@ -74,9 +74,6 @@ public class BossBehaviour : MonoBehaviour {
                 hit = false;
                 countdown = 0.3f;
             }
-
-
-            
         }
         else
         {
@@ -136,11 +133,7 @@ public class BossBehaviour : MonoBehaviour {
                 Instantiate(explotion, transform.position, transform.rotation);
                 ShowFloatingText();
                // GameManager.ins.WinGame();
-                
-             
             }
-           
-           
         }
     }
 
@@ -151,14 +144,12 @@ public class BossBehaviour : MonoBehaviour {
             floatingText.GetComponent<TextMesh>().text = points.ToString();
             Instantiate(floatingText, position, Quaternion.identity);
         }
-        
     }
 
     internal void TakeDamageFromBomb(float amount)
     {
         hit = true;
         this.health -= amount;
-        bpm.WaitToFire();
     }
 
     public void TakeDamage(float amount)
@@ -311,7 +302,6 @@ public class BossBehaviour : MonoBehaviour {
         {
             DefaultGun();
         }
-       
     }
 
     private void OnTriggerEnter2D(Collider2D other)

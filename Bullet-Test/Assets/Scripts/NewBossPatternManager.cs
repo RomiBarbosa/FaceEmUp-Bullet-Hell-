@@ -24,26 +24,19 @@ public class NewBossPatternManager : MonoBehaviour {
 
     public ePatterns currentPattern;
 
-    private ePatterns[] fullPattern = new ePatterns[]
+    public ePatterns[] fullPattern = new ePatterns[]
     {
-        ePatterns.DEFAULT,
-        ePatterns.DEATH_FLOWER,
-        ePatterns.MOVE,
-        ePatterns.THE_FLOWER,
-        ePatterns.THE_OTHER_FLOWER
+
     };
 
-    private void Start()
-    {
-        
-    }
-    
     private void Update () {
         KillThemAll();
-	}
+        Debug.Log("Elements in the array: " + fullPattern.Length);
+        Debug.Log(currentPattern.ToString());
+    }
 
     void KillThemAll()
-    {
+    { 
         NextPattern(fullPattern);
     }
 
@@ -52,15 +45,8 @@ public class NewBossPatternManager : MonoBehaviour {
         currentPattern = pattern;
     }
 
-    
-
-    private float timer = 1f;
+    private float timer = 5f;
     public float patternTime = 5f;
-
-    public void WaitToFire()
-    {
-        defaultPattern = true;
-    }
 
     public int arrayIndex = 0;
     private void NextPattern(ePatterns[] pat)
@@ -79,6 +65,7 @@ public class NewBossPatternManager : MonoBehaviour {
             {
                 SetPattern(fullPattern[0]);
                 arrayIndex = 0;
+                Debug.Log("Exception catched");
             }
             timer = patternTime;
         }
