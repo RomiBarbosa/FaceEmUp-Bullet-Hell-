@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 114760924007487502}
   - component: {fileID: 95301467668089924}
   - component: {fileID: 60894634818392580}
+  - component: {fileID: 114746701500463750}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -361,6 +362,24 @@ MonoBehaviour:
   canRotate: 1
   canShoot: 0
   speedRotate: 50
+--- !u!114 &114746701500463750
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1451030312892666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db0487ae091c2a4caa5d1d97884564a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wave:
+  - {fileID: 1063111008428698, guid: bab8c435dbe68a54ab0feb2f62dccf9b, type: 2}
+  Rate: 0
+  spawn: 0
+  posxmax: 0
+  posxmin: 0
+  posy: 0
 --- !u!114 &114760924007487502
 MonoBehaviour:
   m_ObjectHideFlags: 1

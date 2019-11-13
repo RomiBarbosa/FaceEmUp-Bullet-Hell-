@@ -625,9 +625,9 @@ MonoBehaviour:
   bossGun2: {fileID: 114694504944299050}
   bullets:
   - {fileID: 1706914078768222, guid: a1966b2d3e7073b45b3e799a48bdbfaf, type: 2}
-  - {fileID: 1880868425618140, guid: 6f614f22a44765943ad7862d222b7a32, type: 2}
-  - {fileID: 1659667555473700, guid: 24995aeea5ce8734ea8aae33ae75de0e, type: 2}
-  - {fileID: 1265219243434970, guid: 580094a4ca130094482279ce30dcf466, type: 2}
+  - {fileID: 1208668860476200, guid: bec65ac0f32b3b5428d7a4208cc375e8, type: 2}
+  - {fileID: 1965843649271408, guid: f51ba807edf476b4caee47963c0f4f6f, type: 2}
+  - {fileID: 1194575172788428, guid: 39de3d8021419814487a03f3629847da, type: 2}
   bpm: {fileID: 114727890309084512}
   healthPercentage: 0
   timer: 0
@@ -682,8 +682,8 @@ MonoBehaviour:
   flowerPattern: 1
   defaultPattern: 0
   currentPattern: 0
-  fullPattern: 0100000008000000050000000300000008000000
-  patternTime: 5
+  fullPattern: 010000000800000001000000080000000100000008000000
+  patternTime: 4
   arrayIndex: 0
 --- !u!114 &114893690334471158
 MonoBehaviour:

@@ -17328,6 +17328,7 @@ MonoBehaviour:
   xMax: 7
   yMin: -4
   yMax: 4
+  focusSpeed: 0
 --- !u!212 &1723198690
 SpriteRenderer:
   m_ObjectHideFlags: 0
