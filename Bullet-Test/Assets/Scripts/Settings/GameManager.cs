@@ -76,7 +76,8 @@ public class GameManager : MonoBehaviour {
 
     public void LevelUp()
     {
-        WinUI.SetActive(true);
+        //WinUI.SetActive(true);
+        Instantiate(WinUI,transform.position,transform.rotation);
         mw.index++;
         mw.NextWave();
         Level += 1;

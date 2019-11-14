@@ -80,14 +80,22 @@ public class PlayerGuns : MonoBehaviour {
         }
         if (col.tag == "Life+")
         {
-            gameObject.GetComponent<Player>().health++;
-            Destroy(col.gameObject);
+            if (gameObject.GetComponent<Player>().health <4)
+            {
+                gameObject.GetComponent<Player>().health++;
+                Destroy(col.gameObject);
+            }
+            
 
         }
         if (col.tag == "Bomb+")
         {
-            gameObject.GetComponent<Bomb>().bombs++;
-            Destroy(col.gameObject);
+            if (gameObject.GetComponent<Bomb>().bombs < 4)
+            {
+                gameObject.GetComponent<Bomb>().bombs++;
+                Destroy(col.gameObject);
+            }
+          
         }
 
        

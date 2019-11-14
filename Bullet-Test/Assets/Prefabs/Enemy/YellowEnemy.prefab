@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d4de065c48ac14a87346e2753af232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullets: {fileID: 1191696688703148, guid: 9cfc537bf39da8b4483c25ea665428a9, type: 2}
+  Bullets: {fileID: 1315173393840652, guid: 0d2aefe01eed8df43b36cbe128f53869, type: 2}
 --- !u!114 &114415629011435384
 MonoBehaviour:
   m_ObjectHideFlags: 1
