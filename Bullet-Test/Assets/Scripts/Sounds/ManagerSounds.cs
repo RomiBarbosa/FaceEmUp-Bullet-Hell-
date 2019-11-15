@@ -25,4 +25,21 @@ public class ManagerSounds : MonoBehaviour {
     {
         music[0].Play();
     }
+
+    public void MusicManager(string musicstring)
+    {
+        switch(musicstring)
+        {
+            case "boss":
+                music[1].Play();
+                music[0].Stop();
+                break;
+
+            case "level":
+                music[0].Play();
+                music[1].Stop();
+                Debug.Log("hoda te qedo muxo");
+                break;
+        }
+    }
 }

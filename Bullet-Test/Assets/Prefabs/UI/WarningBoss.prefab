@@ -74,6 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4953157963908998}
   - component: {fileID: 114727421903097032}
+  - component: {fileID: 114879699800533422}
   m_Layer: 0
   m_Name: WarningBoss
   m_TagString: Untagged
@@ -231,6 +232,18 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114879699800533422
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1999567147468580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c4dc096fac9140498770fbeefa09545, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musica: boss
 --- !u!222 &222574663364618384
 CanvasRenderer:
   m_ObjectHideFlags: 1

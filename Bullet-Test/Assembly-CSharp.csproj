@@ -133,6 +133,7 @@
     <Compile Include="Assets\Scripts\Settings\PrincipalMenu.cs" />
     <Compile Include="Assets\Scripts\Settings\Waves.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />
+    <Compile Include="Assets\Scripts\Sounds\ChangeMusic.cs" />
     <Compile Include="Assets\Scripts\Sounds\ManagerSounds.cs" />
     <Compile Include="Assets\Scripts\TEST.cs" />
     <Compile Include="Assets\Scripts\Wall.cs" />
