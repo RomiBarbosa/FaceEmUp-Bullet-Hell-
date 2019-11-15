@@ -8,11 +8,15 @@ public class Pause : MonoBehaviour {
     public bool InPause;
     public bool SlowDown;
     public float countdown;
+    public float countdown2;
     public bool starttimer;
-
-
-
-	void Update () {
+    public float cooldown = 3;
+    public bool canSlowTime;
+    private void Start()
+    {
+        canSlowTime = true;
+    }
+    void Update () {
 
         if (Input.GetButtonDown("Pause") && InPause == false )
         {
@@ -24,16 +28,19 @@ public class Pause : MonoBehaviour {
             BackGame();
 
         }
-       
-        if (Input.GetButtonDown("ralentizar") && SlowDown == false && InPause == false)
+
+        if (Input.GetButtonDown("ralentizar") && SlowDown == false && InPause == false && canSlowTime == true)
         {
             SlowDownTime();
             starttimer = true;
-            
+           // canSlowTime = false;
+
+
         }
         else if (Input.GetButtonUp("ralentizar") && SlowDown == true)
         {
-                BackGame();
+            canSlowTime = false;
+            BackGame();
                 countdown = 0;
             starttimer = false;
 
@@ -50,11 +57,24 @@ public class Pause : MonoBehaviour {
 
                 countdown = 0;
 
+                canSlowTime = false;
                 starttimer = false;
 
             }
-        }  
+        }
 
+        //esperar maso menos 3 segundos
+        if (canSlowTime == false)
+        {
+            countdown2 += Time.deltaTime;
+
+            if (countdown2 >= cooldown)
+            {
+                canSlowTime = true;
+                countdown2 = 0;
+            }
+        }
+       
             
     }
 
