@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Bomb : MonoBehaviour {
 
@@ -11,6 +12,8 @@ public class Bomb : MonoBehaviour {
     public Animator anim;
     bool bomb;
     float cont;
+    public Text BombBar;
+    public Text BombBar2;
     private void Start()
     {
         cont = 1;
@@ -25,6 +28,8 @@ public class Bomb : MonoBehaviour {
         {
             cont -= Time.deltaTime;
             anim.SetBool("Bomb", true);
+            //BombBar.color = Color.grey;
+            //BombBar2.color = Color.grey;
             if (cont <= 0)
             {
                 bomb = false;
@@ -35,13 +40,26 @@ public class Bomb : MonoBehaviour {
         {
             anim.SetBool("Bomb", false);
         }
+
+        if (bombs <= 0 || bombAvailable == false)
+        {
+            BombBar.color = Color.grey;
+            BombBar2.color = Color.grey;
+        } else 
+        {
+            BombBar.color = Color.white;
+            BombBar2.color = Color.white;
+        }
+       
     }
 
     public void TirarBomba()
     {
-    
+       
         if (Input.GetButton("Button_Bomb") && bombs > 0 && bombAvailable && Time.timeScale != 0)
         {
+            //BombBar.color = Color.grey;
+            //BombBar2.color = Color.grey;
             bombAvailable = false;
             var enemies = GameObject.FindGameObjectsWithTag("EnemyBullet");
             
@@ -81,6 +99,8 @@ public class Bomb : MonoBehaviour {
             {
                 bombAvailable = true;
                 cd = 2f;
+                //BombBar.color = Color.white;
+                //BombBar2.color = Color.white;
             }
         }
       

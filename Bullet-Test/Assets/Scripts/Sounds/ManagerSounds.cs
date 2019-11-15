@@ -38,7 +38,6 @@ public class ManagerSounds : MonoBehaviour {
             case "level":
                 music[0].Play();
                 music[1].Stop();
-                Debug.Log("hoda te qedo muxo");
                 break;
         }
     }
