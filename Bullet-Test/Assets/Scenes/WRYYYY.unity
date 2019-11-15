@@ -1523,7 +1523,15 @@ MonoBehaviour:
   InPause: 0
   SlowDown: 0
   countdown: 0
+  countdown2: 0
   starttimer: 0
+  cooldown: 9
+  canSlowTime: 0
+  cooldownui: {fileID: 0}
+  maxCool: 0
+  Cool: 0
+  porcentaje: 0
+  focus: {fileID: 0}
 --- !u!114 &828290313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1694,7 +1702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - {fileID: 828290317}
+  - {fileID: 828290314}
   index: 0
 --- !u!114 &828290317
 MonoBehaviour:
@@ -1702,7 +1710,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 828290306}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3db0487ae091c2a4caa5d1d97884564a, type: 3}
   m_Name: 

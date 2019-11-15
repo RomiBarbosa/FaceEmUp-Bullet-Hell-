@@ -86,10 +86,6 @@ public class Bomb : MonoBehaviour {
                     
                     bomb = true;
                 }
-
-            
-
-
         }
 
         if (!bombAvailable)

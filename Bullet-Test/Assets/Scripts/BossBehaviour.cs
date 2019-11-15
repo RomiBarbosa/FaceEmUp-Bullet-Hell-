@@ -126,6 +126,7 @@ public class BossBehaviour : MonoBehaviour {
         {
             anim.SetBool("cry",true);
             Destroy(gameObject, 1.5f);
+            CleanSceneWhenDefeated();
             countdown2 += Time.deltaTime;
             if (countdown2 >= 1.3f)
             {
@@ -317,6 +318,17 @@ public class BossBehaviour : MonoBehaviour {
     {
         ManagerPuntps.instance.AddScore(points);
         GameManager.ins.LevelUp();
-        
+
+        //destroy all enemybullets when boss is defeated
+        CleanSceneWhenDefeated();
+    }
+
+    private void CleanSceneWhenDefeated()
+    {
+        var bullets = GameObject.FindGameObjectsWithTag("EnemyBullet");
+        foreach (var b in bullets)
+        {
+            Destroy(b);
+        }
     }
 }
