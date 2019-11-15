@@ -682,7 +682,7 @@ MonoBehaviour:
   flowerPattern: 1
   defaultPattern: 0
   currentPattern: 0
-  fullPattern: 010000000800000001000000080000000100000008000000
+  fullPattern: 010000000e000000010000000e000000010000000e000000
   patternTime: 4
   arrayIndex: 0
 --- !u!114 &114893690334471158

@@ -54,7 +54,6 @@ public class BossBehaviour : MonoBehaviour {
         healthPercentage = 100f;
        // health = 500f;
         movementTime = setMovementTime;
-
         rend = GetComponent<Renderer>();
         rend.enabled = true;
         rend.sharedMaterial = materiales[0];
@@ -116,6 +115,24 @@ public class BossBehaviour : MonoBehaviour {
             case NewBossPatternManager.ePatterns.MOVE_WITHOUT_SHOOTING:
                 MoveWithoutShooting();
                 break;
+            case NewBossPatternManager.ePatterns.UWU_MORE_BULLETS:
+                Pattern_UwuMoreBullets();
+                break;
+            case NewBossPatternManager.ePatterns.UWU_SLOW_FALL:
+                Pattern_UwuSlowFall();
+                break;
+            case NewBossPatternManager.ePatterns.UWU_FAST_AND_FURIOUS:
+                Pattern_Uwu_Fast_And_Furious();
+                break;
+            case NewBossPatternManager.ePatterns.UWU_DOUBLE_DEATHFLOWER:
+                Pattern_DoubleDeathFlower();
+                break;
+            case NewBossPatternManager.ePatterns.UWU_MADNESS:
+                Pattern_UwuMadness();
+                break;
+            case NewBossPatternManager.ePatterns.DO_NOTHING:
+                IdleForOneSecond();
+                break;
             default:
                 //DefaultGun(); lo dejo comentado pero puede que sirva
                 break;
@@ -137,7 +154,10 @@ public class BossBehaviour : MonoBehaviour {
             }
         }
     }
-
+    private void IdleForOneSecond()
+    {
+        DefaultGun();
+    }
     private void ShowFloatingText()
     {
         if (floatingText)
@@ -266,6 +286,84 @@ public class BossBehaviour : MonoBehaviour {
         bossGun2.bulletForce = 4;
     }
 
+    void Pattern_UwuMadness()
+    {
+        bossGun.canShoot = true;
+        bossGun2.canShoot = true;
+        bossGun.canRotate = true;
+        bossGun2.canRotate = true;
+        bossGun.cooldown = 0;
+        bossGun2.cooldown = 0;
+        bossGun.speedRotate = 10;
+        bossGun2.speedRotate = 10;
+        bossGun.ChangeBullet(bullets[0]);
+        bossGun2.ChangeBullet(bullets[0]);
+        bossGun.bulletForce = 3;
+        bossGun2.bulletForce = 3;
+    }
+
+    void Pattern_DoubleDeathFlower()
+    {
+        bossGun.canShoot = true;
+        bossGun2.canShoot = true;
+        bossGun.canRotate = true;
+        bossGun2.canRotate = true;
+        bossGun.cooldown = 0;
+        bossGun2.cooldown = 0;
+        bossGun.speedRotate = 70;
+        bossGun2.speedRotate = 70;
+        bossGun.ChangeBullet(bullets[4]);
+        bossGun2.ChangeBullet(bullets[4]);
+        bossGun.bulletForce = 8;
+        bossGun2.bulletForce = 8;
+    }
+
+    void Pattern_UwuMoreBullets()
+    {
+        bossGun.canShoot = true;
+        bossGun2.canShoot = false;
+        bossGun.canRotate = true;
+        
+        bossGun.cooldown = 0.1f;
+        
+        bossGun.speedRotate = 10;
+        bossGun.speedRotate = -10;
+        bossGun.ChangeBullet(bullets[2]);
+        
+        bossGun.bulletForce = 3;
+    }
+
+    void Pattern_Uwu_Fast_And_Furious()
+    {
+        bossGun.canShoot = true;
+        bossGun2.canShoot = true;
+        bossGun.canRotate = true;
+        bossGun2.canRotate = true;
+        bossGun.cooldown = 0;
+        bossGun2.cooldown = 0;
+        bossGun.speedRotate = -70;
+        bossGun2.speedRotate = 70;
+        bossGun.ChangeBullet(bullets[0]);
+        bossGun2.ChangeBullet(bullets[0]);
+        bossGun.bulletForce = 8;
+        bossGun2.bulletForce = 8;
+    }
+
+    void Pattern_UwuSlowFall()
+    {
+        bossGun.canShoot = true;
+        bossGun2.canShoot = true;
+        bossGun.canRotate = true;
+        bossGun2.canRotate = true;
+        bossGun.cooldown = 0.1f;
+        bossGun2.cooldown = 0.1f;
+        bossGun.speedRotate = -20;
+        bossGun2.speedRotate = 20;
+        bossGun.ChangeBullet(bullets[4]);
+        bossGun2.ChangeBullet(bullets[4]);
+        bossGun.bulletForce = 4;
+        bossGun2.bulletForce = 4;
+    }
     void Pattern_THEOtherFlower()
     {
         bossGun.canShoot = true;

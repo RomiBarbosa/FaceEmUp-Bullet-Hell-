@@ -620,7 +620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a1c0085b86bbd647b937eb1de0fb77b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 125
+  health: 150
   bossGun: {fileID: 114256525843517550}
   bossGun2: {fileID: 114694504944299050}
   bullets:
@@ -628,6 +628,7 @@ MonoBehaviour:
   - {fileID: 1208668860476200, guid: bec65ac0f32b3b5428d7a4208cc375e8, type: 2}
   - {fileID: 1965843649271408, guid: f51ba807edf476b4caee47963c0f4f6f, type: 2}
   - {fileID: 1194575172788428, guid: 39de3d8021419814487a03f3629847da, type: 2}
+  - {fileID: 1745474300218848, guid: 99d11617f7655a9438c5b4cdf12e0377, type: 2}
   bpm: {fileID: 114727890309084512}
   healthPercentage: 0
   timer: 0
@@ -682,7 +683,7 @@ MonoBehaviour:
   flowerPattern: 1
   defaultPattern: 0
   currentPattern: 0
-  fullPattern: 0200000004000000030000000600000007000000
+  fullPattern: 0400000006000000080000000d0000000a0000000b000000
   patternTime: 4
   arrayIndex: 0
 --- !u!114 &114893690334471158

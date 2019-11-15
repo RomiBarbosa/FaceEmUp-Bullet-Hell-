@@ -18,6 +18,12 @@ public class NewBossPatternManager : MonoBehaviour {
         PRETTY_FLOWERS,
         THE_FLOWER,
         THE_OTHER_FLOWER,
+        UWU_MORE_BULLETS,
+        UWU_SLOW_FALL,
+        UWU_FAST_AND_FURIOUS,
+        UWU_DOUBLE_DEATHFLOWER,
+        UWU_MADNESS,
+        DO_NOTHING,
         MOVE,
         MOVE_WITHOUT_SHOOTING
     }
@@ -52,7 +58,7 @@ public class NewBossPatternManager : MonoBehaviour {
     private void NextPattern(ePatterns[] pat)
     {
         SetPattern(fullPattern[arrayIndex]);
-
+        
         timer -= Time.deltaTime;
         if (timer < 0)
         {
@@ -60,6 +66,7 @@ public class NewBossPatternManager : MonoBehaviour {
             {
                 arrayIndex++;
                 SetPattern(fullPattern[arrayIndex]);
+                
             }
             catch (System.IndexOutOfRangeException)
             {
@@ -67,7 +74,18 @@ public class NewBossPatternManager : MonoBehaviour {
                 arrayIndex = 0;
                 Debug.Log("Exception catched");
             }
-            timer = patternTime;
+            if (currentPattern == ePatterns.DO_NOTHING)
+            {
+                timer = 1f;
+            }
+            if (currentPattern == ePatterns.UWU_MORE_BULLETS)
+            {
+                timer = 2f;
+            }
+            else
+            {
+                timer = patternTime;
+            }
         }
     }
 
