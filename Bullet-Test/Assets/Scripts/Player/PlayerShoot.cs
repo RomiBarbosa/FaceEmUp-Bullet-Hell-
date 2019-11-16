@@ -13,6 +13,7 @@ public class PlayerShoot : MonoBehaviour {
     float time;
     void Update()
     {
+        
         time += Time.deltaTime;
         //if (time >= cooldown)
         //{

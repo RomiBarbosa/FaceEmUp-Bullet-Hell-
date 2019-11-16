@@ -8,6 +8,8 @@ public class PlayerGuns : MonoBehaviour {
    // public GameObject currentGun;
     public int ind;
     public bool focus;
+    public GameObject bullet;
+
     private void Start()
     {
         for (int i = 0; i < Guns.Length; i++)
@@ -63,19 +65,19 @@ public class PlayerGuns : MonoBehaviour {
 
         if (col.tag == "DecreaseCooldown")
         {
-           
-            Debug.Log("Aumenta el cooldown");
+            
+            
 
-            Guns[ind].GetComponent<GunPlayer>().cooldown -= 0.2f;
-            Guns[ind].GetComponent<GunPlayer>().Change();
+            Guns[ind].GetComponent<GunPlayer>().cooldown -= 2f;
+            //Guns[ind].GetComponent<GunPlayer>().Change();
             Destroy(col.gameObject);
         }
 
         if (col.tag == "IncreaseDamage")
         {
-          
-            Guns[ind].GetComponent<GunPlayer>().damage += 0.2f;
-            Guns[ind].GetComponent<GunPlayer>().Change();
+
+            bullet.GetComponent<BulletPlayer>().IncreaseDamage(0.2f);
+            //Guns[ind].GetComponent<GunPlayer>().Change();
             Destroy(col.gameObject);
         }
         if (col.tag == "Life+")

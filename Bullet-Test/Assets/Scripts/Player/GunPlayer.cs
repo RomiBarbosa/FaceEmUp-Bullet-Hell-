@@ -7,6 +7,12 @@ public class GunPlayer : MonoBehaviour {
     public float cooldown;
     public float damage;
     public PlayerShoot[] canyon;
+    
+    private void Start()
+    {
+        
+        
+    }
 
     public void Change()
     {
@@ -14,7 +20,6 @@ public class GunPlayer : MonoBehaviour {
         {
             canyon[i].cooldown = this.cooldown;
             canyon[i].damage = this.damage;
-
         }
     }
 }

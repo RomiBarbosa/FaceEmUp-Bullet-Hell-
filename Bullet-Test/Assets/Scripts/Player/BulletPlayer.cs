@@ -12,6 +12,11 @@ public class BulletPlayer : MonoBehaviour {
         Destroy(gameObject, 3);
     }
 
+    private void Update()
+    {
+        Debug.Log("Bala " + damage);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Boss")
@@ -20,7 +25,16 @@ public class BulletPlayer : MonoBehaviour {
             collision.GetComponent<BossBehaviour>().TakeDamage(damage);
             //boss.TakeDamage(damage); no funciona desde aca ni idea
         }
-
-        
+    }
+    public void IncreaseDamage(float amount)
+    {
+        if (damage < 2)
+        {
+            damage += amount;
+        }
+        if (damage > 2)
+        {
+            damage = 2;
+        }
     }
 }

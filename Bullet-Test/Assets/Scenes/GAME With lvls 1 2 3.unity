@@ -1731,6 +1731,12 @@ Prefab:
       propertyPath: bulletForce
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 114330622398574256, guid: 1dd6ea697206b27408947246443b7d37,
+        type: 2}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 1185599295989270, guid: e51789d376225ee4c89eda68146671ee,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dd6ea697206b27408947246443b7d37, type: 2}
   m_IsPrefabAsset: 0
@@ -5298,7 +5304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2013950659
 Transform:
   m_ObjectHideFlags: 0
