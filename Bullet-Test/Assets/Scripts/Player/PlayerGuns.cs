@@ -9,7 +9,7 @@ public class PlayerGuns : MonoBehaviour {
     public int ind;
     public bool focus;
     public GameObject bullet;
-
+    public GameObject gunManager;
     private void Start()
     {
         for (int i = 0; i < Guns.Length; i++)
@@ -67,16 +67,20 @@ public class PlayerGuns : MonoBehaviour {
         {
 
             ManagerSounds.ins.PowerUp();
-
-            Guns[ind].GetComponent<GunPlayer>().cooldown -= 2f;
+            if (gunManager.GetComponent<GunPlayer>().cooldown >= 0.3f)
+            {
+                gunManager.GetComponent<GunPlayer>().cooldown -= 0.1f;
+            }
+            
             //Guns[ind].GetComponent<GunPlayer>().Change();
             Destroy(col.gameObject);
         }
 
         if (col.tag == "IncreaseDamage")
         {
-            
-            Guns[ind].GetComponent<GunPlayer>().Change();
+
+            gunManager.GetComponent<GunPlayer>().Change();
+            gunManager.GetComponent<GunPlayer>().damage +=0.2f;
             Destroy(col.gameObject);
             ManagerSounds.ins.PowerUp();
         }

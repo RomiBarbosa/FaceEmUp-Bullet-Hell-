@@ -158,6 +158,12 @@ public class BossBehaviour : MonoBehaviour {
                 Instantiate(explotion, transform.position, transform.rotation);
                 ShowFloatingText();
                 Destroy(bar);
+
+                ManagerPuntps.instance.AddScore(points);
+                GameManager.ins.LevelUp();
+
+                //destroy all enemybullets when boss is defeated
+                CleanSceneWhenDefeated();
                 // GameManager.ins.WinGame();
             }
         }
@@ -431,11 +437,11 @@ public class BossBehaviour : MonoBehaviour {
 
     private void OnDestroy()
     {
-        ManagerPuntps.instance.AddScore(points);
-        GameManager.ins.LevelUp();
+        //ManagerPuntps.instance.AddScore(points);
+        //GameManager.ins.LevelUp();
 
-        //destroy all enemybullets when boss is defeated
-        CleanSceneWhenDefeated();
+        ////destroy all enemybullets when boss is defeated
+        //CleanSceneWhenDefeated();
     }
 
     private void CleanSceneWhenDefeated()

@@ -64,4 +64,16 @@ public class ManagerSounds : MonoBehaviour {
 
         }
     }
+
+    public void BajarVolumen()
+    {
+        music[0].volume = 0.1f;
+        music[1].volume = 0.1f;
+    }
+
+    public void VolumenNormal()
+    {
+        music[0].volume = 0.4f;
+        music[1].volume = 0.4f;
+    }
 }

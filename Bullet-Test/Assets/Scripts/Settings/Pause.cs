@@ -137,6 +137,8 @@ public class Pause : MonoBehaviour {
         {
             pausePanel.SetActive(true);
         }
+
+        ManagerSounds.ins.BajarVolumen();
         
     }
 
@@ -146,5 +148,6 @@ public class Pause : MonoBehaviour {
         InPause = false;
         SlowDown = false;
         pausePanel.SetActive(false);
+        ManagerSounds.ins.VolumenNormal();
     }
 }

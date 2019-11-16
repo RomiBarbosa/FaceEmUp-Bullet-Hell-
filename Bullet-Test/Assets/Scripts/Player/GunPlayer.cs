@@ -13,7 +13,10 @@ public class GunPlayer : MonoBehaviour {
         
         
     }
-
+    private void Update()
+    {
+        Change();
+    }
     public void Change()
     {
         for (int i = 0; i < canyon.Length; i++)

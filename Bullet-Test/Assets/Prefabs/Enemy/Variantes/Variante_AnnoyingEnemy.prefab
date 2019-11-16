@@ -222,7 +222,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1745474300218848, guid: 99d11617f7655a9438c5b4cdf12e0377,
     type: 2}
   bulletForce: 3
-  coolDown: 0.3
+  coolDown: 0.5
   canShoot: 0
 --- !u!114 &114499990353778416
 MonoBehaviour:
