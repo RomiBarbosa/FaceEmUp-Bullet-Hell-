@@ -6,7 +6,7 @@ public class ColliderISP : MonoBehaviour {
 
     
     CircleCollider2D coll2d;
-    public float radio;
+    public float speed;
 	void Start () {
 
        coll2d = gameObject.GetComponent<CircleCollider2D>();
@@ -15,13 +15,13 @@ public class ColliderISP : MonoBehaviour {
 	void Update () {
 
         
-        if (transform.localScale.x <= 6)
+        if (transform.localScale.x <= 30)
         {
             var x = transform.localScale.x;
-            x += Time.deltaTime;
+            x += Time.deltaTime * speed;
 
             var y = transform.localScale.y;
-            y += Time.deltaTime;
+            y += Time.deltaTime * speed;
 
 
             transform.localScale = new Vector2(x, y);

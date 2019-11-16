@@ -65,8 +65,8 @@ public class PlayerGuns : MonoBehaviour {
 
         if (col.tag == "DecreaseCooldown")
         {
-            
-            
+
+            ManagerSounds.ins.PowerUp();
 
             Guns[ind].GetComponent<GunPlayer>().cooldown -= 2f;
             //Guns[ind].GetComponent<GunPlayer>().Change();
@@ -79,6 +79,7 @@ public class PlayerGuns : MonoBehaviour {
             bullet.GetComponent<BulletPlayer>().IncreaseDamage(0.2f);
             //Guns[ind].GetComponent<GunPlayer>().Change();
             Destroy(col.gameObject);
+            ManagerSounds.ins.PowerUp();
         }
         if (col.tag == "Life+")
         {
@@ -86,6 +87,7 @@ public class PlayerGuns : MonoBehaviour {
             {
                 gameObject.GetComponent<Player>().health++;
                 Destroy(col.gameObject);
+                ManagerSounds.ins.PowerUp();
             }
             
 
@@ -96,6 +98,7 @@ public class PlayerGuns : MonoBehaviour {
             {
                 gameObject.GetComponent<Bomb>().bombs++;
                 Destroy(col.gameObject);
+                ManagerSounds.ins.PowerUp();
             }
           
         }

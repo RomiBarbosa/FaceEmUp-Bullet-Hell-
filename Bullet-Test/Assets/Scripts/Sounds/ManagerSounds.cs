@@ -26,6 +26,28 @@ public class ManagerSounds : MonoBehaviour {
         music[0].Play();
     }
 
+    public void Bomb()
+    {
+        sounds[1].Play();
+    }
+    public void StartGame()
+    {
+        sounds[2].Play();
+    }
+
+    public void Pause()
+    {
+        sounds[3].Play();
+    }
+    public void PowerUp()
+    {
+        sounds[4].Play();
+    }
+    public void Hit()
+    {
+        sounds[5].Play();
+    }
+
     public void MusicManager(string musicstring)
     {
         switch(musicstring)
@@ -39,6 +61,7 @@ public class ManagerSounds : MonoBehaviour {
                 music[0].Play();
                 music[1].Stop();
                 break;
+
         }
     }
 }

@@ -59,6 +59,7 @@ public class Player : MonoBehaviour {
             ObjectCollider.SetActive(false);
             invulnerable = true;
             health--;
+            ManagerSounds.ins.Hit();
         }
       
 

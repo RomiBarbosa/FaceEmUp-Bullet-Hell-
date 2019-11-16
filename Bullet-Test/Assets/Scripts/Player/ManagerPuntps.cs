@@ -14,8 +14,9 @@ public class ManagerPuntps : MonoBehaviour {
     public Text ui_importantscore;
     public Text ui_highscore;
     public Text ui_vida;
-    public Text ui_bombas;
+  //  public Text ui_bombas;
     public GameObject[] Heart;
+    public GameObject[] Bombs;
     public static ManagerPuntps instance;
   
     int index;
@@ -29,6 +30,11 @@ public class ManagerPuntps : MonoBehaviour {
         {
             Heart[i].SetActive(false);
             index = 3;
+        }
+
+        for (int i = 0; i < 4; i++)
+        {
+            Bombs[i].SetActive(false);
         }
 
      highscore = PlayerPrefs.GetFloat("Highscore");
@@ -46,6 +52,31 @@ public class ManagerPuntps : MonoBehaviour {
         {
             PlayerPrefs.SetFloat("Highscore",score);
             ui_highscore.text = score.ToString();
+        }
+
+        for (int i = 0; i < 4; i++)
+        {
+            if (i < player.bombs)
+            {
+                Bombs[i].SetActive(true);
+            } else { Bombs[i].SetActive(false); }
+            
+        }
+
+        if (player.bombs <= 0 || player.GetComponent<Bomb>().bombAvailable == false)
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                Bombs[i].GetComponent<Image>().color = Color.grey;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                Bombs[i].GetComponent<Image>().color = Color.cyan;
+            }
+
         }
     }
 
@@ -71,7 +102,7 @@ public class ManagerPuntps : MonoBehaviour {
     }
     public void ShowBombas()
     {
-        ui_bombas.text = "x"+ player.bombs.ToString();
+
     }
     public void Score()
     {

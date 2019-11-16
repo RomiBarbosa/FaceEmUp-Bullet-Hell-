@@ -20,7 +20,7 @@ public class Pause : MonoBehaviour {
     public float porcentaje;
     bool aux;
 
-    public Text focus;
+    public Image focus;
 
     public GameObject pausePanel;
     private void Start()
@@ -29,12 +29,14 @@ public class Pause : MonoBehaviour {
         canSlowTime = true;
         pausePanel.SetActive(false);
     }
+
+
     void Update () {
 
         if (Input.GetButtonDown("Pause") && InPause == false )
         {
             PauseGame();
-
+            ManagerSounds.ins.Pause();
         }
         else if (Input.GetButtonDown("Pause") && InPause == true)
         {
@@ -83,13 +85,13 @@ public class Pause : MonoBehaviour {
         {
             countdown2 += Time.deltaTime;
             Cool = countdown2;
-            focus.color = Color.grey;
+           // focus.color = Color.grey;
             if (countdown2 >= cooldown)
             {
                 canSlowTime = true;
                 countdown2 = 0;
                 Cool = 1;
-                focus.color = Color.white;
+               // focus.color = Color.yellow;
             }
         }
         if (canSlowTime == true && aux != true)
@@ -97,6 +99,7 @@ public class Pause : MonoBehaviour {
             Cool = 1;
             porcentaje = 1;
             cooldownui.fillAmount = porcentaje;
+           // focus.color = Color.gray;
         }
         else
         {
