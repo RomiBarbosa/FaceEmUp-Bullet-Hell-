@@ -47,7 +47,7 @@ public class BossBehaviour : MonoBehaviour {
     public GameObject floatingText;
     private Vector2 position;
 
-    
+    public GameObject bar;
 
     private void Start()
     {
@@ -145,12 +145,14 @@ public class BossBehaviour : MonoBehaviour {
             Destroy(gameObject, 1.5f);
             CleanSceneWhenDefeated();
             countdown2 += Time.deltaTime;
+           
             if (countdown2 >= 1.3f)
             {
                
                 Instantiate(explotion, transform.position, transform.rotation);
                 ShowFloatingText();
-               // GameManager.ins.WinGame();
+                Destroy(bar);
+                // GameManager.ins.WinGame();
             }
         }
     }

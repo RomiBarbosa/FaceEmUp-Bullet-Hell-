@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour {
     public Text levelUI;
 
     public ManagerWaves mw;
+
+    public GameObject WinGameUI;
     private void Awake()
     {
         ins = this;
@@ -70,18 +72,25 @@ public class GameManager : MonoBehaviour {
 
     public void WinGame()
     {
-        WinUI.SetActive(true);
-        ingame = false;
+        //WinUI.SetActive(true);
+        //ingame = false;
+        
+        Instantiate(WinGameUI, transform.position, transform.rotation);
     }
 
     public void LevelUp()
     {
         //WinUI.SetActive(true);
-        Instantiate(WinUI,transform.position,transform.rotation);
-        mw.index++;
-        mw.NextWave();
-        Level += 1;
-        ingame = true;
+        if ((mw.index+1) != mw.waves.Length)
+        {
+            Instantiate(WinUI, transform.position, transform.rotation);
+            mw.index++;
+            mw.NextWave();
+            Level += 1;
+            ingame = true;
+        } else { WinGame(); }
+      
+
     }
 
     

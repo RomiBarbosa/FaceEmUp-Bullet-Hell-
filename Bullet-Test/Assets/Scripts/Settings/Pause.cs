@@ -21,10 +21,13 @@ public class Pause : MonoBehaviour {
     bool aux;
 
     public Text focus;
+
+    public GameObject pausePanel;
     private void Start()
     {
         maxCool = 900;
         canSlowTime = true;
+        pausePanel.SetActive(false);
     }
     void Update () {
 
@@ -117,12 +120,14 @@ public class Pause : MonoBehaviour {
         SlowDown = true;
         Cool = 0;
         porcentaje = 0;
+        pausePanel.SetActive(false);
     }
 
     public void PauseGame()
     {
         Time.timeScale = 0;
         InPause = true;
+        pausePanel.SetActive(true);
     }
 
     public void BackGame()
@@ -130,5 +135,6 @@ public class Pause : MonoBehaviour {
         Time.timeScale = 1;
         InPause = false;
         SlowDown = false;
+        pausePanel.SetActive(false);
     }
 }

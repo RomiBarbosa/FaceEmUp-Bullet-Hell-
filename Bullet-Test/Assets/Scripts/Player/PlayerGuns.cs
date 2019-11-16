@@ -25,8 +25,8 @@ public class PlayerGuns : MonoBehaviour {
         //}
         if (Input.GetButton("ralentizar"/*KeyCode.Z*/))
         {
-            Guns[0].SetActive(true);
-            Guns[1].SetActive(false);
+            Guns[0].SetActive(false);
+            Guns[1].SetActive(true);
         }
         else {
             Guns[1].SetActive(true);
