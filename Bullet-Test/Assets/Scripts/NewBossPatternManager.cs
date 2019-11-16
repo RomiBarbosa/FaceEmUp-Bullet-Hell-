@@ -24,8 +24,10 @@ public class NewBossPatternManager : MonoBehaviour {
         UWU_DOUBLE_DEATHFLOWER,
         UWU_MADNESS,
         DO_NOTHING,
+        BOMB_WAIT,
         MOVE,
-        MOVE_WITHOUT_SHOOTING
+        MOVE_WITHOUT_SHOOTING,
+        MOVE_1_SECOND
     }
 
     public ePatterns currentPattern;
@@ -46,7 +48,7 @@ public class NewBossPatternManager : MonoBehaviour {
         NextPattern(fullPattern);
     }
 
-    protected void SetPattern(ePatterns pattern)
+    public void SetPattern(ePatterns pattern)
     {
         currentPattern = pattern;
     }
@@ -74,18 +76,26 @@ public class NewBossPatternManager : MonoBehaviour {
                 arrayIndex = 0;
                 Debug.Log("Exception catched");
             }
+
             if (currentPattern == ePatterns.DO_NOTHING)
-            {
-                timer = 1f;
-            }
-            if (currentPattern == ePatterns.UWU_MORE_BULLETS)
             {
                 timer = 2f;
             }
-            else
+            else if (currentPattern == ePatterns.UWU_MORE_BULLETS)
             {
-                timer = patternTime;
+                timer = 2f;
             }
+            else if (currentPattern == ePatterns.BOMB_WAIT)
+            {
+                timer = 1.5f;
+            }
+            else if (currentPattern == ePatterns.MOVE_1_SECOND)
+            {
+                timer = 1.5f;
+            }
+            else
+            timer = patternTime;
+            
         }
     }
 

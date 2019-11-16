@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4720593008632354}
   m_Layer: 0
-  m_Name: -Boss-
+  m_Name: -Boss- LVL 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -649,7 +649,7 @@ MonoBehaviour:
   explotion: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 2}
   floatingText: {fileID: 1931630329274424, guid: d795acb1e9f0d3c4d9efa884dc31b01a,
     type: 2}
-  bar: {fileID: 1063111008428698}
+  bar: {fileID: 0}
 --- !u!114 &114694504944299050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -684,8 +684,8 @@ MonoBehaviour:
   flowerPattern: 1
   defaultPattern: 0
   currentPattern: 0
-  fullPattern: 010000000e000000010000000e000000010000000e000000
-  patternTime: 4
+  fullPattern: 0100000011000000050000001000000008000000
+  patternTime: 5
   arrayIndex: 0
 --- !u!114 &114893690334471158
 MonoBehaviour:

@@ -133,6 +133,12 @@ public class BossBehaviour : MonoBehaviour {
             case NewBossPatternManager.ePatterns.DO_NOTHING:
                 IdleForOneSecond();
                 break;
+            case NewBossPatternManager.ePatterns.MOVE_1_SECOND:
+                MoveOneSecond();
+                break;
+            
+
+
             default:
                 //DefaultGun(); lo dejo comentado pero puede que sirva
                 break;
@@ -156,6 +162,11 @@ public class BossBehaviour : MonoBehaviour {
             }
         }
     }
+
+    void MoveOneSecond()
+    {
+        MoveWithoutShooting();
+    }
     private void IdleForOneSecond()
     {
         DefaultGun();
@@ -173,6 +184,7 @@ public class BossBehaviour : MonoBehaviour {
     {
         hit = true;
         this.health -= amount;
+        bpm.SetPattern(NewBossPatternManager.ePatterns.BOMB_WAIT);
     }
 
     public void TakeDamage(float amount)
@@ -194,7 +206,10 @@ public class BossBehaviour : MonoBehaviour {
             movementTime = setMovementTime;
         }
     }
-
+    private void OnBombActivation()
+    {
+        DefaultGun();
+    }
     private void MoveWithoutShooting()
     {
         if (movementTime > 0)
@@ -268,7 +283,7 @@ public class BossBehaviour : MonoBehaviour {
         bossGun.canRotate = true;
         bossGun.cooldown = 0;
         bossGun.speedRotate = 70;
-        bossGun.ChangeBullet(bullets[2]);
+        bossGun.ChangeBullet(bullets[1]);
         bossGun.bulletForce = 4;
     }
 

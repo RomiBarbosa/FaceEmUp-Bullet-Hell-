@@ -649,6 +649,7 @@ MonoBehaviour:
   explotion: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 2}
   floatingText: {fileID: 1931630329274424, guid: d795acb1e9f0d3c4d9efa884dc31b01a,
     type: 2}
+  bar: {fileID: 1063111008428698}
 --- !u!114 &114694504944299050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -683,8 +684,8 @@ MonoBehaviour:
   flowerPattern: 1
   defaultPattern: 0
   currentPattern: 0
-  fullPattern: 0400000006000000080000000d0000000a0000000b000000
-  patternTime: 4
+  fullPattern: 010000000f000000010000000f000000030000000f000000050000000f000000
+  patternTime: 3
   arrayIndex: 0
 --- !u!114 &114893690334471158
 MonoBehaviour:
