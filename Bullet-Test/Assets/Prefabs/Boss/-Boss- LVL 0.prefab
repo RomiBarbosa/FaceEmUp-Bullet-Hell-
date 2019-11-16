@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4720593008632354}
   m_Layer: 0
-  m_Name: -Boss-
+  m_Name: -Boss- LVL 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -684,8 +684,8 @@ MonoBehaviour:
   flowerPattern: 1
   defaultPattern: 0
   currentPattern: 0
-  fullPattern: 010000000e000000010000000e000000010000000e000000
-  patternTime: 4
+  fullPattern: 09000000020000000d0000000e0000000900000001000000
+  patternTime: 2
   arrayIndex: 0
 --- !u!114 &114893690334471158
 MonoBehaviour:

@@ -991,12 +991,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdc78ffe54c2a7e4ebc65d437826409b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 6
   rb: {fileID: 50366377781470422}
   xMin: -8.4
   xMax: 8.4
   yMin: -6
   yMax: 7
+  focusSpeed: 6
 --- !u!114 &114479177637963522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1047,6 +1048,8 @@ MonoBehaviour:
   cd: 0
   maincamera: {fileID: 0}
   anim: {fileID: 0}
+  BombBar: {fileID: 0}
+  BombBar2: {fileID: 0}
 --- !u!114 &114514323386973472
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1706,11 +1706,6 @@ Prefab:
       propertyPath: anim
       value: 
       objectReference: {fileID: 1358168981}
-    - target: {fileID: 114400167849559964, guid: 1dd6ea697206b27408947246443b7d37,
-        type: 2}
-      propertyPath: focusSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 114496590219326348, guid: 1dd6ea697206b27408947246443b7d37,
         type: 2}
       propertyPath: BombBar
@@ -1718,25 +1713,24 @@ Prefab:
       objectReference: {fileID: 1953709722}
     - target: {fileID: 114496590219326348, guid: 1dd6ea697206b27408947246443b7d37,
         type: 2}
-      propertyPath: BombBarUI
-      value: 
-      objectReference: {fileID: 1153725201}
-    - target: {fileID: 114496590219326348, guid: 1dd6ea697206b27408947246443b7d37,
-        type: 2}
       propertyPath: BombBar2
       value: 
       objectReference: {fileID: 1361593078}
-    - target: {fileID: 114171728598158966, guid: 1dd6ea697206b27408947246443b7d37,
+    - target: {fileID: 114014274919249242, guid: 1dd6ea697206b27408947246443b7d37,
         type: 2}
-      propertyPath: bulletPrefab
-      value: 
-      objectReference: {fileID: 1379686112277676, guid: 13f070de7abac2848aa7141e43b2c594,
+      propertyPath: bulletForce
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114479177637963522, guid: 1dd6ea697206b27408947246443b7d37,
         type: 2}
-    - target: {fileID: 114330622398574256, guid: 1dd6ea697206b27408947246443b7d37,
+      propertyPath: bulletForce
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114132646348107302, guid: 1dd6ea697206b27408947246443b7d37,
         type: 2}
-      propertyPath: Guns.Array.data[0]
-      value: 
-      objectReference: {fileID: 1179973350}
+      propertyPath: bulletForce
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dd6ea697206b27408947246443b7d37, type: 2}
   m_IsPrefabAsset: 0
@@ -1755,6 +1749,7 @@ GameObject:
   m_Component:
   - component: {fileID: 828290310}
   - component: {fileID: 828290316}
+  - component: {fileID: 828290320}
   - component: {fileID: 828290318}
   - component: {fileID: 828290314}
   - component: {fileID: 828290317}
@@ -2013,7 +2008,7 @@ MonoBehaviour:
   - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
   - {fileID: 1027170488459874, guid: a805963b427a40a4daf6a8e4e0d77a37, type: 2}
   - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
-  - {fileID: 1027170488459874, guid: a805963b427a40a4daf6a8e4e0d77a37, type: 2}
+  - {fileID: 1446621914109694, guid: f917e5bdc04d6074c817d533cc47d29b, type: 2}
   - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
   - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
   - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
@@ -2162,6 +2157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
+  - {fileID: 828290320}
   - {fileID: 828290318}
   - {fileID: 828290314}
   index: 0
@@ -2177,7 +2173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Wave:
-  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
+  - {fileID: 1712886151663178, guid: b4a2203cf003b2e44a04b436d99d0928, type: 2}
   - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
   - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
   - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
@@ -2314,6 +2310,48 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &828290320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 828290306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db0487ae091c2a4caa5d1d97884564a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Wave:
+  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
+  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
+  - {fileID: 1917895244055850, guid: 9fed99cb52658d649a5f4f589425e172, type: 2}
+  - {fileID: 1917895244055850, guid: 9fed99cb52658d649a5f4f589425e172, type: 2}
+  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
+  - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
+  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
+  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1546613366997710, guid: 68284dda36b136a49ae6da66424c84be, type: 2}
+  - {fileID: 1314888245382484, guid: b44e249b38e319c4babd3ee4ff27219e, type: 2}
+  - {fileID: 1546613366997710, guid: 68284dda36b136a49ae6da66424c84be, type: 2}
+  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1446621914109694, guid: f917e5bdc04d6074c817d533cc47d29b, type: 2}
+  - {fileID: 1446621914109694, guid: f917e5bdc04d6074c817d533cc47d29b, type: 2}
+  - {fileID: 1673578964203362, guid: a7c798195d27d2647b4e003c0135c6f1, type: 2}
+  - {fileID: 1327887747145276, guid: 4a5c8986bf1e07f46a629a070d3a9790, type: 2}
+  - {fileID: 1246097640737522, guid: 181b0d7bf764c7947ad95a88b3eb7ace, type: 2}
+  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
+  - {fileID: 1999567147468580, guid: c3f3f7dd51fd9b94890527973ee35032, type: 2}
+  - {fileID: 1897842249415062, guid: 24adafd63a70ab8448c04641d8e15d92, type: 2}
+  - {fileID: 1063111008428698, guid: c00d57c3932ecb44d8516434bcf82441, type: 2}
+  Rate: 3
+  spawn: 0
+  posxmax: 7
+  posxmin: -7
+  posy: 10
 --- !u!1 &888198461
 GameObject:
   m_ObjectHideFlags: 0
@@ -2882,6 +2920,7 @@ MonoBehaviour:
   explotion: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 2}
   floatingText: {fileID: 1931630329274424, guid: d795acb1e9f0d3c4d9efa884dc31b01a,
     type: 2}
+  bar: {fileID: 0}
 --- !u!95 &1088228991
 Animator:
   serializedVersion: 3
@@ -3360,11 +3399,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1158004529}
   m_CullTransparentMesh: 0
---- !u!1 &1179973350 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1378374113262170, guid: 1dd6ea697206b27408947246443b7d37,
-    type: 2}
-  m_PrefabInternal: {fileID: 761381957}
 --- !u!1 &1202360275
 GameObject:
   m_ObjectHideFlags: 0

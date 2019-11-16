@@ -628,6 +628,7 @@ MonoBehaviour:
   - {fileID: 1208668860476200, guid: bec65ac0f32b3b5428d7a4208cc375e8, type: 2}
   - {fileID: 1965843649271408, guid: f51ba807edf476b4caee47963c0f4f6f, type: 2}
   - {fileID: 1194575172788428, guid: 39de3d8021419814487a03f3629847da, type: 2}
+  - {fileID: 1745474300218848, guid: 99d11617f7655a9438c5b4cdf12e0377, type: 2}
   bpm: {fileID: 114727890309084512}
   healthPercentage: 0
   timer: 0
@@ -648,6 +649,7 @@ MonoBehaviour:
   explotion: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 2}
   floatingText: {fileID: 1931630329274424, guid: d795acb1e9f0d3c4d9efa884dc31b01a,
     type: 2}
+  bar: {fileID: 0}
 --- !u!114 &114694504944299050
 MonoBehaviour:
   m_ObjectHideFlags: 1

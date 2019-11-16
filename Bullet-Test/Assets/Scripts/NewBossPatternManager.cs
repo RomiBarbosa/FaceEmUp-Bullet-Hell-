@@ -51,7 +51,7 @@ public class NewBossPatternManager : MonoBehaviour {
         currentPattern = pattern;
     }
 
-    private float timer = 5f;
+    private float timer = 3f;
     public float patternTime = 5f;
 
     public int arrayIndex = 0;
