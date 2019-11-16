@@ -75,9 +75,8 @@ public class PlayerGuns : MonoBehaviour {
 
         if (col.tag == "IncreaseDamage")
         {
-
-            bullet.GetComponent<BulletPlayer>().IncreaseDamage(0.2f);
-            //Guns[ind].GetComponent<GunPlayer>().Change();
+            
+            Guns[ind].GetComponent<GunPlayer>().Change();
             Destroy(col.gameObject);
             ManagerSounds.ins.PowerUp();
         }

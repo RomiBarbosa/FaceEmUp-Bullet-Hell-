@@ -26,15 +26,5 @@ public class BulletPlayer : MonoBehaviour {
             //boss.TakeDamage(damage); no funciona desde aca ni idea
         }
     }
-    public void IncreaseDamage(float amount)
-    {
-        if (damage < 2)
-        {
-            damage += amount;
-        }
-        if (damage > 2)
-        {
-            damage = 2;
-        }
-    }
+    
 }

@@ -9,7 +9,7 @@ public class DeployPowerUp : MonoBehaviour {
     private System.Random rnd = new System.Random();
     private System.Random rndIndex = new System.Random();
 
-    private int powerUpChance = 10;
+    private int powerUpChance = 5;
     public GameObject[] powerups;
 
     
@@ -17,12 +17,19 @@ public class DeployPowerUp : MonoBehaviour {
     private void InstantiatePowerUp()
     {
         Vector2 position = transform.position;
-        var chance = rnd.Next(0, 101);
-        if (chance < powerUpChance)
+        if (powerups.Length == 1)
         {
-            var i = rnd.Next(1, 5);
-            Debug.Log("Power up: " + i);
-            Instantiate(powerups[i - 1], position, Quaternion.identity);
+            Instantiate(powerups[0], position, Quaternion.identity);
+        }
+        else
+        {
+            var chance = rnd.Next(0, 101);
+            if (chance < powerUpChance)
+            {
+                var i = rnd.Next(1, 5);
+                Debug.Log("Power up: " + i);
+                Instantiate(powerups[i - 1], position, Quaternion.identity);
+            }
         }
     }
 

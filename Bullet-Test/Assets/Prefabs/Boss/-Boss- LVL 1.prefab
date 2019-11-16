@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 95881279106812222}
   - component: {fileID: 60275484731600374}
   - component: {fileID: 50560668842296976}
+  - component: {fileID: 114514654968366298}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -620,7 +621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a1c0085b86bbd647b937eb1de0fb77b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 125
+  health: 250
   bossGun: {fileID: 114256525843517550}
   bossGun2: {fileID: 114694504944299050}
   bullets:
@@ -650,6 +651,19 @@ MonoBehaviour:
   floatingText: {fileID: 1931630329274424, guid: d795acb1e9f0d3c4d9efa884dc31b01a,
     type: 2}
   bar: {fileID: 1063111008428698}
+--- !u!114 &114514654968366298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1774402971514128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578defdec68694a4ebe9494eef5eccfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerups:
+  - {fileID: 1722636035509072, guid: fee4b6415ac30ce4990c6612933742b8, type: 2}
 --- !u!114 &114694504944299050
 MonoBehaviour:
   m_ObjectHideFlags: 1

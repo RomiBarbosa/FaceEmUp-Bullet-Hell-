@@ -284,7 +284,7 @@ public class BossBehaviour : MonoBehaviour {
         bossGun.cooldown = 0;
         bossGun.speedRotate = 70;
         bossGun.ChangeBullet(bullets[1]);
-        bossGun.bulletForce = 4;
+        bossGun.bulletForce = 6;
     }
 
     void Pattern_THEFlower()
@@ -360,8 +360,8 @@ public class BossBehaviour : MonoBehaviour {
         bossGun2.cooldown = 0;
         bossGun.speedRotate = -70;
         bossGun2.speedRotate = 70;
-        bossGun.ChangeBullet(bullets[0]);
-        bossGun2.ChangeBullet(bullets[0]);
+        bossGun.ChangeBullet(bullets[1]);
+        bossGun2.ChangeBullet(bullets[1]);
         bossGun.bulletForce = 8;
         bossGun2.bulletForce = 8;
     }

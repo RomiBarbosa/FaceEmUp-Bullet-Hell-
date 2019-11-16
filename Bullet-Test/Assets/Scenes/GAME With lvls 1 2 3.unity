@@ -2529,7 +2529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Wave:
-  - {fileID: 1063111008428698, guid: 9b55bd8a056069f43ab6904adf1408ee, type: 2}
+  - {fileID: 1063111008428698, guid: bab8c435dbe68a54ab0feb2f62dccf9b, type: 2}
   Rate: 0
   spawn: 0
   posxmax: 0
