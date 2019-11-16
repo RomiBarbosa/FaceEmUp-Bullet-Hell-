@@ -49,8 +49,8 @@ public class GameManager : MonoBehaviour {
         }
 
         time += Time.deltaTime;
-        var minutes = ((int)time / 60).ToString();
-        var seconds = (time % 60).ToString("f0");
+        var minutes = Mathf.Floor((time % 3600) / 60).ToString("00"); /*((int)time / 60).ToString();*/
+        var seconds = (time % 60).ToString("00");
 
         timeUI.text = minutes + ":" + seconds;
 

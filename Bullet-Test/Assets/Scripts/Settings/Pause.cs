@@ -127,7 +127,14 @@ public class Pause : MonoBehaviour {
     {
         Time.timeScale = 0;
         InPause = true;
-        pausePanel.SetActive(true);
+        if (GameManager.ins.ingame == false)
+        {
+            pausePanel.SetActive(false);
+        } else
+        {
+            pausePanel.SetActive(true);
+        }
+        
     }
 
     public void BackGame()
