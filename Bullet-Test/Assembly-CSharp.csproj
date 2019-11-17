@@ -128,11 +128,13 @@
     <Compile Include="Assets\Scripts\Settings\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Settings\Fade.cs" />
     <Compile Include="Assets\Scripts\Settings\FadeImage.cs" />
+    <Compile Include="Assets\Scripts\Settings\flashing.cs" />
     <Compile Include="Assets\Scripts\Settings\GameManager.cs" />
     <Compile Include="Assets\Scripts\Settings\HideCursor.cs" />
     <Compile Include="Assets\Scripts\Settings\ManagerWaves.cs" />
     <Compile Include="Assets\Scripts\Settings\Pause.cs" />
     <Compile Include="Assets\Scripts\Settings\PrincipalMenu.cs" />
+    <Compile Include="Assets\Scripts\Settings\ScaleMenu.cs" />
     <Compile Include="Assets\Scripts\Settings\Waves.cs" />
     <Compile Include="Assets\Scripts\Settings\WinGame.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />

@@ -2280,6 +2280,7 @@ MonoBehaviour:
   mw: {fileID: 828290317}
   WinGameUI: {fileID: 1905197011225562, guid: e88aa62cdf8561641b5bb33b8a8c3a0c, type: 2}
   c: 0
+  WINGAME: 0
 --- !u!114 &828290312
 MonoBehaviour:
   m_ObjectHideFlags: 0
