@@ -635,6 +635,7 @@ MonoBehaviour:
   timer: 0
   materiales:
   - {fileID: 2100000, guid: 27871c14dd5c43a4abe10b3695e324ad, type: 2}
+  - {fileID: 2100000, guid: 308ec7b790b155f4f8bb1df2f1c70575, type: 2}
   hit: 0
   waypoints:
   - {fileID: 1858810986741306}

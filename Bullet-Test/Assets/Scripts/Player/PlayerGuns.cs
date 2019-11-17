@@ -78,11 +78,14 @@ public class PlayerGuns : MonoBehaviour {
 
         if (col.tag == "IncreaseDamage")
         {
-
-            gunManager.GetComponent<GunPlayer>().Change();
-            gunManager.GetComponent<GunPlayer>().damage +=0.2f;
-            Destroy(col.gameObject);
-            ManagerSounds.ins.PowerUp();
+            if (gunManager.GetComponent<GunPlayer>().damage <= 2f)
+            {
+                gunManager.GetComponent<GunPlayer>().Change();
+                gunManager.GetComponent<GunPlayer>().damage += 0.2f;
+                Destroy(col.gameObject);
+                ManagerSounds.ins.PowerUp();
+            }
+           
         }
         if (col.tag == "Life+")
         {
