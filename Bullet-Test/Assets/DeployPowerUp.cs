@@ -14,7 +14,7 @@ public class DeployPowerUp : MonoBehaviour {
 
     
 
-    private void InstantiatePowerUp()
+    public void InstantiatePowerUp()
     {
         Vector2 position = transform.position;
         if (powerups.Length == 1)
@@ -33,9 +33,9 @@ public class DeployPowerUp : MonoBehaviour {
         }
     }
 
-    private void OnDestroy()
-    {
-        InstantiatePowerUp();
-    }
+    //private void OnDestroy()
+    //{
+    //    InstantiatePowerUp();
+    //}
 
 }

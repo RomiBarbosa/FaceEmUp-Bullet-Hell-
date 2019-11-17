@@ -266,6 +266,7 @@ MonoBehaviour:
   FloatingText: {fileID: 1931630329274424, guid: d795acb1e9f0d3c4d9efa884dc31b01a,
     type: 2}
   timeToSelfDestruct: 10
+  dp: {fileID: 114803983511312572}
 --- !u!212 &212603985570543726
 SpriteRenderer:
   m_ObjectHideFlags: 1

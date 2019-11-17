@@ -33,7 +33,7 @@ public class Pause : MonoBehaviour {
 
     void Update () {
 
-        if (Input.GetButtonDown("Pause") && InPause == false )
+        if (Input.GetButtonDown("Pause") && InPause == false)
         {
             PauseGame();
             ManagerSounds.ins.Pause();
@@ -41,7 +41,6 @@ public class Pause : MonoBehaviour {
         else if (Input.GetButtonDown("Pause") && InPause == true)
         {
             BackGame();
-
         }
 
         if (Input.GetButtonDown("ralentizar") && SlowDown == false && InPause == false && canSlowTime == true)

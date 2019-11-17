@@ -14,8 +14,12 @@ public class EnemyBehavior : MonoBehaviour {
     public GameObject explotion;
     public GameObject FloatingText;
     public float timeToSelfDestruct;
-    void Start () {
-        Destroy(this.gameObject, timeToSelfDestruct);
+    public DeployPowerUp dp;
+
+
+    void Start() {
+    
+       Destroy(this.gameObject, timeToSelfDestruct);
         rend = GetComponent<Renderer>();
         rend.enabled = true;
         rend.sharedMaterial = materiales[0];
@@ -34,6 +38,7 @@ public class EnemyBehavior : MonoBehaviour {
             {
                 hit = false;
                 countdown = 0.3f;
+
                 anim.SetBool("death", false);
             }
 
@@ -54,6 +59,7 @@ public class EnemyBehavior : MonoBehaviour {
                 GetComponent<SpawnBulletsWhenDie>().SpawnBullets();
                 Destroy(this.gameObject);
                 Instantiate(explotion, transform.position, transform.rotation);
+                dp.InstantiatePowerUp();
                 if (FloatingText)
                 {
                     ShowFloatingText();
@@ -64,6 +70,7 @@ public class EnemyBehavior : MonoBehaviour {
             {
                 Destroy(this.gameObject);
                 Instantiate(explotion, transform.position, transform.rotation);
+                dp.InstantiatePowerUp();
                 if (FloatingText)
                 {
                     ShowFloatingText();

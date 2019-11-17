@@ -242,6 +242,7 @@ MonoBehaviour:
   FloatingText: {fileID: 1931630329274424, guid: d795acb1e9f0d3c4d9efa884dc31b01a,
     type: 2}
   timeToSelfDestruct: 10
+  dp: {fileID: 114354643432088770}
 --- !u!114 &114354643432088770
 MonoBehaviour:
   m_ObjectHideFlags: 1

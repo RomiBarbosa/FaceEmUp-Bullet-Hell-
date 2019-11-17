@@ -48,9 +48,10 @@ public class BossBehaviour : MonoBehaviour {
     private Vector2 position;
 
     public GameObject bar;
-
+    public DeployPowerUp dp;
     private void Start()
     {
+        dp = GetComponent<DeployPowerUp>();
         healthPercentage = 100f;
        // health = 500f;
         movementTime = setMovementTime;
@@ -154,16 +155,19 @@ public class BossBehaviour : MonoBehaviour {
            
             if (countdown2 >= 1.3f)
             {
-               
-                Instantiate(explotion, transform.position, transform.rotation);
-                ShowFloatingText();
-                Destroy(bar);
+                
+                    Instantiate(explotion, transform.position, transform.rotation);
+                    ShowFloatingText();
+                    Destroy(bar);
 
-                ManagerPuntps.instance.AddScore(points);
-                GameManager.ins.LevelUp();
+                    ManagerPuntps.instance.AddScore(points);
+                    GameManager.ins.LevelUp();
 
-                //destroy all enemybullets when boss is defeated
-                CleanSceneWhenDefeated();
+                    //destroy all enemybullets when boss is defeated
+                    CleanSceneWhenDefeated();
+                dp.InstantiatePowerUp();
+
+
                 // GameManager.ins.WinGame();
             }
         }

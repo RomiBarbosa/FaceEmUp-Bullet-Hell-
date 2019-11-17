@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour {
     public ManagerWaves mw;
 
     public GameObject WinGameUI;
+    public float c;
     private void Awake()
     {
         ins = this;
@@ -56,7 +57,11 @@ public class GameManager : MonoBehaviour {
 
         if (Input.GetButtonDown("PressStart") && ingame == false)
         {
-            scene.ChangScene(SceneName);
+           
+                scene.ChangScene(SceneName);
+            
+            //scene.ChangScene(SceneName);
+
         }
 
         levelUI.text = Level.ToString() ;

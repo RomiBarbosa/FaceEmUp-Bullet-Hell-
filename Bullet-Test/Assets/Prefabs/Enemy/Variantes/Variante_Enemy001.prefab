@@ -21,13 +21,13 @@ GameObject:
   - component: {fileID: 4942600381625256}
   - component: {fileID: 212563833354680696}
   - component: {fileID: 114742561366752626}
+  - component: {fileID: 114843576206130732}
   - component: {fileID: 114297944648071952}
   - component: {fileID: 95149916501375380}
   - component: {fileID: 60752838238344796}
   - component: {fileID: 114234216522741008}
   - component: {fileID: 50097092398220748}
   - component: {fileID: 114248547024328204}
-  - component: {fileID: 114843576206130732}
   m_Layer: 0
   m_Name: Variante_Enemy001
   m_TagString: EnemyBullet
@@ -271,6 +271,7 @@ MonoBehaviour:
   FloatingText: {fileID: 1931630329274424, guid: d795acb1e9f0d3c4d9efa884dc31b01a,
     type: 2}
   timeToSelfDestruct: 15
+  dp: {fileID: 114843576206130732}
 --- !u!114 &114843576206130732
 MonoBehaviour:
   m_ObjectHideFlags: 1

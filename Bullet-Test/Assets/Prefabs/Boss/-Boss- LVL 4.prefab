@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 95881279106812222}
   - component: {fileID: 60275484731600374}
   - component: {fileID: 50560668842296976}
+  - component: {fileID: 114916000632612374}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Boss
@@ -649,7 +650,8 @@ MonoBehaviour:
   explotion: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 2}
   floatingText: {fileID: 1931630329274424, guid: d795acb1e9f0d3c4d9efa884dc31b01a,
     type: 2}
-  bar: {fileID: 0}
+  bar: {fileID: 1436733466942062}
+  dp: {fileID: 114916000632612374}
 --- !u!114 &114694504944299050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -720,6 +722,19 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Boss
+--- !u!114 &114916000632612374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1774402971514128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578defdec68694a4ebe9494eef5eccfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerups:
+  - {fileID: 1618655795316856, guid: 01119d9118d1cc14894c0dabae6f37e9, type: 2}
 --- !u!114 &114922280821699440
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -76,4 +76,6 @@ public class ManagerSounds : MonoBehaviour {
         music[0].volume = 0.4f;
         music[1].volume = 0.4f;
     }
+
+
 }

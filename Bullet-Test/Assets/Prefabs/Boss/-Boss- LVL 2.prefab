@@ -664,6 +664,7 @@ MonoBehaviour:
   floatingText: {fileID: 1931630329274424, guid: d795acb1e9f0d3c4d9efa884dc31b01a,
     type: 2}
   bar: {fileID: 1063111008428698}
+  dp: {fileID: 114230548564823384}
 --- !u!114 &114694504944299050
 MonoBehaviour:
   m_ObjectHideFlags: 1
