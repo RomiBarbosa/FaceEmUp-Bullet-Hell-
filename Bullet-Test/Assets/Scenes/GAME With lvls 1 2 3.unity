@@ -2113,6 +2113,8 @@ MonoBehaviour:
   music:
   - {fileID: 828290315}
   - {fileID: 828290319}
+  c1: 0
+  c2: 0
 --- !u!82 &828290308
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2280,6 +2282,7 @@ MonoBehaviour:
   mw: {fileID: 828290317}
   WinGameUI: {fileID: 1905197011225562, guid: e88aa62cdf8561641b5bb33b8a8c3a0c, type: 2}
   c: 0
+  WINGAME: 0
 --- !u!114 &828290312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4803,7 +4806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4812,11 +4815,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 28cb4063a8104224ca93b20ded5b8f42, type: 3}
-    m_FontSize: 9
+    m_FontSize: 13
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 9
-    m_MaxSize: 46
+    m_MinSize: 1
+    m_MaxSize: 14
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1

@@ -7,7 +7,9 @@ public class ManagerSounds : MonoBehaviour {
     public static ManagerSounds ins;
     public AudioSource[] sounds;
     public AudioSource[] music;
-
+    bool fade1;
+    bool fade2;
+    public float c1, c2;
     private void Start()
     {
         PlayMusic();
@@ -55,15 +57,19 @@ public class ManagerSounds : MonoBehaviour {
             case "boss":
                 music[1].Play();
                 music[0].Stop();
+                
                 break;
 
             case "level":
                 music[0].Play();
                 music[1].Stop();
+               
                 break;
 
         }
     }
+
+   
 
     public void BajarVolumen()
     {
