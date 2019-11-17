@@ -152,7 +152,6 @@ public class BossBehaviour : MonoBehaviour {
             Destroy(gameObject, 1.5f);
             CleanSceneWhenDefeated();
             countdown2 += Time.deltaTime;
-           
             if (countdown2 >= 1.3f)
             {
                 
@@ -165,7 +164,12 @@ public class BossBehaviour : MonoBehaviour {
 
                     //destroy all enemybullets when boss is defeated
                     CleanSceneWhenDefeated();
-                dp.InstantiatePowerUp();
+                Destroy(gameObject);
+                if (GameManager.ins.WINGAME != true)
+                {
+                    dp.InstantiatePowerUp();
+                }
+                
 
 
                 // GameManager.ins.WinGame();

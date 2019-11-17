@@ -113,7 +113,11 @@ public class ManagerPuntps : MonoBehaviour {
 
     public void AddScore(float amount)
     {
-        this.score = score + amount;
+        if (GameManager.ins.ingame == true)
+        {
+            this.score = score + amount;
+        }
+        
     }
 
     public void CloseScore()

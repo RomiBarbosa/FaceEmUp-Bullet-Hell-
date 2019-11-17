@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour {
 
     public GameObject WinGameUI;
     public float c;
+    public bool WINGAME;
     private void Awake()
     {
         ins = this;
@@ -79,8 +80,10 @@ public class GameManager : MonoBehaviour {
     {
         //WinUI.SetActive(true);
         //ingame = false;
-        
+        ingame = false;
+       // pause.PauseGame();
         Instantiate(WinGameUI, transform.position, transform.rotation);
+        WINGAME=true;
     }
 
     public void LevelUp()
