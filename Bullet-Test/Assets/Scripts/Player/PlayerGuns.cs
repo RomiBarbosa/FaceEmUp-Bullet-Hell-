@@ -67,7 +67,7 @@ public class PlayerGuns : MonoBehaviour {
         {
 
             ManagerSounds.ins.PowerUp();
-            if (gunManager.GetComponent<GunPlayer>().cooldown >= 0.3f)
+            if (gunManager.GetComponent<GunPlayer>().cooldown > 0.3f)
             {
                 gunManager.GetComponent<GunPlayer>().cooldown -= 0.1f;
             }
