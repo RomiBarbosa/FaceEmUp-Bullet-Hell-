@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
     Vector2 movement;
     public float xMin, xMax, yMin, yMax;
     public float focusSpeed;
+    public Joystick joystick;
 
     void Update () {
         if (gameObject.name =="Player2")
@@ -18,8 +19,11 @@ public class PlayerMovement : MonoBehaviour {
 
         }
         else if(gameObject.name == "Player") {
-            movement.x = Input.GetAxisRaw("Horizontal");
-            movement.y = Input.GetAxisRaw("Vertical");
+            //movement.x = Input.GetAxisRaw("Horizontal");
+            //movement.y = Input.GetAxisRaw("Vertical");
+
+            movement.x = joystick.Horizontal;
+            movement.y = joystick.Vertical;
         }
         
 
@@ -29,7 +33,7 @@ public class PlayerMovement : MonoBehaviour {
             moveSpeed = focusSpeed;
             
         }
-        else { moveSpeed = 7;
+        else { moveSpeed = 11;
 
         }
 

@@ -16,6 +16,7 @@ public class GunPlayer : MonoBehaviour {
     private void Update()
     {
         Change();
+
     }
     public void Change()
     {
@@ -23,6 +24,14 @@ public class GunPlayer : MonoBehaviour {
         {
             canyon[i].cooldown = this.cooldown;
             canyon[i].damage = this.damage;
+        }
+    }
+
+    public void ShootCanyon()
+    {
+        for (int i = 0; i < canyon.Length; i++)
+        {
+            canyon[i].ShootGUN();
         }
     }
 }

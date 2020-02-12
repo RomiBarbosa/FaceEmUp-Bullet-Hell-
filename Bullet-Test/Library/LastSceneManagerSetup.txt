@@ -1,4 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/GAME With lvls 1 2 3.unity
+- path: Assets/Scenes/MobileScene.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0

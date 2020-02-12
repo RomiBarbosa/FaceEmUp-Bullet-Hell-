@@ -11,6 +11,9 @@ TagManager:
   - IncreaseDamage
   - EnemyBullet
   - Bomb+
+  - Boss
+  - FxTemporaire
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
@@ -20,7 +23,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - input
   - 
   - 
   - 

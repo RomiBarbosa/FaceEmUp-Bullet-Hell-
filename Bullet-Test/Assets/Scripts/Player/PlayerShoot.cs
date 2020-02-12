@@ -21,14 +21,26 @@ public class PlayerShoot : MonoBehaviour {
         //    time = 0;
         //}
 
-        if (Input.GetButton/*Down*/("Fire1") && time >= cooldown && Time.timeScale != 0)
+        //if (Input.GetButton/*Down*/("Fire1") && time >= cooldown && Time.timeScale != 0)
+        //{
+        //    ShootBullet();
+        //    time = 0;
+        //    ManagerSounds.ins.Shoot();
+        //}
+
+    }
+
+    public void ShootGUN() //added mobile
+    {
+        if (time >= cooldown && Time.timeScale != 0)
         {
             ShootBullet();
             time = 0;
             ManagerSounds.ins.Shoot();
         }
-
+      
     }
+
 
     void ShootBullet()
     {

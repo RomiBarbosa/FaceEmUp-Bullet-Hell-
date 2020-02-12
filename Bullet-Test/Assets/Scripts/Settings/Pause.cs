@@ -23,6 +23,7 @@ public class Pause : MonoBehaviour {
     public Image focus;
 
     public GameObject pausePanel;
+
     private void Start()
     {
         maxCool = 900;
@@ -32,6 +33,8 @@ public class Pause : MonoBehaviour {
 
 
     void Update () {
+
+        
 
         if (Input.GetButtonDown("Pause") && InPause == false)
         {
@@ -43,6 +46,8 @@ public class Pause : MonoBehaviour {
             BackGame();
         }
 
+
+       
         if (Input.GetButtonDown("ralentizar") && SlowDown == false && InPause == false && canSlowTime == true)
         {
             SlowDownTime();
@@ -116,6 +121,19 @@ public class Pause : MonoBehaviour {
         return result;
     }
 
+    public void SlowTimeButton()
+    {
+        if (SlowDown == false && InPause == false && canSlowTime == true)
+        {
+            SlowDownTime();
+            starttimer = true;
+            // canSlowTime = false;
+            aux = true;
+        }
+       
+    }
+
+
     public void SlowDownTime()
     {
         Time.timeScale = 0.5f;
@@ -127,17 +145,26 @@ public class Pause : MonoBehaviour {
 
     public void PauseGame()
     {
-        Time.timeScale = 0;
-        InPause = true;
-        if (GameManager.ins.ingame == false)
+        if (InPause)
         {
-            pausePanel.SetActive(false);
-        } else
-        {
-            pausePanel.SetActive(true);
+            BackGame();
         }
+        else
+        {
+            Time.timeScale = 0;
+            InPause = true;
+            if (GameManager.ins.ingame == false)
+            {
+                pausePanel.SetActive(false);
+            }
+            else
+            {
+                pausePanel.SetActive(true);
+            }
 
-        ManagerSounds.ins.BajarVolumen();
+            ManagerSounds.ins.BajarVolumen();
+        }
+       
         
     }
 

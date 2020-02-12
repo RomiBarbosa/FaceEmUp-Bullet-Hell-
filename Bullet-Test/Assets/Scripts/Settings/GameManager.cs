@@ -56,6 +56,11 @@ public class GameManager : MonoBehaviour {
 
         timeUI.text = minutes + ":" + seconds;
 
+        if (Input.touchCount> 0 && ingame == false)
+        {
+            scene.ChangScene(SceneName);
+        }
+
         if (Input.GetButtonDown("PressStart") && ingame == false)
         {
            

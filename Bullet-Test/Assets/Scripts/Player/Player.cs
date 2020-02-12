@@ -32,6 +32,9 @@ public class Player : MonoBehaviour {
         //    invulnerable = true;
 
         //}
+
+
+
         if (invulnerable == true)
         {
             countdown -= Time.deltaTime;
