@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour {
     public GameObject WinGameUI;
     public float c;
     public bool WINGAME;
+
+    bool flag;
     private void Awake()
     {
         ins = this;
@@ -45,9 +47,10 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (players[0].health <= 0)
+        if (players[0].health <= 0 && flag == false)
         {
             GameOver();
+            flag = true;
         }
 
         time += Time.deltaTime;

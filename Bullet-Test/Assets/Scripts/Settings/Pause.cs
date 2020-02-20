@@ -34,82 +34,81 @@ public class Pause : MonoBehaviour {
 
     void Update () {
 
-        
-
-        if (Input.GetButtonDown("Pause") && InPause == false)
+        if (GameManager.ins.ingame ==true)
         {
-            PauseGame();
-            ManagerSounds.ins.Pause();
-        }
-        else if (Input.GetButtonDown("Pause") && InPause == true)
-        {
-            BackGame();
-        }
-
-
-       
-        if (Input.GetButtonDown("ralentizar") && SlowDown == false && InPause == false && canSlowTime == true)
-        {
-            SlowDownTime();
-            starttimer = true;
-            // canSlowTime = false;
-            aux = true;
-
-
-        }
-        else if (Input.GetButtonUp("ralentizar") && SlowDown == true)
-        {
-            canSlowTime = false;
-            BackGame();
-                countdown = 0;
-            starttimer = false;
-            aux = false;
-
-
-        }
-
-        if (starttimer)
-        {
-            countdown += Time.deltaTime;
-            Cool = 0;
-            if (countdown >= 3)
+            if (Input.GetButtonDown("Pause") && InPause == false)
+            {
+                PauseGame();
+                ManagerSounds.ins.Pause();
+            }
+            else if (Input.GetButtonDown("Pause") && InPause == true)
             {
                 BackGame();
-
-                countdown = 0;
-
-                canSlowTime = false;
-                starttimer = false;
-                Cool = 0;
             }
-        }
 
-        //esperar maso menos 3 segundos
-        if (canSlowTime == false)
-        {
-            countdown2 += Time.deltaTime;
-            Cool = countdown2;
-           // focus.color = Color.grey;
-            if (countdown2 >= cooldown)
+            if (Input.GetButtonDown("ralentizar") && SlowDown == false && InPause == false && canSlowTime == true)
             {
-                canSlowTime = true;
-                countdown2 = 0;
+                SlowDownTime();
+                starttimer = true;
+                // canSlowTime = false;
+                aux = true;
+
+
+            }
+            else if (Input.GetButtonUp("ralentizar") && SlowDown == true)
+            {
+                canSlowTime = false;
+                BackGame();
+                countdown = 0;
+                starttimer = false;
+                aux = false;
+            }
+
+            if (starttimer)
+            {
+                countdown += Time.deltaTime;
+                Cool = 0;
+                if (countdown >= 3)
+                {
+                    BackGame();
+
+                    countdown = 0;
+
+                    canSlowTime = false;
+                    starttimer = false;
+                    Cool = 0;
+                }
+            }
+
+            //esperar maso menos 3 segundos
+            if (canSlowTime == false)
+            {
+                countdown2 += Time.deltaTime;
+                Cool = countdown2;
+                // focus.color = Color.grey;
+                if (countdown2 >= cooldown)
+                {
+                    canSlowTime = true;
+                    countdown2 = 0;
+                    Cool = 1;
+                    // focus.color = Color.yellow;
+                }
+            }
+            if (canSlowTime == true && aux != true)
+            {
                 Cool = 1;
-               // focus.color = Color.yellow;
+                porcentaje = 1;
+                cooldownui.fillAmount = porcentaje;
+                // focus.color = Color.gray;
+            }
+            else
+            {
+                porcentaje = Porcentaje();
+                cooldownui.fillAmount = porcentaje;
             }
         }
-        if (canSlowTime == true && aux != true)
-        {
-            Cool = 1;
-            porcentaje = 1;
-            cooldownui.fillAmount = porcentaje;
-           // focus.color = Color.gray;
-        }
-        else
-        {
-            porcentaje = Porcentaje();
-            cooldownui.fillAmount = porcentaje;
-        }
+
+       
         
        
 
