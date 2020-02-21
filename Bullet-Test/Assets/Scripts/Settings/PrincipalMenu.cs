@@ -27,6 +27,7 @@ public class PrincipalMenu : MonoBehaviour {
             if (c >= 1)
             {
                 scene.ChangScene(SceneName);
+                w = false;
             }
            
         }

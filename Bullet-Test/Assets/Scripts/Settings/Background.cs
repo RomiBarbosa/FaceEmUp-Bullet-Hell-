@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Background : MonoBehaviour {
-
-    public float speed;
-	void Update () {
-        if (transform.position.y > -15)
-        {
-            transform.Translate(-Vector3.up * (Time.deltaTime * speed));
-        } else
-        {
-            transform.position = new Vector3(transform.position.x, 30, transform.position.z);
-        }
+public class Background : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
         
-	}
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
 }
