@@ -32,7 +32,7 @@ public class Letter : MonoBehaviour
             {
                 ShowLetter();
             }
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Fire1"))
             {
                 ready = true;
             }

@@ -355,7 +355,7 @@ public class BossBehaviour : MonoBehaviour {
         bossGun2.canShoot = false;
         bossGun.canRotate = true;
         
-        bossGun.cooldown = 0.1f;
+        bossGun.cooldown = 0.4f;
         
         bossGun.speedRotate = 10;
         bossGun.speedRotate = -10;

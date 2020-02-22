@@ -12,21 +12,29 @@ public class ScorePersistence : MonoBehaviour
 
     private void Start()
     {
+       //InitializeTable();
+        LoadHighscore();
+        PlayerPrefs.SetInt("Highscore", players[0].score);
         //InitializeTable();
+    }
+
+    public int getHighScore()
+    {
+        return players[0].score;
     }
 
     public void InitializeTable()
     {
         players.Clear();
-        BinaryFormatter bf = new BinaryFormatter();
-        FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.OpenOrCreate);
-        bf.Serialize(file, players);
-        file.Close();
 
         for (int i = 0; i < 5; i++)
         {
             SaveHighscore("non", 0);
         }
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.OpenOrCreate);
+        bf.Serialize(file, players);
+        file.Close();
 
     }
     public bool IsNewHighscore(int score)
@@ -41,6 +49,7 @@ public class ScorePersistence : MonoBehaviour
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.OpenOrCreate);
         bf.Serialize(file, players);
+        PlayerPrefs.SetInt("Highscore", players[0].score);
         file.Close();
     }
 

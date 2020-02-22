@@ -18,7 +18,7 @@ public class ManagerPuntps : MonoBehaviour {
     public GameObject[] Heart;
     public GameObject[] Bombs;
     public static ManagerPuntps instance;
-  
+    public ScorePersistence sc;
     int index;
 
     public Player player;
@@ -36,8 +36,6 @@ public class ManagerPuntps : MonoBehaviour {
         {
             Bombs[i].SetActive(false);
         }
-
-     highscore = PlayerPrefs.GetFloat("Highscore");
     }
 
     private void Update()
@@ -46,11 +44,12 @@ public class ManagerPuntps : MonoBehaviour {
         ShowBombas();
         Score();
         CloseScore();
-
+        highscore = sc.getHighScore();
         ui_highscore.text = highscore.ToString();
         if (score > highscore)
         {
             PlayerPrefs.SetFloat("Highscore",score);
+            highscore = score;
             ui_highscore.text = score.ToString();
         }
 
