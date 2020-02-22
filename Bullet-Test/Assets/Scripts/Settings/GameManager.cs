@@ -44,13 +44,25 @@ public class GameManager : MonoBehaviour {
         ingame = true;
     }
 	
+    //IEnumerator GoToHighscore()
+    //{
+
+    //    yield return new WaitForSeconds(3f);
+    //    scene.ChangScene("Highscore");
+    //}
+
 	// Update is called once per frame
 	void Update () {
 
         if (players[0].health <= 0 && flag == false)
         {
             GameOver();
+            PlayerPrefs.SetInt("LastScore", (int)ManagerPuntps.instance.score);
+
+           // StartCoroutine(GoToHighscore());
             flag = true;
+
+            
         }
 
         time += Time.deltaTime;
@@ -66,9 +78,9 @@ public class GameManager : MonoBehaviour {
 
         if (Input.GetButtonDown("PressStart") && ingame == false)
         {
-           
-                scene.ChangScene(SceneName);
-            
+
+            //scene.ChangScene(SceneName);
+            scene.ChangScene("Highscore");
             //scene.ChangScene(SceneName);
 
         }

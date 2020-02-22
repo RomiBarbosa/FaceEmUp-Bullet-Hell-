@@ -25,8 +25,8 @@ public class PlayerMovement : MonoBehaviour {
             //movement.x = joystick.Horizontal;
             //movement.y = joystick.Vertical;
         }
-        movement.x = joystick.Horizontal;
-        movement.y = joystick.Vertical;
+        //movement.x = joystick.Horizontal;
+        //movement.y = joystick.Vertical;
 
 
         if (Input.GetButton("ralentizar"/*KeyCode.Z*/))
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour {
             moveSpeed = focusSpeed;
             
         }
-        else { moveSpeed = 16;
+        else { moveSpeed = 10;
 
         }
 

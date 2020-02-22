@@ -25,7 +25,7 @@ public class Parallax : MonoBehaviour
             }
             else
             {
-                transform.position = new Vector3(-0.17f, start, 0);
+                transform.position = new Vector3(0, start, transform.position.z);
             }
         }
        
