@@ -19,17 +19,15 @@ public class PlayerMovement : MonoBehaviour {
 
         }
         else if(gameObject.name == "Player") {
+
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
             //movement.x = joystick.Horizontal;
             //movement.y = joystick.Vertical;
         }
-        //movement.x = joystick.Horizontal;
-        //movement.y = joystick.Vertical;
 
-
-        if (Input.GetButton("ralentizar"/*KeyCode.Z*/))
+        if (Input.GetButton("ralentizar"))
         {
             moveSpeed = focusSpeed;
             

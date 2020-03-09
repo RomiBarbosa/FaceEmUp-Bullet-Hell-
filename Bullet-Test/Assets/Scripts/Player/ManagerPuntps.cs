@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class ManagerPuntps : MonoBehaviour {
 
-  //  public static ManagerPuntps ins;
-
     public float score;
     public float highscore;
     public int importantscore;
@@ -14,7 +12,6 @@ public class ManagerPuntps : MonoBehaviour {
     public Text ui_importantscore;
     public Text ui_highscore;
     public Text ui_vida;
-  //  public Text ui_bombas;
     public GameObject[] Heart;
     public GameObject[] Bombs;
     public static ManagerPuntps instance;
@@ -36,15 +33,15 @@ public class ManagerPuntps : MonoBehaviour {
         {
             Bombs[i].SetActive(false);
         }
+        highscore = PlayerPrefs.GetFloat("Highscore");
     }
 
     private void Update()
     {
         ShowVida();
-        ShowBombas();
         Score();
         CloseScore();
-        highscore = sc.getHighScore();
+        highscore = PlayerPrefs.GetFloat("Highscore");
         ui_highscore.text = highscore.ToString();
         if (score > highscore)
         {
@@ -99,14 +96,8 @@ public class ManagerPuntps : MonoBehaviour {
             }
         }
     }
-    public void ShowBombas()
-    {
-
-    }
     public void Score()
     {
-        Debug.Log(score);
-        // ui_score.text = player.score0.ToString();
         ui_score.text = score.ToString();
     }
 
@@ -121,11 +112,8 @@ public class ManagerPuntps : MonoBehaviour {
 
     public void CloseScore()
     {
-        ui_importantscore.text = player.score1.ToString();
+        ui_importantscore.text = player.graze.ToString();
     }
-    private void Awake()
-    {
-        //ins = this;
-    }
+
 
 }

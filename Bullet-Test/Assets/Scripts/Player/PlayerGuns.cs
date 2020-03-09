@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerGuns : MonoBehaviour {
 
     public GameObject[] Guns;
-   // public GameObject currentGun;
     public int ind;
     public bool focus;
     public GameObject bullet;
@@ -22,14 +21,12 @@ public class PlayerGuns : MonoBehaviour {
         Guns[0].SetActive(true);
         CurrentGun = Guns[0];
         ind = 0;
+
     }
     private void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Z))
-        //{
-        //    ChangeGun();
-        //}
-        if (Input.GetButton("ralentizar"/*KeyCode.Z*/))
+      
+        if (Input.GetButton("ralentizar"))
         {
             Guns[1].SetActive(false);
             Guns[0].SetActive(true);
@@ -76,11 +73,11 @@ public class PlayerGuns : MonoBehaviour {
    void ChangeGun()
     {
         Guns[ind].SetActive(false);
-        Guns[newIndex()].SetActive(true);
+        Guns[NewIndex()].SetActive(true);
     }
 
 
-    int newIndex()
+    int NewIndex()
     {
         if (ind < 1)
         {
@@ -94,55 +91,5 @@ public class PlayerGuns : MonoBehaviour {
     }
 
 
-    void OnTriggerEnter2D(Collider2D col)
-    {
 
-        if (col.tag == "DecreaseCooldown")
-        {
-
-            ManagerSounds.ins.PowerUp();
-            if (gunManager.GetComponent<GunPlayer>().cooldown > 0.3f)
-            {
-                gunManager.GetComponent<GunPlayer>().cooldown -= 0.1f;
-            }
-            
-            //Guns[ind].GetComponent<GunPlayer>().Change();
-            Destroy(col.gameObject);
-        }
-
-        if (col.tag == "IncreaseDamage")
-        {
-            if (gunManager.GetComponent<GunPlayer>().damage <= 2f)
-            {
-                gunManager.GetComponent<GunPlayer>().Change();
-                gunManager.GetComponent<GunPlayer>().damage += 0.2f;
-                Destroy(col.gameObject);
-                ManagerSounds.ins.PowerUp();
-            }
-           
-        }
-        if (col.tag == "Life+")
-        {
-            if (gameObject.GetComponent<Player>().health <4)
-            {
-                gameObject.GetComponent<Player>().health++;
-                Destroy(col.gameObject);
-                ManagerSounds.ins.PowerUp();
-            }
-            
-
-        }
-        if (col.tag == "Bomb+")
-        {
-            if (gameObject.GetComponent<Bomb>().bombs < 4)
-            {
-                gameObject.GetComponent<Bomb>().bombs++;
-                Destroy(col.gameObject);
-                ManagerSounds.ins.PowerUp();
-            }
-          
-        }
-
-       
-    }
 }

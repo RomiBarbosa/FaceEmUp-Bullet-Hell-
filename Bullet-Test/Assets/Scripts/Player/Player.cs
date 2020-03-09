@@ -6,41 +6,32 @@ public class Player : MonoBehaviour {
 
     public int health;
     public bool invulnerable = false;
-
     public int bombs;
-
     float countdown;
 
-    public int score0;
-    public int score1;
-    // Use this for initialization
-   public Animator anim;
+    public int score;
+    public int graze;
+    public Animator anim;
     public GameObject ObjectCollider;
-
+    PlayerGuns guns;
+    Bomb bombHandler;
 
     void Start () {
+
         ObjectCollider.SetActive(true);
         countdown = 2;
-   // ManagerPuntps.ins.ShowVida(health);
+        guns = gameObject.GetComponent<PlayerGuns>();
+        bombHandler = gameObject.GetComponent<Bomb>();
     }
-	
-	// Update is called once per frame
+
 	void Update () {
-
-        //if (Input.GetKey(KeyCode.R))
-        //{
-        //    invulnerable = true;
-
-        //}
-
-
 
         if (invulnerable == true)
         {
             countdown -= Time.deltaTime;
             
             anim.SetBool("invulnerable",true);
-            //animacion y a la vez desactivas tu corazon
+
             if (countdown <= 0)
             {
                 ObjectCollider.SetActive(true);
@@ -50,13 +41,14 @@ public class Player : MonoBehaviour {
             }
         }
 
-        bombs = gameObject.GetComponent<Bomb>().bombs;
-        
+        bombs = bombHandler.bombs;
+
+
     }
 
     public void TakeDamage()
     {
-        //  ManagerPuntps.ins.ShowVida(health);
+
         if (GameManager.ins.ingame == true)
         {
             ObjectCollider.SetActive(false);
@@ -65,13 +57,61 @@ public class Player : MonoBehaviour {
             ManagerSounds.ins.Hit();
         }
       
-
-        
     }
 
     public void CloseScore()
     {
-       score1 += 10;
-       // ManagerPuntps.ins.CloseScore();
+       graze += 10;
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+
+        if (col.tag == "DecreaseCooldown")
+        {
+            if (guns.CurrentGun.GetComponent<GunPlayer>().DecreaseCooldown())
+            {
+                Destroy(col.gameObject);
+                ManagerSounds.ins.PowerUp();
+                Debug.Log("cooldown ok");
+            } 
+           
+        }
+
+        if (col.tag == "IncreaseDamage")
+        {
+            if (guns.CurrentGun.GetComponent<GunPlayer>().IncreaseDamage())
+            {
+                Destroy(col.gameObject);
+                ManagerSounds.ins.PowerUp();
+                Debug.Log("damage ok");
+            }
+
+        }
+
+        if (col.tag == "Life+")
+        {
+            if (health < 4)
+            {
+               health++;
+               Destroy(col.gameObject);
+               ManagerSounds.ins.PowerUp();
+                Debug.Log("life ok");
+            }
+
+
+        }
+
+        if (col.tag == "Bomb+")
+        {
+            if (bombHandler.AddBomb())
+            {
+                Destroy(col.gameObject);
+                ManagerSounds.ins.PowerUp();
+                Debug.Log("bomb ok");
+            }
+        }
+
+
     }
 }

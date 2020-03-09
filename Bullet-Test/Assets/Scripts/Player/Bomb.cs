@@ -18,17 +18,14 @@ public class Bomb : MonoBehaviour {
     private void Start()
     {
         cont = 1;
-
     }
    
     private void Update()
     {
         accelerationDir = Input.acceleration;
-        // ManagerPuntps.ins.ShowBombas(bombs);
         if (Input.GetButton("Button_Bomb") || accelerationDir.sqrMagnitude >= 3f)
         {
-            TirarBomba();
-
+            DropBomb();
         }
 
         if (!bombAvailable)
@@ -46,8 +43,6 @@ public class Bomb : MonoBehaviour {
         {
             cont -= Time.deltaTime;
             anim.SetBool("Bomb", true);
-            //BombBar.color = Color.grey;
-            //BombBar2.color = Color.grey;
             if (cont <= 0)
             {
                 bomb = false;
@@ -60,10 +55,10 @@ public class Bomb : MonoBehaviour {
         }
     }
 
-    public void TirarBomba()
+    public void DropBomb()
     {
        
-        if (/*Input.GetButton("Button_Bomb") &&*/ bombs > 0 && bombAvailable && Time.timeScale != 0)
+        if (bombs > 0 && bombAvailable && Time.timeScale != 0)
         {
             Instantiate(BombEffect,transform.position,transform.rotation);
             ManagerSounds.ins.Bomb();
@@ -95,5 +90,18 @@ public class Bomb : MonoBehaviour {
                 }
         }
       
+    }
+
+    public bool AddBomb()
+    {
+        if (bombs < 4)
+        {
+            bombs++;
+            return true;
+        } else
+        {
+            return false;
+        }
+        
     }
 }
