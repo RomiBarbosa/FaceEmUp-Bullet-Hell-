@@ -7,17 +7,20 @@ public class ManagerPuntps : MonoBehaviour {
 
     public float score;
     public float highscore;
+    public float cont;
     public int importantscore;
     public Text ui_score;
     public Text ui_importantscore;
     public Text ui_highscore;
     public Text ui_vida;
+    public Text ui_powerupinfo;
+    bool info;
     public GameObject[] Heart;
     public GameObject[] Bombs;
     public static ManagerPuntps instance;
     public ScorePersistence sc;
     int index;
-
+    
     public Player player;
 
     private void Start()
@@ -34,6 +37,8 @@ public class ManagerPuntps : MonoBehaviour {
             Bombs[i].SetActive(false);
         }
         highscore = PlayerPrefs.GetFloat("Highscore");
+        cont = 0;
+        ui_powerupinfo.text = " ";
     }
 
     private void Update()
@@ -73,6 +78,18 @@ public class ManagerPuntps : MonoBehaviour {
                 Bombs[i].GetComponent<Image>().color = Color.cyan;
             }
 
+        }
+
+
+        if (info)
+        {
+            cont += Time.deltaTime;
+            if (cont>1)
+            {
+                info = false;
+                ui_powerupinfo.text = "";
+                cont = 0;
+            }
         }
     }
 
@@ -115,5 +132,9 @@ public class ManagerPuntps : MonoBehaviour {
         ui_importantscore.text = player.graze.ToString();
     }
 
-
+    public void ShowPowerUpInfo(string info)
+    {
+        this.info = true;
+        ui_powerupinfo.text = info;
+    }
 }

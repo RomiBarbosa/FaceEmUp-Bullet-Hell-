@@ -152,6 +152,7 @@
     <Compile Include="Assets\Scripts\Settings\PrincipalMenu.cs" />
     <Compile Include="Assets\Scripts\Settings\Quit.cs" />
     <Compile Include="Assets\Scripts\Settings\ScaleMenu.cs" />
+    <Compile Include="Assets\Scripts\Settings\Tutorial.cs" />
     <Compile Include="Assets\Scripts\Settings\Waves.cs" />
     <Compile Include="Assets\Scripts\Settings\WinGame.cs" />
     <Compile Include="Assets\Scripts\Shoot.cs" />

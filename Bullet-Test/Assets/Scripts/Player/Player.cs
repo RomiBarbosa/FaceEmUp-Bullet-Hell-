@@ -74,6 +74,7 @@ public class Player : MonoBehaviour {
                 Destroy(col.gameObject);
                 ManagerSounds.ins.PowerUp();
                 Debug.Log("cooldown ok");
+                ManagerPuntps.instance.ShowPowerUpInfo("- cooldown");
             } 
            
         }
@@ -85,6 +86,7 @@ public class Player : MonoBehaviour {
                 Destroy(col.gameObject);
                 ManagerSounds.ins.PowerUp();
                 Debug.Log("damage ok");
+                ManagerPuntps.instance.ShowPowerUpInfo("+ damage");
             }
 
         }
@@ -96,7 +98,8 @@ public class Player : MonoBehaviour {
                health++;
                Destroy(col.gameObject);
                ManagerSounds.ins.PowerUp();
-                Debug.Log("life ok");
+               Debug.Log("life ok");
+               ManagerPuntps.instance.ShowPowerUpInfo("+1 life");
             }
 
 
@@ -109,6 +112,7 @@ public class Player : MonoBehaviour {
                 Destroy(col.gameObject);
                 ManagerSounds.ins.PowerUp();
                 Debug.Log("bomb ok");
+                ManagerPuntps.instance.ShowPowerUpInfo("+1 bomb");
             }
         }
 
