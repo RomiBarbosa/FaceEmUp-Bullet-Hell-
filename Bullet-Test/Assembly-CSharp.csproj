@@ -146,6 +146,7 @@
     <Compile Include="Assets\Scripts\Settings\GameManager.cs" />
     <Compile Include="Assets\Scripts\Settings\HideCursor.cs" />
     <Compile Include="Assets\Scripts\Settings\ManagerWaves.cs" />
+    <Compile Include="Assets\Scripts\Settings\Menu.cs" />
     <Compile Include="Assets\Scripts\Settings\MobileMenu.cs" />
     <Compile Include="Assets\Scripts\Settings\Parallax.cs" />
     <Compile Include="Assets\Scripts\Settings\Pause.cs" />
