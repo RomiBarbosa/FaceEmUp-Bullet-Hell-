@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ManagerPuntps : MonoBehaviour {
 
-    public float score;
-    public float highscore;
+    public int score;
+    public int highscore;
     public float cont;
     public int importantscore;
     public Text ui_score;
@@ -36,7 +36,7 @@ public class ManagerPuntps : MonoBehaviour {
         {
             Bombs[i].SetActive(false);
         }
-        highscore = PlayerPrefs.GetFloat("Highscore");
+        highscore = PlayerPrefs.GetInt("Highscore");
         cont = 0;
         ui_powerupinfo.text = " ";
     }
@@ -46,7 +46,7 @@ public class ManagerPuntps : MonoBehaviour {
         ShowVida();
         Score();
         CloseScore();
-        highscore = PlayerPrefs.GetFloat("Highscore");
+        highscore = PlayerPrefs.GetInt("Highscore");
         ui_highscore.text = highscore.ToString();
         if (score > highscore)
         {
@@ -122,7 +122,7 @@ public class ManagerPuntps : MonoBehaviour {
     {
         if (GameManager.ins.ingame == true)
         {
-            this.score = score + amount;
+            this.score = score + (int)amount;
         }
         
     }

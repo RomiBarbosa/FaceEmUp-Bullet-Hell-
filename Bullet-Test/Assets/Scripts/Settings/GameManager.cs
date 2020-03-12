@@ -52,9 +52,7 @@ public class GameManager : MonoBehaviour {
         {
             GameOver();
             PlayerPrefs.SetInt("LastScore", (int)ManagerPuntps.instance.score);
-
             flag = true;
-
         }
 
         time += Time.deltaTime;

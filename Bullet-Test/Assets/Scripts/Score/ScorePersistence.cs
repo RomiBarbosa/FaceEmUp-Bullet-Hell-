@@ -24,7 +24,7 @@ public class ScorePersistence : MonoBehaviour
         {
             PlayerPrefs.SetInt("Highscore", players[0].score);
         }
-       
+
         //InitializeTable();
 
 
@@ -82,7 +82,8 @@ public class ScorePersistence : MonoBehaviour
             OrderByScore();
            
         }
-       
+
+        PlayerPrefs.SetInt("Highscore", players[0].score);
         return players;
     }
 

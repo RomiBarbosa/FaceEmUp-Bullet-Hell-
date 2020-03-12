@@ -7,9 +7,9 @@ public class BackMenu : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape) || Input.GetButton("Back"))
+        if (Input.GetKey(KeyCode.Escape) || Input.GetButton("Cancel"))
         {
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("MenuOptions");
         }
     }
 }

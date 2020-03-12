@@ -7331,6 +7331,7 @@ MonoBehaviour:
   WinGameUI: {fileID: 1905197011225562, guid: e88aa62cdf8561641b5bb33b8a8c3a0c, type: 3}
   c: 0
   WINGAME: 0
+  gameOver: 0
 --- !u!114 &828290312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10639,9 +10640,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'PRESS START
-
-    Player 2'
+  m_Text: 
 --- !u!222 &1035219008
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13555,6 +13554,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 342024464}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1358168977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358168976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e91fa0683cc8a6d42be6ea49a736646c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &1358168978 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 20124413108873558, guid: 451df1328a51f1945aa6a5acf3b6a133,
@@ -17280,7 +17291,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Focus with      o with RB (in \n\njoystick) to slow down the time"
+  m_Text: "Focus with      o with RB (in \n\njoystick) to slow down time"
 --- !u!222 &1689130156
 CanvasRenderer:
   m_ObjectHideFlags: 0
