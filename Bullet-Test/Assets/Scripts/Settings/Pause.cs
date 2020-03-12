@@ -144,26 +144,25 @@ public class Pause : MonoBehaviour {
 
     public void PauseGame()
     {
-        if (InPause)
-        {
-            BackGame();
-        }
-        else
-        {
-            Time.timeScale = 0;
-            InPause = true;
-            if (GameManager.ins.ingame == false)
+            if (InPause)
             {
-                pausePanel.SetActive(false);
+                BackGame();
             }
             else
             {
-                pausePanel.SetActive(true);
-            }
+                Time.timeScale = 0;
+                InPause = true;
+                if (GameManager.ins.ingame == false)
+                {
+                    pausePanel.SetActive(false);
+                }
+                else
+                {
+                    pausePanel.SetActive(true);
+                }
 
-            ManagerSounds.ins.BajarVolumen();
-        }
-       
+                ManagerSounds.ins.BajarVolumen();
+            }
         
     }
 
@@ -174,5 +173,10 @@ public class Pause : MonoBehaviour {
         SlowDown = false;
         pausePanel.SetActive(false);
         ManagerSounds.ins.VolumenNormal();
+    }
+
+    public void HidePauseOptions()
+    {
+        pausePanel.SetActive(false);
     }
 }

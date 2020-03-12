@@ -92,7 +92,6 @@
     <Compile Include="Assets\AssetsExtra\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\AssetsExtra\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\AssetsExtra\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
-    <Compile Include="Assets\DeployPowerUp.cs" />
     <Compile Include="Assets\Scripts\Autodestruccion.cs" />
     <Compile Include="Assets\Scripts\BalaCirculo.cs" />
     <Compile Include="Assets\Scripts\Boss1.cs" />
@@ -131,6 +130,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerShoot.cs" />
     <Compile Include="Assets\Scripts\Player\PowerUp.cs" />
+    <Compile Include="Assets\Scripts\PowerUps\DeployPowerUp.cs" />
     <Compile Include="Assets\Scripts\RotanteEnemy.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
     <Compile Include="Assets\Scripts\Score\Letter.cs" />
@@ -150,6 +150,7 @@
     <Compile Include="Assets\Scripts\Settings\MobileMenu.cs" />
     <Compile Include="Assets\Scripts\Settings\Parallax.cs" />
     <Compile Include="Assets\Scripts\Settings\Pause.cs" />
+    <Compile Include="Assets\Scripts\Settings\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Settings\PrincipalMenu.cs" />
     <Compile Include="Assets\Scripts\Settings\Quit.cs" />
     <Compile Include="Assets\Scripts\Settings\ScaleMenu.cs" />

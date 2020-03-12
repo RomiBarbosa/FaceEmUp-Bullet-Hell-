@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour {
     public GameObject WinGameUI;
     public float c;
     public bool WINGAME;
+    public bool gameOver;
 
     bool flag;
     private void Awake()
@@ -44,14 +45,7 @@ public class GameManager : MonoBehaviour {
         ingame = true;
     }
 	
-    //IEnumerator GoToHighscore()
-    //{
 
-    //    yield return new WaitForSeconds(3f);
-    //    scene.ChangScene("Highscore");
-    //}
-
-	// Update is called once per frame
 	void Update () {
 
         if (players[0].health <= 0 && flag == false)
@@ -59,14 +53,12 @@ public class GameManager : MonoBehaviour {
             GameOver();
             PlayerPrefs.SetInt("LastScore", (int)ManagerPuntps.instance.score);
 
-           // StartCoroutine(GoToHighscore());
             flag = true;
 
-            
         }
 
         time += Time.deltaTime;
-        var minutes = Mathf.Floor((time % 3600) / 60).ToString("00"); /*((int)time / 60).ToString();*/
+        var minutes = Mathf.Floor((time % 3600) / 60).ToString("00"); 
         var seconds = (time % 60).ToString("00");
 
         timeUI.text = minutes + ":" + seconds;
@@ -78,11 +70,7 @@ public class GameManager : MonoBehaviour {
 
         if (Input.GetButtonDown("PressStart") && ingame == false)
         {
-
-            //scene.ChangScene(SceneName);
             scene.ChangScene("Highscore");
-            //scene.ChangScene(SceneName);
-
         }
 
         levelUI.text = Level.ToString() ;
@@ -93,15 +81,14 @@ public class GameManager : MonoBehaviour {
     {
         GameOverUI.SetActive(true);
         pause.PauseGame();
+        pause.HidePauseOptions();
         ingame = false;
+        gameOver = true;
     }
 
     public void WinGame()
     {
-        //WinUI.SetActive(true);
-        //ingame = false;
         ingame = false;
-       // pause.PauseGame();
         Instantiate(WinGameUI, transform.position, transform.rotation);
         WINGAME=true;
     }

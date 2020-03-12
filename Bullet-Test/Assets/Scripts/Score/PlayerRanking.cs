@@ -36,6 +36,8 @@ public class PlayerRanking : MonoBehaviour
             Selector.SetActive(false);
             Highscores.SetActive(true);
             ShowHighscores();
+            ok = true;
+            flag = false;
         }
         
 
