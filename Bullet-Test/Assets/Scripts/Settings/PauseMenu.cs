@@ -11,7 +11,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Start()
     {
-        ClickButton();
+        Initialized();
     }
     private void Update()
     {
@@ -20,12 +20,17 @@ public class PauseMenu : MonoBehaviour
         {
             ClickButton();
         }
-        if (index >= Buttons.Length - 1)
+        if (index >= /*Buttons.Length - 1*/3)
         {
             index = 0;
         }
     }
 
+    public void Initialized()
+    {
+        index = 0;
+        ClickButton();
+    }
     public void ClickButton()
     {
         Buttons[index].Select();

@@ -14,11 +14,11 @@ public class PrincipalMenu : MonoBehaviour {
            
         }
 
-        if (Input.touchCount> 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            w = true;
-        }
+        //if (Input.touchCount> 0)
+        //{
+        //    Touch touch = Input.GetTouch(0);
+        //    w = true;
+        //}
 
 
         if (w == true)

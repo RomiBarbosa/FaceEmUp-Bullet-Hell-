@@ -13,9 +13,21 @@ public class ScorePersistence : MonoBehaviour
     private void Start()
     {
        //InitializeTable();
+
         LoadHighscore();
-        PlayerPrefs.SetInt("Highscore", players[0].score);
+        if (players.Count == 0)
+        {
+            InitializeTable();
+            PlayerPrefs.SetInt("Highscore", players[0].score);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Highscore", players[0].score);
+        }
+       
         //InitializeTable();
+
+
     }
 
     public int getHighScore()

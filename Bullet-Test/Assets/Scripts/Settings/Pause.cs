@@ -158,13 +158,26 @@ public class Pause : MonoBehaviour {
                 }
                 else
                 {
-                    pausePanel.SetActive(true);
+                    ShowPanel();
+                    //pausePanel.SetActive(true);
+
                 }
 
                 ManagerSounds.ins.BajarVolumen();
             }
         
     }
+
+    public void ShowPanel()
+    {
+        if (pausePanel.activeSelf == false)
+        {
+            pausePanel.SetActive(true);
+            pausePanel.GetComponent<PauseMenu>().Initialized();
+        }
+       
+    }
+
 
     public void BackGame()
     {

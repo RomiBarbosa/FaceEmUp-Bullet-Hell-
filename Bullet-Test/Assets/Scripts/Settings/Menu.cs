@@ -56,7 +56,8 @@ public class Menu : MonoBehaviour
 
     public void Credits(string Scene)
     {
-        credits.SetActive(true);
+        SceneManager.LoadScene(Scene);
+        //credits.SetActive(true);
     }
 
 }

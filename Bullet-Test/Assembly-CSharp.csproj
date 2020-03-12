@@ -138,6 +138,7 @@
     <Compile Include="Assets\Scripts\Score\PlayerRanking.cs" />
     <Compile Include="Assets\Scripts\Score\ScorePersistence.cs" />
     <Compile Include="Assets\Scripts\Settings\AnimationText.cs" />
+    <Compile Include="Assets\Scripts\Settings\BackMenu.cs" />
     <Compile Include="Assets\Scripts\Settings\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Settings\Fade.cs" />
     <Compile Include="Assets\Scripts\Settings\FadeImage.cs" />
